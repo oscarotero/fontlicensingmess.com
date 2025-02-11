@@ -19,7 +19,7 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  row-gap: 2rem;
+  row-gap: 1rem;
   box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -64,5 +64,8 @@ a {
     margin: 0;
     font-size: 3rem;
     letter-spacing: -0.015em;
+  }
+  p {
+    margin: 0;
   }
 }
