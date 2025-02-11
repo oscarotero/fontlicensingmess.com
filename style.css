@@ -8,6 +8,7 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --color-gray: #eee;
   --color-blue: #2566ff;
 }
 
@@ -30,6 +31,11 @@ h1, h2, h3, h4, h5, h6, strong, b {
 
 a {
   color: inherit;
+}
+
+::selection {
+  color: var(--color-black);
+  background-color: var(--color-gray);
 }
 
 .coming-soon {
