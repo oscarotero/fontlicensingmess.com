@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Octavia;
+  src: url("/assets/Octavia-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-white: #fff;
+  --color-blue: #2566ff;
+  --color-background: var(--color-white);
+  --color-background-dark: color-mix(
+    in hsl,
+    var(--color-background),
+    black 10%
+  );
+  --color-foreground: var(--color-blue);
+  --color-foreground-dark: color-mix(
+    in hsl,
+    var(--color-foreground),
+    black 10%
+  );
+
+  --font-size-small: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+  --font-size-text: clamp(1.2rem, 1.0958rem + 0.5211vw, 1.4996rem);
+  --font-size-title: clamp(1.44rem, 1.2456rem + 0.9722vw, 1.999rem);
+  --font-size-display: clamp(2.4883rem, 1.7069rem + 3.907vw, 4.7348rem);
+}
+
+.theme-dark {
+  --color-background: var(--color-blue);
+  --color-background-dark: color-mix(
+    in hsl,
+    var(--color-background),
+    black 10%
+  );
+  --color-foreground: var(--color-white);
+  --color-foreground-dark: color-mix(
+    in hsl,
+    var(--color-foreground),
+    black 10%
+  );
+}
