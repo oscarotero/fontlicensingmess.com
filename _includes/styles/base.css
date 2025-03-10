@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  outline: 1px solid var(--color-background-dark);
+}
 body {
   font-family: Octavia, system-ui, sans-serif;
   margin: 0;

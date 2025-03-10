@@ -1,0 +1,33 @@
+---
+layout: layouts/base.vto
+---
+
+<div class="ly-page-menu">
+  <a class="logo" href="/">
+    <img src="/assets/logo.svg" width="80" height="80" inline>
+  </a>
+  Menu
+</div>
+
+<div class="ly-page-hero">
+  <h1 class="ly-page-header ty-header">{{ order }}. {{ title }}</h1>
+  <div class="ly-page-content ty-text">{{ content.first |> md }}</div>
+  <div class="ly-page-content ty-text">{{ content.more |> md }}</div>
+</div>
+
+<div class="ly-page-chart">
+  <div class="ly-page-details">Chart header</div>
+  <div class="ly-page-content">Chart content</div>
+</div>
+
+{{ set next = search.page(`order>${order}`, "order=asc") }}
+
+{{ if next }}
+  Next <a href="{{ next.url }}">{{ next.title }}</a>
+{{ /if }}
+
+{{ set prev = search.page(`order<${order}`, "order=desc") }}
+
+{{ if prev }}
+  Previous <a href="{{ prev.url }}">{{ prev.title }}</a>
+{{ /if }}
