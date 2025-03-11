@@ -4,3 +4,6 @@
 @import "styles/typography.css";
 
 @import "styles/components/logo.css";
+@import "styles/components/navigation.css";
+@import "styles/components/menu.css";
+@import "styles/components/chart.css";

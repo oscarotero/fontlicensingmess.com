@@ -1,0 +1,23 @@
+.menu {
+  font-size: var(--font-size-small);
+
+  li + li {
+    margin-top: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    transition: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &[aria-current="page"] {
+      text-decoration: underline;
+      text-underline-offset: -0.3em;
+      text-decoration-thickness: 3px;
+      text-decoration-skip-ink: none;
+    }
+  }
+}

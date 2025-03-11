@@ -6,28 +6,40 @@ layout: layouts/base.vto
   <a class="logo" href="/">
     <img src="/assets/logo.svg" width="80" height="80" inline>
   </a>
-  Menu
+  <nav class="menu">
+    <ol>
+      {{ for page of search.pages("order>=1", "order=asc") }}
+      <li><a {{ page.url === url ? 'aria-current="page"' : "" }} href="{{ page.url }}">{{ page.title }}</a></li>
+      {{ /for }}
+    </ol>
+  </nav>
 </div>
 
-<div class="ly-page-hero">
+<main class="ly-page-hero">
   <h1 class="ly-page-header ty-header">{{ order }}. {{ title }}</h1>
   <div class="ly-page-content ty-text">{{ content.first |> md }}</div>
   <div class="ly-page-content ty-text">{{ content.more |> md }}</div>
-</div>
+</main>
 
-<div class="ly-page-chart">
-  <div class="ly-page-details">Chart header</div>
-  <div class="ly-page-content">Chart content</div>
-</div>
+{{ if extra }}  
+{{ include `templates/${extra}.vto` }}
 
-{{ set next = search.page(`order>${order}`, "order=asc") }}
-
-{{ if next }}
-  Next <a href="{{ next.url }}">{{ next.title }}</a>
 {{ /if }}
 
-{{ set prev = search.page(`order<${order}`, "order=desc") }}
+<nav class="ly-page-nav navigation">
+  {{ set prev = search.page(`order<${order}`, "order=desc") }}
 
-{{ if prev }}
-  Previous <a href="{{ prev.url }}">{{ prev.title }}</a>
-{{ /if }}
+  {{ if prev }}
+    <a rel="prev" class="theme-{{ prev.theme}}" href="{{ prev.url }}">
+      <span>{{ prev.order }}. {{ prev.title }}</span>
+    </a>
+  {{ /if }}
+
+  {{ set next = search.page(`order>${order}`, "order=asc") }}
+
+  {{ if next }}
+    <a rel="next" class="theme-{{ next.theme}}" href="{{ next.url }}">
+      <span>{{ next.order }}. {{ next.title }}</span>
+    </a>
+  {{ /if }}
+</nav>

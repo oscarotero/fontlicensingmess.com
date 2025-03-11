@@ -1,0 +1,25 @@
+<figure class="ly-page-chart ly-chart chart">
+  <figcaption class="ly-chart-header">
+    <h2>{{ chart.title }}</h2>
+
+    <p class="chart-legend"><span class="chart-dot is-fill"></span> {{ chart.legend.women }}</p>
+    <p class="chart-legend"><span class="chart-dot"></span> {{ chart.legend.men }}</p>
+  </figcaption>
+  <div class="ly-chart-content">
+    <dl class="chart-rows">
+      {{ for row of chart.data.sort((a, b) => a.name.localeCompare(b.name)) }}
+      <dt>{{ row.name }}</dt>
+      <dd>
+        {{ for item of row.total }}
+          {{ if item <= row.women }}
+            <span class="chart-dot is-fill"></span>
+          {{ else }}
+            <span class="chart-dot is-empty"></span>
+          {{ /if }}
+        {{ /for }}
+      </dd>
+      {{ /for }}
+      <dt>
+    </dl>
+  </div>
+</figure>
