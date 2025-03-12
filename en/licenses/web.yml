@@ -1,6 +1,7 @@
-title: Licenses
-theme: dark
-order: 3
+title: Web
+id: licenses-web
+theme: light
+order: 3b
 content:
   first: |
     With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.

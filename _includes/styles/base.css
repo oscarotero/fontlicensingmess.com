@@ -26,7 +26,7 @@ a {
   text-underline-offset: 0.25em;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
-  transition: text-underline-offset 200ms;
+  transition: text-underline-offset var(--speed-fast);
 
   &:hover {
     text-underline-offset: -0.25em;

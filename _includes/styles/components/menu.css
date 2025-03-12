@@ -1,7 +1,19 @@
 .menu {
   font-size: var(--font-size-small);
 
-  li + li {
+  ol {
+    margin: 0;
+
+    ol {
+      list-style-type: lower-alpha;
+    }
+  }
+
+  > ol > li:first-child {
+    margin-top: 0;
+  }
+
+  li {
     margin-top: 1em;
   }
 

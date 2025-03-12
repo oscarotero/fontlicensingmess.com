@@ -1,0 +1,19 @@
+<figure class="ly-page-chart ly-chart chart" id="more">
+  <figcaption class="ly-chart-header">
+    <h2>{{ chart.title }}</h2>
+  </figcaption>
+  <div class="ly-chart-content">
+    <dl class="chart-rows">
+      {{ for row of chart.data.sort((a, b) => b.total - a.total) }}
+      <dt>{{ row.name }}</dt>
+      <dd>
+        {{ for item of row.total }}
+          <span class="chart-dot is-fill"></span>
+        {{ /for }}
+        <span class="chart-value">{{ row.total }} foundries</span>
+      </dd>
+      {{ /for }}
+      <dt>
+    </dl>
+  </div>
+</figure>

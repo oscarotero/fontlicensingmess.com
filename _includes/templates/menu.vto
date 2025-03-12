@@ -1,0 +1,29 @@
+<div class="ly-page-menu">
+  <a class="logo" href="/">
+    <img src="/assets/logo.svg" width="80" height="80" inline>
+  </a>
+
+  <nav class="menu">
+    <ol>
+      {{ for item of nav.menu("/", `lang=${lang}`, "order=asc suborder=asc").children }}
+      <li>
+        <a {{ item.data.url === url ? 'aria-current="page"' : "" }} href="{{ item.data.url }}">
+          {{ item.data.title }}
+        </a>
+
+        {{ if item.children }}
+          <ol>
+            {{ for subitem of item.children }}
+            <li>
+              <a {{ subitem.data.url === url ? 'aria-current="page"' : "" }} href="{{ subitem.data.url }}">
+                {{ subitem.data.title }}
+              </a>
+            </li>
+            {{ /for }}
+          </ol>
+        {{ /if }}
+      </li>
+      {{ /for }}
+    </ol>
+  </nav>
+</div>

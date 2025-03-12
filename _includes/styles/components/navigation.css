@@ -1,17 +1,16 @@
 .navigation {
   display: flex;
-  padding-top: 40px;
 }
 
 .navigation-item {
-  position: relative;
+  position: fixed;
+  bottom: -10px;
 
   &.is-next {
-    margin-left: auto;
-    margin-right: -50px;
+    right: -60px;
   }
   &.is-prev {
-    margin-left: -50px;
+    left: -60px;
   }
 
   &::after {
@@ -21,12 +20,15 @@
     left: -3px;
     width: 306px;
     height: 306px;
-    transition: clip-path 200ms;
+    transition: clip-path var(--speed-fast);
     background-color: var(--color-foreground);
     clip-path: circle(53px at 50% 50%);
   }
   &:has(a:hover)::after {
     clip-path: circle(153px at 50% 50%);
+  }
+  &:hover {
+    z-index: 2;
   }
 
   > a {
@@ -39,7 +41,7 @@
     font-size: var(--font-size-title);
     letter-spacing: var(--tracking-title);
     line-height: var(--line-height-short);
-    transition: clip-path 200ms;
+    transition: clip-path var(--speed-fast);
     outline: none;
     clip-path: circle(50px at 50% 50%);
     margin-bottom: -50px;
@@ -49,7 +51,7 @@
     > span {
       display: block;
       transform: translateX(100px);
-      transition: transform 200ms;
+      transition: transform var(--speed-fast);
     }
 
     &:hover {

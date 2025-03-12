@@ -10,6 +10,9 @@
   --color-white: #fff;
   --color-blue: #2566ff;
 
+  --speed-fast: 200ms;
+  --speed-medium: 400ms;
+
   --font-size-small: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
   --font-size-text: clamp(1.2rem, 1.0958rem + 0.5211vw, 1.4996rem);
   --font-size-title: clamp(1.44rem, 1.2456rem + 0.9722vw, 1.999rem);
