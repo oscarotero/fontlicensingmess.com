@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-size: var(--font-size-small);
   overflow-x: hidden;
