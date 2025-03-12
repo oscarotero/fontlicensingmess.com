@@ -1,6 +1,6 @@
 .ty-text {
   font-size: var(--font-size-text);
-  line-height: 1.35;
+  line-height: var(--line-height-long);
 
   > :first-child {
     margin-top: 0;
@@ -11,7 +11,7 @@
 }
 .ty-header {
   font-size: var(--font-size-display);
-  line-height: 1.1;
-  letter-spacing: -0.015em;
+  line-height: var(--line-height-short);
+  letter-spacing: var(--tracking-display);
   margin: 0;
 }

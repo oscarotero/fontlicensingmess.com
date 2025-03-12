@@ -34,7 +34,7 @@
   display: grid;
   grid-template-columns: subgrid;
   align-content: start;
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 300px);
   row-gap: 40px;
   padding: 40px 0;
 
@@ -46,6 +46,19 @@
     }
   }
 }
+
+.ly-page-more {
+  grid-column: 1 / -1;
+  justify-self: center;
+  z-index: 3;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+
 .ly-page-details {
   grid-column: details-start / details-end;
 }
@@ -54,9 +67,13 @@
 }
 
 .ly-page-nav {
+  height: 300px;
+  overflow-y: clip;
   position: sticky;
+  align-items: center;
+  z-index: 2;
   bottom: 0;
-  grid-column: menu-start / extra-end;
+  grid-column: 1 / -1;
 }
 
 .ly-chart {

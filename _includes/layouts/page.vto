@@ -21,7 +21,13 @@ layout: layouts/base.vto
   <div class="ly-page-content ty-text">{{ content.more |> md }}</div>
 </main>
 
-{{ if extra }}  
+{{ if extra }}
+<a href="#more" class="ly-page-more">
+  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 0V39" stroke="#2566FF" stroke-width="3"/>
+    <path d="M40.2637 20.3862L21.0137 39.7006L1.76367 20.3862" stroke="#2566FF" stroke-width="3"/>
+  </svg>
+</a>
 {{ include `templates/${extra}.vto` }}
 
 {{ /if }}
@@ -30,16 +36,20 @@ layout: layouts/base.vto
   {{ set prev = search.page(`order<${order}`, "order=desc") }}
 
   {{ if prev }}
-    <a rel="prev" class="theme-{{ prev.theme}}" href="{{ prev.url }}">
-      <span>{{ prev.order }}. {{ prev.title }}</span>
-    </a>
+    <div class="navigation-item is-prev">
+      <a rel="prev" class="theme-{{ prev.theme}}" href="{{ prev.url }}">
+        <span>{{ prev.order }}. {{ prev.title }}</span>
+      </a>
+    </div>
   {{ /if }}
 
   {{ set next = search.page(`order>${order}`, "order=asc") }}
 
   {{ if next }}
-    <a rel="next" class="theme-{{ next.theme}}" href="{{ next.url }}">
-      <span>{{ next.order }}. {{ next.title }}</span>
-    </a>
+    <div class="navigation-item is-next">
+      <a rel="next" class="theme-{{ next.theme}}" href="{{ next.url }}">
+        <span>{{ next.order }}. {{ next.title }}</span>
+      </a>
+    </div>
   {{ /if }}
 </nav>

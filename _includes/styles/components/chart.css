@@ -1,8 +1,9 @@
 .chart {
   h2 {
     font-size: var(--font-size-title);
+    letter-spacing: var(--tracking-title);
+    line-height: var(--line-height-short);
     margin: 0;
-    line-height: 1.1;
     border-bottom: solid 3px;
     padding-bottom: 20px;
     margin-bottom: 24px;
@@ -19,7 +20,7 @@
 
   dt {
     font-size: var(--font-size-text);
-    line-height: 1;
+    line-height: var(--line-height-short);
     text-align: right;
     grid-column: 1;
   }
