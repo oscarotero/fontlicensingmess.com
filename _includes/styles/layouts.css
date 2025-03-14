@@ -9,6 +9,17 @@
   extra-start] minmax(0, 1fr) [extra-end] 40px;
   min-height: 100vh;
 }
+.ly-page-footer {
+  grid-column: menu-start / extra-end;
+  text-align: center;
+  height: 150px;
+  display: grid;
+  align-content: center;
+
+  p {
+    margin: 0;
+  }
+}
 
 .ly-page-menu {
   grid-column: menu-start / content-start;
@@ -37,7 +48,7 @@
   display: grid;
   grid-template-columns: subgrid;
   align-content: start;
-  min-height: 100vh;
+  min-height: calc(100vh - 150px);
   row-gap: 40px;
   padding: 40px 0;
 
@@ -89,6 +100,10 @@
   @media (width > 800px) {
     align-items: start;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  + .ly-chart {
+    margin-top: 160px;
   }
 }
 .ly-chart-header {

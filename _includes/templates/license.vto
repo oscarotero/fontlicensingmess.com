@@ -1,0 +1,51 @@
+{{ if chart }}  
+<figure class="ly-page-chart ly-chart chart" id="more">
+  <figcaption class="ly-chart-header">
+    <h2>{{ chart.title }}</h2>
+  </figcaption>
+  <div class="ly-chart-content">
+    <dl class="chart-rows">
+      {{ for id, row of chart.rows }}
+      <dt>{{ row.name }}</dt>
+      <dd>
+        <div class="chart-row-bar bg-pattern-{{ id }}" style="--value:{{ row.value }}">
+          {{# {{ row.value }} #}}
+        </div>
+      </dd>
+      {{ /for }}
+    </dl>
+  </div>
+</figure>
+{{ /if }}
+
+{{ if pricing }}  
+<figure class="ly-page-chart ly-chart chart">
+  <figcaption class="ly-chart-header">
+    <h2>{{ pricing.title }}</h2>
+  </figcaption>
+  <div class="ly-chart-content">
+    <div class="chart-pricing">
+      {{ for row of utils.groupPricing(pricing.prices) }}
+      <div class="chart-pricing-dots {{ (row.min || row.max || row.median) ? 'has-label' : '' }}">
+        <div class="chart-pricing-dots-wrapper">
+          {{ for price of row.prices }}
+          <span class="chart-dot is-fill"></span>
+          {{ /for }}
+        </div>
+      </div>
+      <div class="chart-pricing-details">
+        {{ if row.min }}
+          <strong>{{ row.min }}€</strong>
+        {{ /if }}
+        {{ if row.max }}
+          <strong>{{ row.max }}€</strong>
+        {{ /if }}
+        {{ if row.median }}
+          <strong>{{ row.median }}€</strong> (median)
+        {{ /if }}
+      </div>
+      {{ /for }}
+    </div>
+  </div>
+</figure>
+{{ /if }}
