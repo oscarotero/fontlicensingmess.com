@@ -11,7 +11,7 @@
 }
 .ty-header {
   font-size: var(--font-size-display);
-  line-height: var(--line-height-short);
+  line-height: 1;
   letter-spacing: var(--tracking-display);
   margin: 0;
 }

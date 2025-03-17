@@ -40,6 +40,10 @@
     grid-column: content-start / content-end;
   }
 }
+header.ly-page-content {
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
 .ly-page-header {
   grid-column: details-start / content-end;
 

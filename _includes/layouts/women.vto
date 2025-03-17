@@ -1,0 +1,23 @@
+---
+layout: layouts/base.vto
+---
+
+{{ include "templates/menu.vto" }}
+
+<header class="ly-page-content">
+  <h1 class="ty-header">{{ title }}</h1>
+</header>
+
+<dl class="ly-page-content list">
+  {{ for foundry of women.sort((a, b) => a["Type foundry"]?.localeCompare(b["Type foundry"])) }}
+  <dt>
+    <a href="{{ foundry.Web }}">{{ foundry["Type foundry"] }} — {{ foundry.Location }}</a>
+  </dt>
+  <dd>
+    <p>
+    {{ foundry.Name }} ({{ foundry.Role }}) — {{ foundry.Nationality }}<br>
+    {{ foundry.Size }}
+    </p>
+  </dd>
+  {{ /for }}
+</dl>

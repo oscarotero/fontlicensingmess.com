@@ -1,5 +1,5 @@
 <nav class="ly-page-nav navigation">
-  {{ set prev = nav.previousPage(url, `lang=${lang} order!=undefined`, "order=asc suborder=asc") }}
+  {{ set prev = nav.previousPage(url, `lang=${lang} order!=undefined menu!=false`, "order=asc suborder=asc") }}
 
   {{ if prev }}
     <div class="navigation-item is-prev">
@@ -9,7 +9,7 @@
     </div>
   {{ /if }}
 
-  {{ set next = nav.nextPage(url, `lang=${lang} order!=undefined`, "order=asc suborder=asc") }}
+  {{ set next = nav.nextPage(url, `lang=${lang} order!=undefined menu!=false`, "order=asc suborder=asc") }}
 
   {{ if next }}
     <div class="navigation-item is-next">
