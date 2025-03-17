@@ -5,7 +5,7 @@ layout: layouts/base.vto
 {{ include "templates/menu.vto" }}
 
 <main class="ly-page-hero">
-  <h1 class="ly-page-header ty-header">{{ order }}. {{ title }}</h1>
+  <h1 style="view-transition-name: t-{{ id }}" class="ly-page-header ty-header">{{ order }}. {{ title }}</h1>
   <div class="ly-page-content ty-text">{{ content.first |> md }}</div>
   <div class="ly-page-content ty-text">{{ content.more |> md }}</div>
 </main>

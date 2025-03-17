@@ -12,11 +12,11 @@
       <dd>
         {{ for item of row.total }}
           {{ if item <= row.women }}
-            <span class="chart-dot is-fill">
+            <span class="chart-dot is-fill" tabindex="-1">
               <span class="chart-dot-tooltip">Led by women</span>
             </span>
           {{ else }}
-            <span class="chart-dot is-empty">
+            <span class="chart-dot is-empty" tabindex="-1">
               <span class="chart-dot-tooltip">No women in led positions</span>
             </span>
           {{ /if }}

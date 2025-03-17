@@ -4,7 +4,7 @@
   {{ if prev }}
     <div class="navigation-item is-prev">
       <a rel="prev" class="theme-{{ prev.theme}}" href="{{ prev.url }}">
-        <span>{{ prev.order }}. {{ prev.title }}</span>
+        <span style="view-transition-name:t-{{ prev.id }}">{{ prev.order }}. {{ prev.title }}</span>
       </a>
     </div>
   {{ /if }}
@@ -14,7 +14,7 @@
   {{ if next }}
     <div class="navigation-item is-next">
       <a rel="next" class="theme-{{ next.theme}}" href="{{ next.url }}">
-        <span>{{ next.order }}. {{ next.title }}</span>
+        <span style="view-transition-name:t-{{ next.id }}">{{ next.order }}. {{ next.title }}</span>
       </a>
     </div>
   {{ /if }}
