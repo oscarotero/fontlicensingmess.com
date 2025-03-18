@@ -1,11 +1,11 @@
-<figure class="ly-page-chart ly-chart chart" id="more">
-  <figcaption class="ly-chart-header">
+<figure class="ly-page-resources ly-resources chart" id="more">
+  <figcaption class="ly-resources-header">
     <h2>{{ chart.title }}</h2>
 
     <p class="chart-legend"><span class="chart-dot is-fill"></span> {{ chart.legend.women }}</p>
     <p class="chart-legend"><span class="chart-dot"></span> {{ chart.legend.men }}</p>
   </figcaption>
-  <div class="ly-chart-content">
+  <div class="ly-resources-chart">
     <dl class="chart-rows">
       {{ for row of chart.data.sort((a, b) => a.name.localeCompare(b.name)) }}
       <dt>{{ row.name }}</dt>

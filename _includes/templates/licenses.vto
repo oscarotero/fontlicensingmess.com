@@ -1,8 +1,8 @@
-<figure class="ly-page-chart ly-chart chart" id="more">
-  <figcaption class="ly-chart-header">
+<figure class="ly-page-resources ly-resources chart" id="more">
+  <figcaption class="ly-resources-header">
     <h2>{{ chart.title }}</h2>
   </figcaption>
-  <div class="ly-chart-content">
+  <div class="ly-resources-chart">
     <dl class="chart-rows">
       {{ for row of chart.data.sort((a, b) => b.total - a.total) }}
       <dt>{{ row.name }}</dt>

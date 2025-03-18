@@ -1,4 +1,5 @@
 import Navigator from "./vendor/page-loader/navigator.js";
+import Filter from "./vendor/filter.js";
 
 const nav = new Navigator(async (load, event) => {
   const target = event.target.closest("a");
@@ -100,3 +101,5 @@ function createNode(name, properties = {}) {
 
   return node;
 }
+
+customElements.define("filter-list", Filter);

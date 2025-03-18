@@ -3,50 +3,75 @@ id: resources
 theme: dark
 order: 4
 layout: layouts/resources.vto
+# Icons: https://feathericons.com/
+filters: Filter resources
+types:
+  - label: Foundry articles
+    value: foundry
+    icon: type
+  - label: Videos
+    value: video
+    icon: youtube
+  - label: Url
+    value: url
+    icon: link-2
+
 resources:
   - title: Women Leading Foundries
     description: List of foundries leaded by at least one women
-    highlighted: true
-    url: "#"
+    type: fontlicensingmess
+    url: "/women"
   - title: Map of foundries
     description: Map with independent foundries around the World
-    highlighted: true
+    type: fontlicensingmess
+    url: "/"
+  - title: Tipografías para web, licencias y comercio justo
+    description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: url
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: url
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: video
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: video
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: url
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: video
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: foundry
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: foundry
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: foundry
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: url
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: video
     url: "#"
   - title: Tipografías para web, licencias y comercio justo
     description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
-    url: "#"
-  - title: Tipografías para web, licencias y comercio justo
-    description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+    type: foundry
     url: "#"
 
 content:

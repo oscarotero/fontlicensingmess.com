@@ -86,8 +86,9 @@ header.ly-page-content {
 
 .ly-page-details {
   grid-column: details-start / details-end;
+  align-self: start;
 }
-.ly-page-chart {
+.ly-page-resources {
   grid-column: details-start / content-end;
 }
 
@@ -99,7 +100,7 @@ header.ly-page-content {
   grid-column: 1 / -1;
 }
 
-.ly-chart {
+.ly-resources {
   display: grid;
   margin: 0;
   row-gap: 80px;
@@ -110,11 +111,11 @@ header.ly-page-content {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  + .ly-chart {
+  + .ly-resources {
     margin-top: 160px;
   }
 }
-.ly-chart-header {
+.ly-resources-header {
   grid-column: 1 / 2;
   max-width: 250px;
 
@@ -128,6 +129,9 @@ header.ly-page-content {
   }
 }
 
-.ly-chart-content {
+.ly-resources-list {
+  grid-column: 3 / -1;
+}
+.ly-resources-chart {
   grid-column: 2 / -1;
 }
