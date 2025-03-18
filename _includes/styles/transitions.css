@@ -1,0 +1,29 @@
+.transition-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  fill: none;
+  background: none;
+
+  circle {
+    fill: var(--color-background);
+    stroke-width: 10px;
+    stroke: var(--color-foreground);
+  }
+}
+
+.transition-content {
+  animation: fadein var(--speed-fast);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
