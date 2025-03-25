@@ -6,7 +6,13 @@
 
     ol {
       list-style-type: lower-alpha;
+      display: none;
     }
+  }
+
+  ol ol:has([aria-current="page"]),
+  ol a[aria-current="page"] + ol {
+    display: block;
   }
 
   > ol > li:first-child {
