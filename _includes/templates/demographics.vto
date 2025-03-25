@@ -1,3 +1,4 @@
+
 <figure class="ly-page-resources ly-resources chart" id="more">
   <figcaption class="ly-resources-header">
     <h2>{{ chart.title }}</h2>
@@ -7,19 +8,24 @@
   </figcaption>
   <div class="ly-resources-chart">
     <dl class="chart-rows">
-      {{ for row of chart.data.sort((a, b) => a.name.localeCompare(b.name)) }}
-      <dt>{{ row.name }}</dt>
+      {{ for country, foundries of demographics |> demographics }}
+
+      <dt>{{ country }}</dt>
       <dd>
-        {{ for item of row.total }}
-          {{ if item <= row.women }}
-            <span class="chart-dot is-fill" tabindex="-1">
-              <span class="chart-dot-tooltip">Led by women</span>
-            </span>
-          {{ else }}
-            <span class="chart-dot is-empty" tabindex="-1">
-              <span class="chart-dot-tooltip">No women in led positions</span>
-            </span>
-          {{ /if }}
+        {{ for item of foundries.sort((a, b) => a.women ? -1 : 1) }}
+        {{ if item.url }}
+        <a href="{{ item.url }}" target="_blank" class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
+          <span class="chart-dot-tooltip">
+          {{ item.name }}
+          </span>
+        </a>
+        {{ else }}
+        <span class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
+          <span class="chart-dot-tooltip">
+          {{ item.name }}
+          </span>
+        </span>
+        {{ /if }}
         {{ /for }}
       </dd>
       {{ /for }}
