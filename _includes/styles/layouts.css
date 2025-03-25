@@ -86,10 +86,19 @@ header.ly-page-content {
 
 .ly-page-map {
   grid-column: menu-start / extra-end;
-  width: 100%;
+  justify-self: stretch;
+  width: auto;
   height: min(800px, 100vh);
   border: none;
   border-radius: 4px;
+
+  @media (width < 500px) {
+    grid-column: 1 / -1;
+    border-radius: 0;
+  }
+  @media (width > 1000px) {
+    margin-left: min(20vw, 300px);
+  }
 }
 
 .ly-page-details {

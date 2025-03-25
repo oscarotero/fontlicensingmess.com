@@ -13,8 +13,8 @@ extra: demographics
 chart:
   title: Number of foundries by country
   legend:
-    women: With women in led positions
-    men: Without women in led positions
+    women: Women in lead positions
+    men: No women in lead positions
 
 resources:
   title: Related resources
