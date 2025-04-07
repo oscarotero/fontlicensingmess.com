@@ -19,6 +19,12 @@
   p {
     margin: 0;
   }
+  a {
+    text-decoration: none;
+  }
+  svg {
+    vertical-align: middle;
+  }
 
   @media (width < 600px) {
     margin-bottom: 60px;
@@ -65,6 +71,9 @@ header.ly-page-content {
     grid-row: 1;
     .ly-page-header + .ly-page-content {
       order: -1;
+      /* min-height: calc(30vh);
+      display: grid;
+      align-content: end; */
     }
   }
 }

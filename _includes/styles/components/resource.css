@@ -4,13 +4,6 @@
   padding: 0;
   display: grid;
   row-gap: 40px;
-
-  @media (width >= 600px) {
-    &.is-highlighted {
-      min-height: 33vh;
-      align-content: end;
-    }
-  }
 }
 
 .resource {
@@ -18,10 +11,6 @@
   line-height: var(--line-height-long);
   display: flex;
   column-gap: 20px;
-
-  &[hidden] {
-    display: none;
-  }
 
   > a {
     text-decoration: none;

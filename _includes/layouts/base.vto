@@ -11,7 +11,13 @@
   {{ content }}
 
   <footer class="ly-page-footer">
-    <p>(cc) {{ new Date().getFullYear() }}. The Font Licensing Mess Team</p>
+    <p>
+      <a href="{{ i18n.footer.cc_url }}">
+        <img width=18 height=18 src="{{ "creative-commons" |> icon("fontawesome", "brands") }}" alt="Creative commons" inline>
+        <img width=18 height=18 src="{{ "creative-commons-by" |> icon("fontawesome", "brands") }}" alt="Attribution" inline>
+      </a>
+      &nbsp;&nbsp;
+      {{ new Date().getFullYear() }}. {{ i18n.footer.text }}</p>
   </footer>
 </body>
 </html>
