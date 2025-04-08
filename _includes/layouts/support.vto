@@ -1,0 +1,44 @@
+---
+layout: layouts/base.vto
+---
+
+{{ include "templates/menu.vto" }}
+
+<main class="ly-page-hero">
+  <h1 class="ly-page-header ty-header">{{ order }}. {{ title }}</h1>
+  <div class="ly-page-content ty-text">
+    {{ content |> md }}
+    <ul class="links">
+    {{ for link of links }}
+      <li><a href="{{ link.url }}">
+        <img width=32 height=32 src="{{ link.icon |> icon("simpleicons") }}" inline>
+        {{ link.text }}
+      </a></li>
+    {{ /for }}
+    </ul>
+  </div>
+  
+  <form class="ly-page-content form" name="contact" method="POST" netlify>
+    {{ form.intro |> md }}
+    
+    <p class="form-field">
+      <label for="field-name">{{ form.name }}</label>
+      <input id="field-name" type="text" name="name">
+    </p>
+
+    <p class="form-field">
+      <label for="field-email">{{ form.email }}</label>
+      <input id="field-email" type="email" name="email">
+    </p>
+
+    <p class="form-field">
+      <label for="field-content">{{ form.content }}</label>
+      <textarea id="field-content" name="content"></textarea>
+    </p>
+    <footer class="form-footer">
+      <button type="submit">{{ form.submit }}</button>
+    </footer>
+  </form>
+</main>
+
+{{ include "templates/navigation.vto" }}

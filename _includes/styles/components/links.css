@@ -1,0 +1,15 @@
+.links {
+  list-style-type: "";
+  padding: 0;
+  margin: 2em 0;
+
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    font-size: var(--font-size-small);
+  }
+  svg {
+    fill: currentColor;
+  }
+}
