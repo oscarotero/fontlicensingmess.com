@@ -10,7 +10,7 @@ layout: layouts/base.vto
   <div class="ly-page-content people">
     {{ for person of people }}
     <section class="person">
-      <img class="person-image" src="{{ person.img }}">
+      <img transform-images="webp 100@2" class="person-image" src="{{ person.img }}">
       
       <div class="person-bio">
         {{ person.bio |> md }}

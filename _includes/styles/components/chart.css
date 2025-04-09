@@ -15,16 +15,16 @@
 .chart-rows {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 24px;
   row-gap: 16px;
   margin: 0;
   align-items: center;
 
   dt {
-    font-size: var(--font-size-text);
+    font-size: var(--font-size-small);
     line-height: var(--line-height-short);
     text-align: right;
     grid-column: 1;
+    padding-right: 16px;
   }
   dd {
     margin: 0;
@@ -104,6 +104,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
 
   &.has-label {
     background-image: linear-gradient(
@@ -122,6 +123,7 @@
   justify-content: center;
   background-color: var(--color-background);
   padding: 0 1rem;
+  min-height: 20px;
 }
 .chart-pricing-details {
   font-size: var(--font-size-small);
@@ -138,9 +140,19 @@
   align-items: center;
   padding-left: 3px;
   height: 63px;
+  position: relative;
+
+  > span {
+    color: var(--color-foreground);
+    position: absolute;
+    left: calc(100% + 5px);
+    top: 0;
+  }
 }
 
-.bg-pattern-0 {
+.bg-pattern-0,
+.bg-pattern-6,
+.bg-pattern-12 {
   background-image: linear-gradient(
     to bottom,
     var(--color-foreground),
@@ -150,7 +162,9 @@
   );
   background-size: 100% 6px;
 }
-.bg-pattern-1 {
+.bg-pattern-1,
+.bg-pattern-7,
+.bg-pattern-13 {
   background-image: linear-gradient(
     to right,
     var(--color-foreground),
@@ -160,7 +174,8 @@
   );
   background-size: 6px 100%;
 }
-.bg-pattern-2 {
+.bg-pattern-2,
+.bg-pattern-8 {
   background-image: radial-gradient(
     var(--color-foreground) 2px,
     transparent 2px
@@ -168,7 +183,8 @@
   background-size: 7px 7px;
   background-position-y: 1px;
 }
-.bg-pattern-3 {
+.bg-pattern-3,
+.bg-pattern-9 {
   background: repeating-linear-gradient(
     -45deg,
     transparent,
@@ -177,7 +193,8 @@
     var(--color-foreground) 6px
   );
 }
-.bg-pattern-4 {
+.bg-pattern-4,
+.bg-pattern-10 {
   background: repeating-linear-gradient(
     45deg,
     transparent,
@@ -186,7 +203,8 @@
     var(--color-foreground) 6px
   );
 }
-.bg-pattern-5 {
+.bg-pattern-5,
+.bg-pattern-11 {
   background-image:
     linear-gradient(
       to bottom,

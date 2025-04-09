@@ -5,11 +5,11 @@
   </figcaption>
   <div class="ly-resources-chart">
     <dl class="chart-rows">
-      {{ for id, row of chart.rows }}
-      <dt>{{ row.name }}</dt>
+      {{ for id, unit of it[chart.key] |> units }}
+      <dt>{{ unit.name }}</dt>
       <dd>
-        <div class="chart-row-bar bg-pattern-{{ id }}" style="--value:{{ row.value }}">
-          {{# {{ row.value }} #}}
+        <div class="chart-row-bar bg-pattern-{{ id }}" style="--value:{{ unit.value }}">
+          <span>{{ unit.value }}</span>
         </div>
       </dd>
       {{ /for }}
@@ -25,7 +25,7 @@
   </figcaption>
   <div class="ly-resources-chart">
     <div class="chart-pricing">
-      {{ for row of utils.groupPricing(pricing.prices) }}
+      {{ for row of it[pricing.key] |> pricing }}
       <div class="chart-pricing-dots {{ (row.min || row.max || row.median) ? 'has-label' : '' }}">
         <div class="chart-pricing-dots-wrapper">
           {{ for price of row.prices }}
