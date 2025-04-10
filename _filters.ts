@@ -45,12 +45,14 @@ export function convertUnit(content: UnitCSV[]): Unit[] {
   const count: Record<string, number> = {};
 
   for (const unit of content) {
-    const name = unit["Measuring unit"];
-    if (count[name] === undefined) {
-      count[name] = 0;
+    const names = unit["Measuring unit"]?.split(",").map((u) => u.trim());
+    if (!names?.length) {
+      continue;
     }
 
-    count[name]++;
+    for (const name of names) {
+      count[name] = (count[name] ?? 0) + 1;
+    }
   }
 
   return Object.entries(count).map(([name, value]) => ({

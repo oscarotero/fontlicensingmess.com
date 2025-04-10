@@ -143,9 +143,10 @@
   position: relative;
 
   > span {
+    font-size: var(--font-size-title);
     color: var(--color-foreground);
     position: absolute;
-    left: calc(100% + 5px);
+    left: calc(100% + 10px);
     top: 0;
   }
 }

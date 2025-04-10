@@ -1,7 +1,7 @@
 title: Desktop
-id: licenses-desktop
+id: licences-desktop
 theme: light
-extra: license
+extra: licence
 order: 3a
 content:
   first: |
@@ -10,9 +10,9 @@ content:
     The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
 
 chart:
-  title: Popular units of measurement for desktop licenses
-  key: "desktop"
+  title: Popular measuring units for desktop licences
+  key: desktop
 
 pricing:
-  title: Pricing in desktop licenses
-  key: "desktop-pricing"
+  title: Pricing in desktop licences
+  key: desktop-pricing

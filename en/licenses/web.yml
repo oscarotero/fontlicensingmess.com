@@ -1,7 +1,7 @@
 title: Web
-id: licenses-web
+id: licences-web
 theme: light
-extra: license
+extra: licence
 order: 3b
 content:
   first: |
@@ -10,5 +10,5 @@ content:
     The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
 
 chart:
-  title: Popular units of measurement for web licenses
-  key: "web"
+  title: Popular measuring units for web licences
+  key: web
