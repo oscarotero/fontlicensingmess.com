@@ -4,8 +4,7 @@ id: about-us
 theme: light
 order: 5
 content: |
-  With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
-
+  Font Licensing Mess is an independent research project born to shed some light on one of the most complex and least understood aspects of the modern type industry: font licensing. Over the past decades, digital type design and font production have experienced significant growth. However, the legal and commercial frameworks governing font use have not evolved with the same clarity. The result is an opaque and fragmented system that is often challenging to navigate, even for those working within the industry. 
 people:
   - img: /img/equipo2.jpg
     bio: |
