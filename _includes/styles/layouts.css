@@ -60,7 +60,11 @@ header.ly-page-content {
 .ly-page-hero {
   grid-column: details-start / content-end;
   display: grid;
-  grid-template-columns: [details-start] minmax(0, 650px) [details-end content-start] minmax(0, 650px) [content-end extra-start];
+  grid-template-columns:
+    [details-start] minmax(0, 650px) [details-end content-start] minmax(
+    0,
+    650px
+  ) [content-end extra-start];
   align-content: start;
   min-height: calc(100vh - 150px);
   row-gap: 40px;

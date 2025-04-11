@@ -15,9 +15,13 @@
 .chart-rows {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  row-gap: 16px;
+  row-gap: 32px;
   margin: 0;
   align-items: center;
+
+  &.is-condensed {
+    row-gap: 16px;
+  }
 
   dt {
     font-size: var(--font-size-small);
@@ -30,9 +34,13 @@
     margin: 0;
     grid-column: 2 / -1;
     display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
+    column-gap: 8px;
   }
+}
+.chart-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
 }
 .chart-dot {
   width: 20px;
@@ -84,12 +92,11 @@
 }
 .chart-value {
   display: inline-flex;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-text);
   line-height: var(--line-height-short);
   padding: 0 4px;
   height: 20px;
   align-items: center;
-  display: none;
 }
 
 .chart-pricing {

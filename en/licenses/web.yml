@@ -12,3 +12,7 @@ content:
 chart:
   title: Popular measuring units in web licences
   key: web
+
+pricing:
+  title: Pricing in web licences
+  key: web-pricing

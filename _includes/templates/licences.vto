@@ -4,13 +4,15 @@
   </figcaption>
   <div class="ly-resources-chart">
     <dl class="chart-rows">
-      {{ for row of chart.data.sort((a, b) => b.total - a.total) }}
-      <dt>{{ row.name }}</dt>
+      {{ for row of licences }}
+      <dt>{{ row.Tipo }}</dt>
       <dd>
-        {{ for item of row.total }}
+        <div class="chart-dots">
+        {{ for item of row.Recuento }}
           <span class="chart-dot is-fill"></span>
         {{ /for }}
-        <span class="chart-value">{{ row.total }} foundries</span>
+        </div>
+        <span class="chart-value">{{ row.Recuento }}</span>
       </dd>
       {{ /for }}
       <dt>
