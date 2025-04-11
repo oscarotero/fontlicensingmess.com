@@ -1,9 +1,37 @@
 title: Introduction
 id: introduction
 theme: dark
+extra: text
 order: 1
 content:
   first: |
-    Since the democratisation of digital goods, one can rarely avoid using fonts. Anyone with a computer or other electronic device interacts with fonts daily, yet almost none thinks about it. Quoting Matthew Carter, “few consumers are concerned to know where a particular typeface came from or when or who designed it, if, indeed, there was any human agency involved in its creation if it didn’t just sort of materialise out of the software ether”.
+    Over the past few decades, the digital type industry has experienced significant growth. However, the legal and commercial frameworks governing font use have not evolved with the same clarity. As a result, the system is often opaque and fragmented, making it difficult to understand, even for those working within the industry.
   more: |
-    It is a common misconception that fonts come automatically with electronic devices, without even considering they are independent products purchased and used as such. Those who obtain font licences often need clarification about the limitations of their use, and the purchase process can appear unclear and complicated sometimes. Every font has a licence, whether free, open-source, or pre-installed on a computer.
+    Font Licensing Mess stems from this general lack of understanding among both the general public and professionals connected to font distribution. We aim to provide an initial overview of the current state of commercial font licences, based on structured and comparative information.
+
+text: |
+  When discussing font licensing, we often confront repetitive questions that try to clear the mess around the topic. What does a Desktop licence actually mean? Can I use this typeface in an app if I purchased it for the web? What happens if the client changes the use of the font without prior notice? Do I need to pay for a new licence if I change my domain? What are the implications if my company increases the number of employees? Why do some foundries measure web traffic by pageviews and others use web visitors? Why do some licences combine different uses with no precise specifications, while others divide font use in a long list of options and restrictions?
+
+  In the initial stage of the project, which is more focused on statistics, we are examining independent foundries and designers who sell their fonts directly through their own websites, primarily working with the Latin script. From a broad international sample, we have analysed how they present their licences, the conditions they offer, their pricing structures, and the metrics used to calculate the cost of a digital font.
+
+  The sample was created considering criteria such as independence, clarity, representativeness, and accessibility of legal information. All the selected foundries provide commercial font licences, and the information on their sites is either in English or Spanish. At this stage, free, open-source, and libre fonts are not included in the research.
+
+  ## What kind of content does FLM offer?
+
+  Font Licensing Mess is a tool of live documentation, designed as an ecosystem of complementary content for sharing knowledge and fostering debate. At this stage, we have developed the following materials:
+
+  - A sample of 171 entries from 44 countries, excluding font retailers. The analysis of this sample allows us to compare the structure and conditions proposed by those who create and distribute the fonts.
+  - Graphics and data visualisations that illustrate the most common types of licences, the measuring units for font use, and the base prices for each category. These visuals help define patterns and differences in commercial strategies.
+  - A map that presents the diversity and reach of independent type foundries in the international scene, going beyond the prominent locations. It served as a valuable resource for defining the sample, tracing patterns by region, and identifying areas with less visibility or representation in the industry.
+  - A list of external resources, including links and references to articles, talks, legal advice, and other materials focused on the topic. It provides a broader context and extends the discussion to other publications addressing intellectual property, digital rights, or font licensing management.
+  - A directory of type foundries led by women, aimed at increasing their presence and visibility in the public sphere. This search was also instrumental in creating a more representative sample.
+
+  All these materials have been compiled to offer valuable, accessible, and well-organised information. They combine quantitative analysis with a critical perspective. While our work is grounded in data, the ultimate goal is not just to present numbers but to facilitate their interpretation and encourage new questions.
+
+  ## Who is the target audience for FLM?
+
+  Font Licensing Mess aims to reach a wide audience. Currently, the content especially resonates with professionals in the font industry, including type designers, independent foundries, font retailers, design studios, software developers, and legal advisors. They will find relevant information for analysing, comparing, and learning about the various types of licences available. The information will also serve to identify trends and explore new models within the industry.
+
+  The initial analytic approach does not hinder our intention to provide educational content for academic contexts, not only for disciplines clearly connected to typography, such as design, but also for other fields, like cultural management, law, or computing. We offer valuable information for those who make strategic decisions in a type foundry and those who are just learning to navigate the field.
+
+  Beyond the empirical data, we are interested in stimulating the debate. Information can illuminate topics that often seem inaccessible, reveal contradictions within the system, and help us imagine new licencing formulas that better address the actual needs of typeface creators and users.

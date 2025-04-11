@@ -4,7 +4,7 @@ id: about-us
 theme: light
 order: 5
 content: |
-  Font Licensing Mess is an independent research project born to shed some light on one of the most complex and least understood aspects of the modern type industry: font licensing.  
+  Font Licensing Mess is an independent research project born to shed some light on one of the most complex and least understood aspects of the modern type industry: font licensing.
 people:
   - img: /img/equipo2.jpg
     bio: |

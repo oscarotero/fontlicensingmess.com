@@ -1,8 +1,8 @@
-title: App
-id: licences-app
+title: Corporate
+id: licences-corporate
 theme: light
 extra: licence
-order: 3c
+order: 3h
 content:
   first: |
     With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
@@ -10,9 +10,9 @@ content:
     The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
 
 chart:
-  title: Popular measuring units in app licences
-  key: app
+  title: Popular measuring units in corporate licences
+  key: corporate
 
 pricing:
-  title: Pricing in app licences
-  key: app-pricing
+  title: Pricing in corporate licences
+  key: corporate-pricing

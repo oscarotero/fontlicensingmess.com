@@ -5,6 +5,7 @@
 .person {
   font-size: var(--font-size-small);
   line-height: var(--line-height-long);
+  max-width: 550px;
 
   > a {
     text-decoration: none;

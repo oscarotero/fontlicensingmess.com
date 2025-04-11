@@ -1,0 +1,9 @@
+.text {
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-long);
+
+  h2 {
+    font-size: var(--font-size-title);
+    margin: 2em 0 0.5em 0;
+  }
+}

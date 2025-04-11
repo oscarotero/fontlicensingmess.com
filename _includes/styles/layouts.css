@@ -4,8 +4,8 @@
   grid-template-columns:
     40px [menu-start] minmax(0, 1fr) [menu-end details-start] minmax(
     0,
-    550px
-  ) [details-end content-start] minmax(0, 550px) [content-end
+    650px
+  ) [details-end content-start] minmax(0, 650px) [content-end
   extra-start] minmax(0, 1fr) [extra-end] 40px;
   min-height: 100vh;
 }
@@ -60,7 +60,7 @@ header.ly-page-content {
 .ly-page-hero {
   grid-column: details-start / content-end;
   display: grid;
-  grid-template-columns: subgrid;
+  grid-template-columns: [details-start] minmax(0, 650px) [details-end content-start] minmax(0, 650px) [content-end extra-start];
   align-content: start;
   min-height: calc(100vh - 150px);
   row-gap: 40px;
@@ -116,6 +116,9 @@ header.ly-page-content {
 }
 .ly-page-resources {
   grid-column: details-start / content-end;
+}
+.ly-page-text {
+  grid-column: content-start / content-end;
 }
 
 .ly-page-nav {
