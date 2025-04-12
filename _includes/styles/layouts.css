@@ -19,7 +19,7 @@
   p {
     margin: 0;
   }
-  a {
+  a:has(svg) {
     text-decoration: none;
   }
   svg {

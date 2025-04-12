@@ -5,7 +5,7 @@
 
   <nav class="menu">
     <ol>
-      {{ for item of nav.menu("/", `lang=${lang} menu!=false`, "order=asc suborder=asc").children }}
+      {{ for item of nav.menu(lang === "en" ? "/" : "/es", `lang=${lang} menu!=false`, "order=asc suborder=asc").children }}
       <li>
         <a {{ item.data.url === url ? 'aria-current="page"' : "" }} href="{{ item.data.url }}">
           {{ item.data.title }}

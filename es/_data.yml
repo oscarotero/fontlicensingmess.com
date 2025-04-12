@@ -1,0 +1,7 @@
+layout: layouts/page.vto
+lang: es
+language_name: Español
+metas:
+  title: "=title"
+  description: Font Licensing Independent Research
+  icon: "/apple-touch-icon.png"

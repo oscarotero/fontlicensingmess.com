@@ -11,5 +11,7 @@ layout: layouts/base.vto
 </header>
 
 <nav class="home-nav">
-  <a href="/introduction/">English</a><br>
+  {{ for page of search.pages("id=introduction") }}
+    <a href="{{ page.url }}">{{ page.language_name }}</a><br>
+  {{ /for }}
 </nav>
