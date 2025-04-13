@@ -4,10 +4,9 @@ theme: light
 order: 2
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    The sample of this research is based on the following criteria: independence, clarity, representativeness, and accessibility of legal information. It includes 171 foundries and designers from 44 countries. All of them offer commercial font licences in English or Spanish. Free, open-source, and libre fonts are not included in the analysis.
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
-
+    Font retailers and distribution platforms have been excluded, putting the focus on the terms directly provided by the font creators. The data was gathered from publicly available information on foundry websites between July 2023 and April 2025.
 extra: demographics
 
 chart:
