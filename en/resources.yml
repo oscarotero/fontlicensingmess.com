@@ -5,18 +5,18 @@ order: 4
 layout: layouts/resources.vto
 
 resources:
-  - title: Women Leading Foundries
-    description: List of foundries leaded by at least one women
+  - title: Women leading foundries
+    description: A directory of women-led type foundries to enhance their presence and visibility in the public sphere.
     type: fontlicensingmess
     url: /women/
   - title: Map of foundries
-    description: Map with independent foundries around the World
+    description: Independent type foundries in the international scene. A valuable resource for tracing patterns by region and identifying areas with less visibility or representation. 
     type: fontlicensingmess
     url: /map/
-  - title: Tipografías para web, licencias y comercio justo
-    description: 21 March 2024 · Gràffica, Alphabettes<br>Spanish, English
+  - title: Other resources and publications
+    description: A collection of external resources, including links to articles, surveys, legal advice, and other content focused on the topic.
     type: url
     url: "#"
 
 content: |
-  With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+  We are sharing additional material that we developed during the research process. This content may be of interest to our audience and serve as a useful resource for other initiatives.
