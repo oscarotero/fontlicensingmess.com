@@ -4,9 +4,10 @@ theme: dark
 order: 3
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    Hemos creado gráficas que muestran los tipos de licencia más habituales, las unidades de medida y los precios base por cada categoría, detectando patrones y diferencias entre estrategias comerciales. A continuación, presentamos una lista con el número de entradas analizadas en cada tipo de licencia. 
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    Existen distintos modelos en el mercado; mientras algunas fundiciones dividen sus licencias en numerosas opciones, otras las simplifican permitiendo múltiples usos en sus licencias básicas. El uso en publicaciones electrónicas (ePub) y redes sociales, por ejemplo, se incluye habitualmente en las licencias Desktop. 
+    Es reseñable que un 22% de las fundiciones en la muestra ofrece paquetes de licencias, combinando diversos usos. Sus datos han sido analizados en cada una de las categorías indicadas en su paquete. Las licencias menos comunes, como Servidor, Broadcasting o Terceros, requieren generalmente un presupuesto a medida y no están disponibles en venta directa.
 extra: licences
 chart:
   title: Number of foundries by licence
