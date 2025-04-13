@@ -5,17 +5,19 @@ extra: text
 order: 1
 content:
   first: |
-    Over the past few decades, the digital type industry has experienced significant growth. However, the legal and commercial frameworks governing font use have not evolved with the same clarity. As a result, the system is often opaque and fragmented, making it difficult to understand, even for those working within the industry.
+    En las últimas décadas, la tipografía digital como disciplina ha vivido una expansión notable. Sin embargo, los mecanismos legales y comerciales que regulan su uso no han evolucionado con la misma claridad. El resultado es un sistema opaco, fragmentado y, en muchos casos, difícil de entender incluso para quienes trabajamos dentro del sector.
   more: |
-    Font Licensing Mess stems from this general lack of understanding. We aim to provide an initial overview of the current state of commercial font licences, based on structured and comparative information.
+    Font Licensing Mess nace precisamente de esa falta de comprensión generalizada, tanto entre el público general como en una parte del sector profesional. El objetivo es ofrecer una primera radiografía de las licencias tipográficas comerciales en la actualidad, desde una perspectiva estructurada y comparativa. 
 
 text: |
-  In the initial stage of the project—mainly focused on statistics—we are examining independent foundries and designers who sell their fonts through their websites, and primarily work with the Latin script. We have analysed how they present their licences, the conditions they offer, their pricing structures, and the metrics used to calculate the cost of a digital font.
+  En esta primera fase —más analítica y estadística— hemos centrado el estudio en fundiciones independientes, que venden sus tipografías a través de sus propias webs y que trabajan principalmente con el alfabeto latino. A partir de una muestra internacional amplia, hemos analizado cómo presentan sus licencias, qué condiciones ofrecen, qué precios manejan y con qué métricas calculan el coste de uso de una fuente digital.
+  
+  Font Licensing Mess está concebido como una herramienta de documentación viva, un ecosistema de contenidos complementarios para compartir conocimiento y fomentar el debate. Cada uno de nuestros recursos han sido creados para ofrecer información útil, accesible y estructurada, combinando análisis cuantitativo con perspectiva crítica. Aunque partimos de informatición cuantitativa, nuestro objetivo no es únicamente presentar cifras, sino también facilitar su interpretación y fomentar nuevas preguntas.
+  
+  Los contenidos de esta primera fase conectan especialmente con perfiles profesionales dentro del sector tipográfico: diseñadoras y diseñadores de tipografía, fundiciones independientes, distribuidoras, estudios de diseño, desarrolladores de software y especialistas en propiedad intelectual. La información que ofrecemos facilita el análisis, la comparación y el aprendizaje, al tiempo que permite detectar tendencias de mercado y evaluar nuevos modelos.
+  
+  Aunque el enfoque inicial sea más bien técnico, el contenido ha sido desarrollado también con una intención pedagógica, que pueda utilizarse en entornos formativos de ámbitos como el diseño, la gestión cultural, el derecho o la programación. Se busca que la infomación sea útil tanto para quienes toman decisiones estratégicas en la industria tipográfica como para quienes están aprendiendo a moverse en este terreno.
 
-  Font Licensing Mess is a tool of live documentation, designed as an ecosystem of complementary content for sharing knowledge and fostering debate. All the materials have been compiled to offer valuable, accessible, and well-organised information. We combine quantitative analysis with a critical perspective. While our work is grounded in data, the ultimate goal is not just to present numbers but to facilitate their interpretation and encourage new questions.
 
-  The current content especially resonates with professionals in the font industry, including type designers, independent foundries, font retailers, design studios, software developers, and legal advisors. They will find relevant information for analysing, comparing, and learning about font licensing. The information is also valuable to identify trends and explore new models within the industry.
 
-  The initial analytic approach does not hinder our intention to provide educational content for academic contexts, connecting with disciplines aligned with typography, such as design, but also other fields, like cultural management, law, or computing. We offer valuable information for those who make strategic decisions in type foundries and those who are just beginning to navigate the field.
 
-  Beyond the empirical data, our goal is to stimulate the debate. Information can illuminate topics that often seem inaccessible, reveal contradictions within the system, and help us imagine new licencing formulas that better address the actual needs of typeface creators and users.
