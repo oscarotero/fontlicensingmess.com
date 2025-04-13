@@ -11,7 +11,7 @@ content:
     Es reseñable que un 22% de las fundiciones en la muestra organiza sus licencias en paquetes que combinan varios usos. Sus datos han sido analizados en cada una de las categorías indicadas en su paquete. Las licencias menos comunes, como servidor, broadcasting o terceros, requieren generalmente un presupuesto a medida y no están disponibles en venta directa.
 extra: licences
 chart:
-  title: Number of foundries by licence
+  title: Número de fundiciones por licencia
   data:
     - name: Desktop
       total: 50
