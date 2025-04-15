@@ -8,7 +8,7 @@ resources:
   - title: Mujeres que lideran fundiciones
     description: Un directorio de fundiciones dirigidas por mujeres, creado para mejorar su presencia y visibilidad en la esfera pública.
     type: fontlicensingmess
-    url: /women/
+    url: "https://www.notion.so/1d69824c60a180c1b4dbd7e63685f971?v=1d69824c60a18196a279000c0e64b95f&pvs=4"
   - title: Mapa de fundiciones independientes
     description: Un mapamundi para localizar fundiciones tipográficas independientes, definir patrones por regiones e identificar zonas con menor visibilidad.
     type: fontlicensingmess
