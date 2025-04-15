@@ -11,7 +11,11 @@ layout: layouts/base.vto
 </header>
 
 <nav class="home-nav">
+  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 29V68"/>
+    <path d="M69.2637 49.3862L50.0137 68.7006L30.7637 49.3862"/>
+  </svg>
   {{ for page of search.pages("id=introduction") }}
-    <a href="{{ page.url }}">{{ page.language_name }}</a><br>
+    <a href="{{ page.url }}">{{ page.language_name }}</a>
   {{ /for }}
 </nav>

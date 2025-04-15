@@ -9,6 +9,10 @@
   text-align: center;
   font-size: var(--font-size-text);
   transform: rotate(-45deg);
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+  justify-self: center;
 
   p, h1 {
     margin: 0;
@@ -25,6 +29,35 @@
   text-align: right;
   align-self: center;
   z-index: 2;
+  display: grid;
+  row-gap: 1rem;
+  justify-content: end;
+  align-items: center;
+
+  a {
+    grid-column: 2;
+  }
+  svg {
+    grid-column: 1;
+    grid-row: span 2;
+    rotate: -90deg;
+  }
+
+  a:not(:hover) {
+    text-decoration: none;
+  }
+  path {
+    stroke: var(--color-foreground);
+  }
+
+  @media (width < 700px) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: end;
+    background-color: var(--color-background);
+    padding: 10px 40px;
+  }
 }
 .ly-page:has(.home-header) {
   grid-template-rows: 1fr auto;

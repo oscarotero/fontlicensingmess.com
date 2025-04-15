@@ -1,6 +1,6 @@
 {
   "imports": {
-    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@bc3f2a7981a503e7563536f4c93d75b548f40851/",
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@44f91bd50afccfa6726526934eca46b0d9b0facf/",
     "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.8/jsx-runtime.ts"
   },
   "tasks": {
