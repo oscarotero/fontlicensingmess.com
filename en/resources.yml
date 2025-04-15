@@ -12,11 +12,11 @@ resources:
   - title: Map of independent foundries
     description: The independent type industry in a worldwide map that exhibits patterns by regions and identifies areas with less representation. 
     type: fontlicensingmess
-    url: /map/
+    URL: "https://www.google.com/maps/d/edit?hl=es&mid=1br9CtuDyDHGh7I0HIjcrVp6nmp3jgAo&ll=3.4954369849734235%2C0&z=2"
   - title: Other sources and publications
     description: A collection of external resources, including links to articles, surveys, legal advice, and other content focused on the topic.
     type: url
-    url: "#"
+    url: "https://www.notion.so/1d69824c60a180e2b07be5cd9bf16de0?v=1d69824c60a18116bdfa000c9277c64b&pvs=4"
 
 content: |
   We have developed this additional material during the research process. The shared content may be of interest to our audience and serve as a useful resource for other initiatives.
