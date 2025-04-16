@@ -4,17 +4,17 @@ theme: light
 order: 2
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    Nuestra muestra fue creada atendiendo a criterios de independencia, claridad, representatividad y accesibilidad de la información legal. Incluye 171 fundiciones y profesionales independientes de 44 países. Todas las páginas web consultadas ofrecen licencias comerciales y su información está disponible en inglés o español. No hemos considerado las fuentes gratuitas y de código abierto. 
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    La muestra excluye también plataformas de distribución, poniendo el foco en las condiciones propuestas directamente por quienes han creado las fuentes. Los datos provienen de información disponible en las páginas web de las fundiciones y han sido recopilados entre julio de 2023 y abril de 2025.
 
 extra: demographics
 
 chart:
-  title: Number of foundries by country
+  title: Número de fundiciones por país
   legend:
-    women: Women in lead positions
-    men: No women in lead positions
+    women: Mujeres en puestos de liderazgo
+    men: Sin mujeres en puestos de liderazgo
 
 resources:
   title: Related resources
