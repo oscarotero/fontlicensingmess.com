@@ -8,7 +8,7 @@
   </figcaption>
   <div class="ly-resources-chart">
     <dl class="chart-rows is-condensed">
-      {{ for country, foundries of demographics |> demographics }}
+      {{ for country, foundries of demographics |> demographics(lang) }}
 
       <dt>{{ country }}</dt>
       <dd>

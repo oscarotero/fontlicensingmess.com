@@ -11,10 +11,59 @@ interface Foundry {
   women: boolean;
 }
 
+const translatedCountries: Record<string, string> = {
+  Argentina: "Argentina",
+  Australia: "Australia",
+  Austria: "Austria",
+  Belgium: "Bélgica",
+  Brazil: "Brasil",
+  Bulgaria: "Bulgaria",
+  Canada: "Canadá",
+  Chile: "Chile",
+  Colombia: "Colombia",
+  "Costa Rica": "Costa Rica",
+  Croatia: "Croacia",
+  Czechia: "Chequia",
+  Denmark: "Dinamarca",
+  Estonia: "Estonia",
+  Finland: "Finlandia",
+  France: "Francia",
+  Germany: "Alemania",
+  Greece: "Grecia",
+  Iceland: "Islandia",
+  India: "India",
+  Indonesia: "Indonesia",
+  Ireland: "Irlanda",
+  Italy: "Italia",
+  Japan: "Japón",
+  Kazakhstan: "Kazajstán",
+  Mexico: "México",
+  "New Zealand": "Nueva Zelanda",
+  Norway: "Noruega",
+  Poland: "Polonia",
+  Portugal: "Portugal",
+  Romania: "Rumanía",
+  Serbia: "Serbia",
+  Slovakia: "Eslovaquia",
+  Slovenia: "Eslovenia",
+  Spain: "España",
+  Sweden: "Suecia",
+  Switzerland: "Suíza",
+  "The Netherlands": "Países Bajos",
+  Turkey: "Turquía",
+  Ukraine: "Ucrania",
+  "United Arab Emirates": "Emiratos Árabes Unidos",
+  "United Kingdom": "Reino Unido",
+  Uruguay: "Uruguay",
+  USA: "Estados Unidos",
+};
+
 export function convertFoundries(
   content: FoundryCSV[],
 ): Partial<Record<string, Foundry[]>> {
   const foundries: Foundry[] = [];
+  // @ts-ignore this.data is not defined
+  const lang = this.data?.lang as string;
 
   for (const foundry of content) {
     const countries = foundry["Base Country"].split(",").map((c) => c.trim());
@@ -22,7 +71,9 @@ export function convertFoundries(
       foundries.push({
         name: foundry.Nombre,
         url: foundry["URL Licensing"] || undefined,
-        country,
+        country: lang === "es"
+          ? translatedCountries[country] ?? country
+          : country,
         women: foundry["Run by women"] === "Yes",
       });
     }
@@ -35,6 +86,7 @@ export function convertFoundries(
 
 interface UnitCSV {
   "Measuring unit": string;
+  __EMPTY?: string;
 }
 interface Unit {
   name: string;
@@ -45,7 +97,8 @@ export function convertUnit(content: UnitCSV[]): Unit[] {
   const count: Record<string, number> = {};
 
   for (const unit of content) {
-    const names = unit["Measuring unit"]?.split(",").map((u) => u.trim());
+    const row = `${unit["Measuring unit"] ?? ""}, ${unit.__EMPTY ?? ""}`;
+    const names = row.split(",").map((u) => u.trim()).filter((u) => u);
     if (!names?.length) {
       continue;
     }
