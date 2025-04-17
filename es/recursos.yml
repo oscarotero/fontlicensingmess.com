@@ -14,7 +14,7 @@ resources:
     type: fontlicensingmess
     url: "https://www.google.com/maps/d/edit?hl=es&mid=1br9CtuDyDHGh7I0HIjcrVp6nmp3jgAo&ll=3.4954369849734235%2C0&z=2"
   - title: Otras fuentes y publicaciones
-    description: 2Una lista de recursos externos, con enlaces y referencias a artículos, estudios, consejos legales y otros materiales vinculados con el tema.
+    description: Una lista de recursos externos, con enlaces y referencias a artículos, estudios, consejos legales y otros contenidos relacionados con el tema.
     type: url
     url: "https://www.notion.so/1d69824c60a180e2b07be5cd9bf16de0?v=1d69824c60a18116bdfa000c9277c64b&pvs=4"
 
