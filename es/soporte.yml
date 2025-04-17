@@ -1,19 +1,19 @@
-title: Soporte
+title: Contribuye
 id: support
 theme: dark
 order: 6
 layout: layouts/support.vto
 content: |
-  With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
-
+  If you believe our research and the content we provide are valuable, there are several ways to show your support. Please help us continue collecting and updating our databases by sending relevant information. You can also share this project and its resources with others. Additionally, if you want, you can make a small donation using the link to Open Collective below to help cover project expenses. Thank you for your support!
+  
 links:
   - icon: opencollective
     text: Open Collective
     url: https://opencollective.com/font-licensing-mess
 
 form:
-  intro: Contact us throught this contact form or sending us an email at [hola@fontlicensingmess.com](mailto:hola@fontlicensingmess.com)
+  intro: You can contact us by filling out this form or emailing us at [hola@fontlicensingmess.com](mailto:hola@fontlicensingmess.com)
   email: Your email
   name: Your name
   content: Tell us something!
-  submit: Contact us!
+  submit: Send
