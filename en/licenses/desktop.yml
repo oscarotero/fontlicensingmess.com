@@ -5,9 +5,11 @@ extra: licence
 order: 3a
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    This licence grants the right to use the digital font in desktop applications, such as graphic design software or word processors. The font can be installed locally on a computer or other electronic device, making it available to any software supporting the font format.
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    One of the factors making this topic especially complex is the variety of criteria for defining font usage. Licences are offered at different prices based on particular measuring units. Their values mark the extent and cost of the font licence, outlining use restrictions and defining price scales.
+    The desktop license has the greatest consensus regarding the measurement of font use. There are only three different metrics, all related to the number of potential font users. 
+    The price range for a single text font in desktop licences varies from €8 to €200, with the gross around 50€. All the prices in the sample are expressed in euros, and when currency conversion was needed, we used the Xe website.
 
 chart:
   title: Popular measuring units in desktop licences
