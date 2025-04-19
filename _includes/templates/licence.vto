@@ -28,9 +28,9 @@
       {{ for row of it[pricing.key] |> pricing }}
       <div class="chart-pricing-dots {{ (row.min || row.max || row.median) ? 'has-label' : '' }}">
         <div class="chart-pricing-dots-wrapper">
-          {{ for price of row.prices }}
+          {{- for price of row.prices }}
           <span class="chart-dot is-fill"></span>
-          {{ /for }}
+          {{ /for -}}
         </div>
       </div>
       <div class="chart-pricing-details">
