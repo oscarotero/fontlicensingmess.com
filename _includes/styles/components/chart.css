@@ -133,7 +133,12 @@
   min-height: 20px;
 
   &:empty {
-    background-image: linear-gradient(to bottom, var(--color-foreground), var(--color-foreground) 5px, var(--color-background) 5px);
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-foreground),
+      var(--color-foreground) 5px,
+      var(--color-background) 5px
+    );
     background-repeat: repeat-y;
     background-size: 1px 10px;
     background-position: center;

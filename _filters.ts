@@ -142,8 +142,7 @@ export function groupPricing(prices: number[]): Pricing[] {
   prices.sort((a, b) => b - a);
   const min = Math.min(...prices);
   const max = Math.max(...prices);
-  const mid = Math.floor(prices.length / 2);
-  const median = prices[mid];
+  const median = getMedian(prices);
   const step = (max - min) / 40;
   const acc: Pricing[] = [];
 
@@ -151,7 +150,7 @@ export function groupPricing(prices: number[]): Pricing[] {
     acc.push({ prices: [] });
   }
 
-  prices.forEach((price) => {
+  prices.forEach((price, index, prices) => {
     const group = Math.floor((price - min) / step);
     acc[group].prices.push(price);
     if (price === min) {
@@ -160,12 +159,19 @@ export function groupPricing(prices: number[]): Pricing[] {
     if (price === max) {
       acc[group].max = price;
     }
-    if (price === median) {
-      acc[group].median = price;
+    if (Math.floor(prices.length / 2) === index) {
+      acc[group].median = Math.round(median);
     }
   });
 
   acc.reverse();
 
   return acc;
+}
+
+function getMedian(values: number[]): number {
+  const mid = Math.floor(values.length / 2);
+  return values.length % 2 !== 0
+    ? values[mid]
+    : (values[mid - 1] + values[mid]) / 2;
 }

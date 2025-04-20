@@ -5,7 +5,7 @@ order: 6
 layout: layouts/support.vto
 content: |
   Si crees que este proyecto de investigación es importante y su contenido te ha resultado útil, puedes contibuir de varias maneras. Ayúdanos a seguir recopilando y actualizando nuestras bases de datos enviando información que consideres relevante. Comparte el proyecto y los recursos que facilitamos con otras personas y entidades. También puedes hacer una pequeña donación, a través del enlace a Open Collective que aparece a continuación, y cubrir parte de los gastos del proyecto. ¡Muchas gracias por tu apoyo!
-  
+
 links:
   - icon: opencollective
     text: Open Collective
