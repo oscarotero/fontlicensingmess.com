@@ -1,6 +1,8 @@
 .menu {
   font-size: var(--font-size-small);
+}
 
+.menu-content {
   ol {
     margin: 0;
 
@@ -37,5 +39,69 @@
       text-decoration-thickness: 3px;
       text-decoration-skip-ink: none;
     }
+  }
+}
+
+menu-button > button {
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  min-height: 40px;
+  width: fit-content;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+  @media (width >= 600px) {
+    display: none;
+  }
+}
+
+.menu-content {
+  @media (width < 600px) {
+    &:not(.is-popover) {
+      display: none;
+    }
+  }
+}
+.menu-content.is-popover:popover-open {
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  display: grid;
+  align-content: center;
+  z-index: 3;
+
+  > ol {
+    max-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 40px;
+  }
+}
+.menu-close {
+  background: none;
+  border: solid 3px transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: currentColor;
+  padding: 2px;
+
+  &:hover {
+    border-color: currentColor;
+  }
+
+  @media (width >= 600px) {
+    display: none;
   }
 }

@@ -8,6 +8,14 @@
   ) [details-end content-start] minmax(0, 650px) [content-end
   extra-start] minmax(0, 1fr) [extra-end] 40px;
   min-height: 100vh;
+
+  @media (width < 600px) {
+    grid-template-columns:
+      40px [menu-start details-start content-start extra-start] minmax(
+      0,
+      1fr
+    ) [menu-end details-end content-end extra-end] 40px;
+  }
 }
 .ly-page-footer {
   grid-column: menu-start / extra-end;
@@ -38,6 +46,10 @@
   padding: 40px 0;
   grid-row: 1;
   z-index: 1;
+
+  @media (width < 600px) {
+    padding-bottom: 0;
+  }
 }
 .ly-page-content {
   grid-column: details-start / content-end;
@@ -70,7 +82,11 @@ header.ly-page-content {
   row-gap: 40px;
   padding: 40px 0;
 
-  @media (min-width: 600px) {
+  @media (width < 600px) {
+    padding-top: 10px;
+  }
+
+  @media (width >= 600px) {
     align-content: center;
     grid-row: 1;
     .ly-page-header + .ly-page-content {

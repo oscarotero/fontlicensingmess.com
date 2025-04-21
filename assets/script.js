@@ -1,5 +1,8 @@
 import Navigator from "./vendor/page-loader/navigator.js";
-import Filter from "./vendor/filter.js";
+import MenuButton from "./menu-button.js";
+
+// Register the custom element
+customElements.define("menu-button", MenuButton);
 
 const nav = new Navigator(async (load, event) => {
   const target = event.target.closest("a");
@@ -101,5 +104,3 @@ function createNode(name, properties = {}) {
 
   return node;
 }
-
-customElements.define("filter-list", Filter);
