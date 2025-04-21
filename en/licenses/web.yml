@@ -6,8 +6,13 @@ order: 3b
 content:
   first: |
     This licence permits the use of digital fonts on websites, enabling typefaces to be displayed in any browser. The fonts are loaded dynamically online and may be self-hosted or provided by the foundry’s server. This second option creates a dependency on the foundry.
-  more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+  more: |    
+    Web use is mainly quantified by the site traffic (pageviews or visitors), 76% of the sample. While desktop licences focus on the individuals who will use the font, web licences concentrate on those who will see, read, or interact with the font on websites.
+
+    Over half of the sample (54%) uses pageviews per month as the measuring unit for web licences. While the number of domains is commonly combined with web traffic, there are a few cases (4) where this is the only metric. Many foundries that track employees, users, or workstations sell web licences as part of a package that includes various uses, providing this metric as a universal reference.
+
+    We find a few temporary licences for  web use, but they are still rare within the sample. Five foundries charge an annual fee, and two offer multiple timeframes. The average price for a text font for the web is similar to desktop, with a wider range peaking at 233€.
+
 
 chart:
   title: Popular measuring units in web licences
