@@ -5,9 +5,16 @@ extra: licence
 order: 3c
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    This licence grants the use of fonts in applications to effectively display the content. In most cases, it’s important to review the End User Licence Agreement to determine whether the licence covers desktop applications or is restricted to mobile software. The fonts are embedded in the app and loaded into the user interface.
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    The App licence is sometimes offered as App/ePub or App/Game. For foundries with a separate licence for games, we have observed that the metrics and pricing align with the App, so we have not made a separate analysis.
+  
+    There is a predominant measuring unit here, the number of apps that will include the font. We use the general term ‘use case’ instead, as it is appropriate for other licences too. Some other metrics are connected to who sees/reads/interacts with the app (downloads and monthly users), but, in this case, the percentage in the sample is smaller (19%) than in web licences. 
+    
+    We have also identified five foundries that rely on the number of years as the only metric. The sample includes more non-perpetual licences for apps than for other purposes, with seven charging an annual subscription and eight imposing limits based on the number of years.
+
+    The font licence cost for apps is often higher than that for web and desktop, sometimes doubling or even increasing tenfold. However, a few foundries maintain the same basic fee. The result is a broad range, with most foundries keeping their prices below 250€ for one text font.
+
 
 chart:
   title: Popular measuring units in app licences
