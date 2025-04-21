@@ -5,7 +5,7 @@ extra: licence
 order: 3c
 content:
   first: |
-    This licence grants the use of fonts in applications to effectively display the content. In most cases, it’s important to review the End User Licence Agreement to determine whether the licence covers desktop applications or is restricted to mobile software. The fonts are embedded in the app and loaded into the user interface.
+    This licence grants the use of fonts in applications to effectively display the content. In most cases, one must review the End User Licence Agreement to determine whether the licence covers desktop applications or is restricted to mobile software. The fonts are embedded in the app and loaded into the user interface.
   more: |
     The App licence is sometimes offered as App/ePub or App/Game. For foundries with a separate licence for games, we have observed that the metrics and pricing align with the App, so we have not made a separate analysis.
   
