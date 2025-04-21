@@ -7,7 +7,7 @@ content:
   first: |
     The rights of use in this licence vary from one foundry to another. It generally refers to the use in digital applications that operate from a server, such as platforms that use fonts to generate text or graphics in real time. However, we have also found cases where rights refer to a company's local server, enabling internal use by its employees.
   more: |
-    The OEM (Original Equipment Manufacturer) also enables dynamic content, as fonts are embedded in the operating system of hardware devices. This means they don’t require a connection to a server to access the font.
+    The OEM (Original Equipment Manufacturer) licence also enables dynamic content, as fonts are embedded in the operating system of hardware devices. In this case, they don’t require a connection to a server to access the font.
     
     This confusing mix of references and uses results in a particularly complicated licence for foundries and users. In fact, we’ve witnessed seven foundries in the sample removing this licence from direct sales.
 
