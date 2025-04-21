@@ -5,9 +5,16 @@ extra: licence
 order: 3e
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    The rights of use in this licence vary from one foundry to another. It generally refers to digital applications that operate from a server, such as platforms that use fonts to generate text or graphics in real time. However, we have also found cases where rights refer to a company's local server, enabling internal use by its employees.
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    The OEM (Original Equipment Manufacturer) also enables dynamic content, as fonts are embedded in the operating system of hardware devices. This means they don’t require a connection to a server to access the font.
+    
+    This confusing mix of references and uses results in a particularly complicated licence for foundries and users. In fact, we’ve witnessed seven foundries in the sample removing this licence from direct sales.
+
+    The price is mainly based on the number of servers. One foundry that measures the number of users offers the licence for company servers. And the metric ‘PDFs per Month’ applies to an Automated Document Production Server, described as ‘a server that generates documents automatically’.
+
+    In a small sample of 19 foundries, prices range from 92€ to 1.440€ for one text font in the lowest licence tier. Still, some are unclear about what kind of server they refer to, so it is difficult to identify a trend.
+
 
 chart:
   title: Popular measuring units in server licences
