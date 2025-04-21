@@ -5,14 +5,16 @@ extra: licence
 order: 3d
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    Esta es la licencia para usar fuentes digitales en libros electrónicos (eBooks), generalmente distribuidos en formato ePub, .mobi y formatos similares. La fuente se incrusta en publicaciones digitales que se leerán en dispositivos como lectores electrónicos, tabletas y aplicaciones de lectura para teléfonos móviles y ordenadores.
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    Case una tercera parte de la licencias analizadas para ePub miden el número de «casos de uso» (títulos). Tan solo tres definen sus licencias en función del número de años. Otras métricas genéricas (usuarias, puestos de trabajo, personas empleadas) forman parte de paquetes de licencias que combinas varios usos. También hemos encontrado aquí tres ejemplos de fundiciones que cobran una tarifa anual por el uso en publicaciones electrónicas.
+
+    En muchos casos el uso de una fuente en libros electrónicos está incluído en las licencia de escritorio, ya que se se considera un uso similar a la incrustación en documentos PDF. El rango de precios en ePub sigue siendo amplio y, aunque la muestra es más pequeña que la de aplicaciones, la tendencia presenta un coste más bajo.
 
 chart:
-  title: Popular measuring units in ePub licences
+  title: Unidades de medida en licencias ePub
   key: ePub
 
 pricing:
-  title: Pricing in ePub licences
+  title: Precios en licencias ePub
   key: ePub-pricing
