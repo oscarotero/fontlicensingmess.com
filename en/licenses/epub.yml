@@ -5,9 +5,12 @@ extra: licence
 order: 3d
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    This is the licence for using fonts in electronic books (eBooks), typically distributed as ePub, .mobi, and similar formats. The font is embedded in digital publications and displayed on devices such as e-readers, tablets, and reading apps for smartphones and computers.
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    Almost a third of the sampled licences for ePub are based on the number of ‘use cases’ (titles). Only three licences define their tiers by number of years. Other general metrics (users, workstations, employees) relate to font packages that combine various uses. We’ve also found three foundries that charge an annual fee for use in electronic publications.
+
+    Many include font usage in electronic books in their desktop licence, as it is considered similar to font embedding in PDF documents. The price range for ePub licences is still wide, and although the sample size is smaller than that of apps, the trend suggests a lower cost.
+
 
 chart:
   title: Popular measuring units in ePub licences
