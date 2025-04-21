@@ -26,6 +26,8 @@
 .home-intro {
   grid-column: menu-start / extra-end;
   max-width: 8em;
+  margin: 0;
+  padding: 40px 0;
 
   &[lang="en"] {
     grid-row: 1;
@@ -37,7 +39,7 @@
     text-align: right;
   }
 
-  @media (width < 700px) {
+  @media (width < 850px) {
     display: none;
   }
 }
@@ -70,11 +72,28 @@
 
   @media (width < 700px) {
     position: fixed;
-    bottom: 0;
-    width: 100%;
-    justify-content: end;
+    bottom: 40px;
     background-color: var(--color-background);
-    padding: 10px 40px;
+    padding: 0 10px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-auto-flow: column;
+    border-radius: 30px;
+    border: solid 1px var(--color-foreground);
+
+    @media (height > 1000px) {
+      bottom: 140px;
+    }
+
+    svg {
+      display: none;
+    }
+    a {
+      grid-column: auto;
+      grid-row: auto;
+      padding: 20px;
+    }
   }
 }
 .ly-page:has(.home-header) {
