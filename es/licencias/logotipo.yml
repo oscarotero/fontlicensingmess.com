@@ -5,14 +5,16 @@ extra: licence
 order: 3i
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    Esta licencia está diseñada para permitir el uso de una fuente digital en la creación de un logotipo o marca registrada. Una vez creado, la imagen vectorial o rasterizada del logo puede utilzarse en distintos soportes (sitios web, material impreso, embalaje, publicidad, señalización…).
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    Este uso está mayoritariamente incluido en licencias de escritorio. Las pocas fundiciones que ofrecen licencias de logotipo (13) miden el coste en función del tamaño de la compañía, según el tamaño de su plantilla, o cuantifican los ‘casos de uso’ (número de logotipos), que a su vez pueden diferenciar entre logotipos o marcas registradas.
+    
+    El coste de una fuente de texto va desde los 29€ del precio más bajo al más alto, que se sitúa por encima de los 400€.
 
 chart:
-  title: Popular measuring units in logotype licences
+  title: Unidades de medida en licencias de logotipo
   key: logotype
 
 pricing:
-  title: Pricing in logotype licences
+  title: Precios en licencias de logotipo
   key: logotype-pricing
