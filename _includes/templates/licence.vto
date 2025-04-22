@@ -1,3 +1,9 @@
+{{ if text }}  
+<div class="ly-page-text text" id="more">
+  {{ text |> md }}
+</div>
+{{ /if }}
+
 {{ if chart }}  
 <figure class="ly-page-resources ly-resources chart" id="more">
   <figcaption class="ly-resources-header">

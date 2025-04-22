@@ -9,11 +9,12 @@ content:
   more: |
     The App licence is sometimes offered as App/ePub or App/Game. For foundries with a separate licence for games, we have observed that the metrics and pricing align with the App, so we have not made a separate analysis.
 
-    There is a predominant measuring unit here, the number of apps that will include the font. We use the general term ‘use case’ instead, as it is appropriate for other licences too. Some other metrics are connected to who sees/reads/interacts with the app (downloads and monthly users), but, in this case, the percentage in the sample is smaller (19%) than in web licences.
+text: |
+  There is a predominant measuring unit here, the number of apps that will include the font. We use the general term ‘use case’ instead, as it is appropriate for other licences too. Some other metrics are connected to who sees/reads/interacts with the app (downloads and monthly users), but, in this case, the percentage in the sample is smaller (19%) than in web licences.
 
-    We have also identified five foundries that rely on the number of years as the only metric. The sample includes more non-perpetual licences for apps than for other purposes, with seven charging an annual subscription and eight imposing limits based on the number of years.
+  We have also identified five foundries that rely on the number of years as the only metric. The sample includes more non-perpetual licences for apps than for other purposes, with seven charging an annual subscription and eight imposing limits based on the number of years.
 
-    The font licence cost for apps is often higher than that for web and desktop, sometimes doubling or even increasing tenfold. However, a few foundries maintain the same basic fee. The result is a broad range, with most foundries keeping their prices below 250€ for one text font.
+  The font licence cost for apps is often higher than that for web and desktop, sometimes doubling or even increasing tenfold. However, a few foundries maintain the same basic fee. The result is a broad range, with most foundries keeping their prices below 250€ for one text font.
 
 chart:
   title: Popular measuring units in app licences

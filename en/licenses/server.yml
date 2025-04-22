@@ -9,7 +9,8 @@ content:
   more: |
     This confusing mix of references and types of server results in a particularly complicated licence for foundries and users. In fact, we’ve witnessed seven foundries in the sample removing this licence from direct sales.
 
-    The price is mainly based on the number of servers. The single case that measures the number of users offers the licence for company servers. Prices range from 92€ to 1.440€ for one text font in the lowest licence tier. Still, some are unclear about what kind of server they refer to, so it is difficult to identify a trend.
+text: |
+  The price is mainly based on the number of servers. The single case that measures the number of users offers the licence for company servers. Prices range from 92€ to 1.440€ for one text font in the lowest licence tier. Still, some are unclear about what kind of server they refer to, so it is difficult to identify a trend.
 
 chart:
   title: Popular measuring units in server licences

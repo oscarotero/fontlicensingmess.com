@@ -9,9 +9,10 @@ content:
   more: |
     La confusión en este caso viene de cómo y dónde se distribuyen las producciones de vídeo. Algunas licencias de retransmisión incluyen dos tipos de contenido audiovisual y canales de difusión: videos que se emitirán en medios de difusión masiva, por un lado, y publicidad pagada, por otro lado, en la que se incluyen plataformas y formatos como redes sociales o publicidad exterior. Algunas fundiciones diferencian entre contenido para retransmisión y contenido para publicidad, por lo que es necesario revisar el EULA para conocer los derechos y las restricciones.
 
-    Es interesante ver la variedad de opciones en la medición de este tipo de licencia. Tras «casos de uso» (número de producciones), también encontramos métricas que miden factores económicos o alcance geográfico, como el número de países en los que se verá el contenido audiovisual o el presupuesto del proyecto en cuestión.
+text: |
+  Es interesante ver la variedad de opciones en la medición de este tipo de licencia. Tras «casos de uso» (número de producciones), también encontramos métricas que miden factores económicos o alcance geográfico, como el número de países en los que se verá el contenido audiovisual o el presupuesto del proyecto en cuestión.
 
-    Dos fundiciones cobran una subscripción anual por las licencias de retransmisión. Los precios van desde las tarifas básicas por debajo de los 200€ a algunos de los precios más altos en toda la base de datos.
+  Dos fundiciones cobran una subscripción anual por las licencias de retransmisión. Los precios van desde las tarifas básicas por debajo de los 200€ a algunos de los precios más altos en toda la base de datos.
 
 chart:
   title: Unidades de medida en licencias de retransmisión

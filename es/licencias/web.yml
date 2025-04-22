@@ -9,9 +9,10 @@ content:
   more: |
     El 76% de la muestra cuantifica el uso web midiendo el tráfico del sitio (páginas vistas o visitantes). Mientras las licencias de escritorio ponen el foco en quién usa la fuente, las licencias web se fijan en quiénes ven, leen o interactúan con la fuente en las páginas web.
 
-    Más de la mitad de la muestra (54%) usa el número de páginas vistas al mes como unidad de medida en este tipo de licencia. Y, aunque es habitual encontrar el número de dominios combinado con el tráfico web, hay unos pocos casos (4) en los que esta métrica es la única que se solicita. Muchas de las fundiciones que miden el número de empleados, personas usuarias o puestos de trabajo ofrecen la licencia web dentro de un paquete con distintos usos, utilizando este dato como referencia general.
+text: |
+  Más de la mitad de la muestra (54%) usa el número de páginas vistas al mes como unidad de medida en este tipo de licencia. Y, aunque es habitual encontrar el número de dominios combinado con el tráfico web, hay unos pocos casos (4) en los que esta métrica es la única que se solicita. Muchas de las fundiciones que miden el número de empleados, personas usuarias o puestos de trabajo ofrecen la licencia web dentro de un paquete con distintos usos, utilizando este dato como referencia general.
 
-    El precio medio de una fuente para texto en web es similar al de las licencias de escritorio, si bien el rango es algo más amplio y el máximo alcanza los 233€. Encontramos algunas licencias temporales, pero siguen siendo casos excepcionales dentro de la muestra. Cinco fundiciones establecen una tarifa anual y dos ofrecen distintos tramos temporales.
+  El precio medio de una fuente para texto en web es similar al de las licencias de escritorio, si bien el rango es algo más amplio y el máximo alcanza los 233€. Encontramos algunas licencias temporales, pero siguen siendo casos excepcionales dentro de la muestra. Cinco fundiciones establecen una tarifa anual y dos ofrecen distintos tramos temporales.
 
 chart:
   title: Unidades de medida en licencias web

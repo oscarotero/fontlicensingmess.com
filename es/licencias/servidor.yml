@@ -9,7 +9,8 @@ content:
   more: |
     Esta mezcla de referencias y tipos de servidor presenta una licencia especialmente confusa para fundiciones y usuarias. Mientras recopilabamos los datos, presenciamos la desaparición de esta licencia en la lista de opciones para venta directa en siete de las fundiciones de la muestra.
 
-    Su precio se mide principalmente por el número de servidores. El caso particular de la fundición que mide el número de usuarias ofrece su licencia para servidores locales. Los precios van desde los 92€ a los 1.440€ por una tipografía para texto en su licencia más baja. Aún así, en muchos casos no es fácil saber a qué tipo de servidor hacen referencia, por lo que es difícil determinar una tendencia.
+text: |
+  Su precio se mide principalmente por el número de servidores. El caso particular de la fundición que mide el número de usuarias ofrece su licencia para servidores locales. Los precios van desde los 92€ a los 1.440€ por una tipografía para texto en su licencia más baja. Aún así, en muchos casos no es fácil saber a qué tipo de servidor hacen referencia, por lo que es difícil determinar una tendencia.
 
 chart:
   title: Unidades de medida en licencias de servidor

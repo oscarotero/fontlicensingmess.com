@@ -9,7 +9,8 @@ content:
   more: |
     Almost a third of the sampled licences for ePub are based on the number of ‘use cases’ (titles). Only three licences define their tiers by number of years. Other general metrics (users, workstations, employees) relate to font packages that combine various uses. We’ve also found three foundries that charge an annual fee for use in electronic publications.
 
-    Many include font usage in electronic books in their desktop licence, as it is considered similar to font embedding in PDF documents. The price range for ePub licences is still wide, and although the sample size is smaller than that of apps, the trend suggests a lower cost.
+text: |
+  Many include font usage in electronic books in their desktop licence, as it is considered similar to font embedding in PDF documents. The price range for ePub licences is still wide, and although the sample size is smaller than that of apps, the trend suggests a lower cost.
 
 chart:
   title: Popular measuring units in ePub licences

@@ -9,7 +9,8 @@ content:
   more: |
     Most of the metrics in licenses for online use (web, digital ads, social media) measure the audience, using different terms in each case. The predominant measuring unit in digital ads is the number of impressions, which can be counted monthly or as a total sum with no particular timeframe.
 
-    This is the smallest sample in our database (11), and—not counting the two foundries that charge an annual fee—the average price for one text font is 65€, similar to social media. One exceptional case charges above 2.000€ for digital ads plus social media, including unlimited use for a single brand.
+text: |
+  This is the smallest sample in our database (11), and—not counting the two foundries that charge an annual fee—the average price for one text font is 65€, similar to social media. One exceptional case charges above 2.000€ for digital ads plus social media, including unlimited use for a single brand.
 
 chart:
   title: Popular measuring units in digital ads licences

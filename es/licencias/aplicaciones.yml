@@ -9,11 +9,12 @@ content:
   more: |
     La licencia para aplicaciones se ofrece a veces como App/ePub o App/Videojuego. Las fundiciones con una licencia específica para videojuegos usan métricas y precios similares a los de las licencias App, así que las hemos metido en el mismo bloque.
 
-    Hay una clara unidad de medida predominante en esta licencia, el número de aplicaciones que incluirán la fuente. Preferimos el término genérico «caso de uso» para poder utilizarlo diferentes licencias. Otras métricas hacen referencia a quiénes ven/leen/interactúan con la aplicación (descargas y usuarias mensuales), pero, en este caso, el porcentaje de la muestra es menor (19%) que en licencias web.
+text: |
+  Hay una clara unidad de medida predominante en esta licencia, el número de aplicaciones que incluirán la fuente. Preferimos el término genérico «caso de uso» para poder utilizarlo diferentes licencias. Otras métricas hacen referencia a quiénes ven/leen/interactúan con la aplicación (descargas y usuarias mensuales), pero, en este caso, el porcentaje de la muestra es menor (19%) que en licencias web.
 
-    También hemos identificado fundiciones que utilizan el número de años como la única métrica en esta licencia. La muestra incluye más licencias no perpetuas en applicaciones que en otros usos, siete fundiciones cobran una subscripción anual y ocho imponen límites temporales.
+  También hemos identificado fundiciones que utilizan el número de años como la única métrica en esta licencia. La muestra incluye más licencias no perpetuas en applicaciones que en otros usos, siete fundiciones cobran una subscripción anual y ocho imponen límites temporales.
 
-    El coste de una licencia para aplicaciones es a menudo más alto que para web o escritorio, doblando o incluso multiplicando por diez el precio base. Sin embargo, algunas fundiciones mantienen la misma tarifa básica. Este escenario presenta un rango bastante amplio de precios, con el grueso concentrado por debajo de los 250€ por una fuente de texto.
+  El coste de una licencia para aplicaciones es a menudo más alto que para web o escritorio, doblando o incluso multiplicando por diez el precio base. Sin embargo, algunas fundiciones mantienen la misma tarifa básica. Este escenario presenta un rango bastante amplio de precios, con el grueso concentrado por debajo de los 250€ por una fuente de texto.
 
 chart:
   title: Unidades de medida en licencias de applicaciones

@@ -9,7 +9,8 @@ content:
   more: |
     Casi una tercera parte de la licencias analizadas para ePub miden el número de «casos de uso» (títulos). Tan solo tres determinan el uso por número de años. Otras métricas generales (usuarias, puestos de trabajo, personas empleadas) forman parte de paquetes de licencias combinadas. Hemos encontrado también tres ejemplos de fundiciones que cobran una subscripción por el uso en publicaciones electrónicas.
 
-    En muchos casos el uso de una fuente en libros electrónicos está incluido en las licencia de escritorio, ya que se considera similar a la incrustación en documentos PDF. El rango de precios en ePub sigue siendo amplio y, aunque la muestra es más pequeña que la de aplicaciones, la tendencia presenta un coste más bajo.
+text: |
+  En muchos casos el uso de una fuente en libros electrónicos está incluido en las licencia de escritorio, ya que se considera similar a la incrustación en documentos PDF. El rango de precios en ePub sigue siendo amplio y, aunque la muestra es más pequeña que la de aplicaciones, la tendencia presenta un coste más bajo.
 
 chart:
   title: Unidades de medida en licencias ePub
