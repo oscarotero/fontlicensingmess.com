@@ -99,6 +99,10 @@ header.ly-page-content {
 }
 .ly-page:has(.ly-page-more) .ly-page-hero {
   min-height: calc(100vh - 190px);
+
+  @media (width < 750px) {
+    min-height: calc(100vh - 400px);
+  }
 }
 
 .ly-page-more {
