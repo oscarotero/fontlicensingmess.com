@@ -1,18 +1,23 @@
-title: Broadcasting
+title: Retransmisión
 id: licences-broadcasting
 theme: light
 extra: licence
 order: 3f
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    Esta licencia permite el uso de una fuente en contenido audiovisual para ser emitido en medios de difusión masiva, como televisión, cine o plataformas de emisión en directo y de contenido bajo demanda. Específicamente, permite que una tipografía se utilice en gráficos, títulos de créditos o cualquier otro elemento tipográfico en películas, anuncios publicitarios y contenidos de entretenimiento.
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    La confusión en este caso viene de cómo y dónde se distribuyen las producciones de vídeo. Algunas licencias de retransmisión incluyen dos tipos de contenido audiovisual y canales de difusión: videos que se emitirán en medios de difusión masiva, por un lado, y publicidad pagada, por otro lado, en la que también se incluye plataformas y formatos como redes sociales o publicidad exterior. Algunas fundiciones diferencian entre contenido para retransmisión y publicidad, por lo que es necesario revisar el EULA para conocer los derechos y las restricciones. Las fundiciones que solo incluyen la publicidad pagada en sus licencias de video no se han incluido en este análisis; a menudo miden el uso según el número de impresiones y puede que las incluyamon en el futuro como una licencia aparte. 
+    
+    Es interesante ver la variedad de opciones en la medición de este tipo de licencia. Tras «casos de uso» (número de producciones), también encontramos métricas que miden factores económicos o alcance geográfico, como el número de países en los que se verá el contenido audiovisual o el presupuesto del proyecto en cuestión.
+    
+    Dos fundiciones cobran una subscripción anual por las licencias de retransmisión. Los precios van desde las tarifas básicas por debajo de los 200€ a algunos de los precios más altos en toda la base de datos.
+
 
 chart:
-  title: Popular measuring units in broadcasting licences
+  title: Unidade de medida en licencias de retransmisión
   key: broadcasting
 
 pricing:
-  title: Pricing in broadcasting licences
+  title: Precios en licencias de retransmisión
   key: broadcasting-pricing
