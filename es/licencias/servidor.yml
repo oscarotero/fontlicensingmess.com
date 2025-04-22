@@ -12,9 +12,9 @@ content:
     Su precio se mide principalmente por el número de servidores. El caso particular de la fundición que mide el número de usuarias ofrece su licencia para servidores locales. Los precios van desde los 92€ a los 1.440€ por una tipografía para texto en su licencia más baja. Aún así, en muchos casos no es fácil saber a qué tipo de servidor hacen referencia, por lo que es difícil determinar una tendencia.
 
 chart:
-  title: Popular measuring units in server licences
+  title: Unidades de medida en licencias de servidor
   key: server
 
 pricing:
-  title: Pricing in server licences
+  title: Precios en licencias de servidor
   key: server-pricing
