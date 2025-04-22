@@ -5,14 +5,19 @@ extra: licence
 order: 3g
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    Una licencia tipográfica para redes sociales permite utilizar una fuente digital en contenido creado y publicado en plataformas de redes sociales como Instagram, Facebook, Twitter, TikTok, entre otras.
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    La fuente puede ser utilizada en formatos comunes como imágenes estáticas y videos, aunque en el caso de los videos algunas fundiciones utilizan una licencia diferente. Si se trata de publicidad o contenido pagado puede ser necesario adquirir otra licencia que mide el número de impresiones. 
+    
+    Al igual que en otros casos, este uso está a menudo incluido en licencias básicas o paquetes de licencias. Aún así, algunas fundiciones siguen una estrategia diferente, dividiendo la licencia en usos más específios como redes sociales, logotipo o anuncios digitales.
+
+    El precio se calcula en la mayoría de los casos según el número de personas subscritas o que siguen un perfil en todas sus redes sociales, partiendo de 10.000. El precio medio para una tipografía de texto, en una muestra de 18 fundiciones, es 66€, algo por encima pero no mucho más que la media en licencias de escritorio y web.
+
 
 chart:
-  title: Popular measuring units in social media licences
+  title: Unidade de medida en licencias de redes sociales
   key: social-media
 
 pricing:
-  title: Pricing in social media licences
+  title: Precios en licencias de redes sociales
   key: social-media-pricing
