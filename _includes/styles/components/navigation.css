@@ -36,8 +36,12 @@
     background-color: var(--color-foreground);
     clip-path: circle(53px at 50% 50%);
   }
+
   &:has(a:hover)::after {
     clip-path: circle(153px at 50% 50%);
+  }
+  &:has(a.is-transitioning)::after {
+    opacity: 0;
   }
   &:hover {
     z-index: 2;
@@ -67,6 +71,7 @@
       transition: transform var(--speed-fast);
     }
 
+    &.is-transitioning,
     &:hover {
       clip-path: circle(150px at 50% 50%);
 

@@ -10,6 +10,7 @@ const nav = new Navigator(async (load, event) => {
   let page;
 
   if (circle) {
+    target.classList.add("is-transitioning");
     const svg = createSvg(event.clientX, event.clientY, "red");
     svg.classList.add("transition-circle");
 
