@@ -25,10 +25,10 @@
   display: block;
   display: grid;
   row-gap: 8px;
-  padding-right: 48px;
   padding-left: 42px;
   flex-grow: 1;
   position: relative;
+  max-width: 22em;
 
   &:hover {
     .resource-title {

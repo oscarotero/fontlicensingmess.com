@@ -31,7 +31,7 @@ export default class MenuButton extends HTMLElement {
       menu.hidePopover();
     });
 
-    const media = matchMedia("(width < 600px)");
+    const media = matchMedia("(width < 750px)");
     media.addEventListener("change", (e) => {
       if (e.matches) {
         menu.setAttribute("popover", "");

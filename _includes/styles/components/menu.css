@@ -55,13 +55,13 @@ menu-button > button {
   &:hover {
     text-decoration: line-through;
   }
-  @media (width >= 600px) {
+  @media (width >= 750px) {
     display: none;
   }
 }
 
 .menu-content {
-  @media (width < 600px) {
+  @media (width < 750px) {
     &:not(.is-popover) {
       display: none;
     }
@@ -101,7 +101,7 @@ menu-button > button {
     border-color: currentColor;
   }
 
-  @media (width >= 600px) {
+  @media (width >= 750px) {
     display: none;
   }
 }

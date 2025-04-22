@@ -37,7 +37,8 @@
     font-size: var(--font-size-text);
     line-height: 1;
     font-family: inherit;
-    padding: 0.5em;
+    font-weight: normal;
+    padding: 0.6em 0.7em 0.5em;
     border: none;
     border-radius: 3px;
     background: var(--color-foreground);
