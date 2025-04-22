@@ -35,5 +35,6 @@ site.add("style.css");
 site.filter("demographics", filters.convertFoundries);
 site.filter("units", filters.convertUnit);
 site.filter("pricing", filters.convertPricing);
+site.filter("licenses", filters.convertLicenses);
 
 export default site;

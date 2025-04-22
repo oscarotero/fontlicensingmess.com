@@ -4,7 +4,7 @@
   </figcaption>
   <div class="ly-resources-chart">
     <dl class="chart-rows">
-      {{ for row of licences }}
+      {{ for row of licences |> licenses }}
       <dt>{{ row.Tipo }}</dt>
       <dd>
         <div class="chart-dots">

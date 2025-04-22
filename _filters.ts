@@ -11,6 +11,23 @@ interface Foundry {
   women: boolean;
 }
 
+const translatedLicenses: Record<string, string> = {
+  Desktop: "Escritorio",
+  Web: "Web",
+  App: "Aplicaciones",
+  ePub: "ePub",
+  Server: "Servidor",
+  Broadcasting: "Retransmisión",
+  "Social Media": "Redes Sociales",
+  Corporate: "Corporativa",
+  Logotype: "Logotipo",
+  Video: "Vídeo",
+  "Digital Ads": "Publicidad Digital",
+  "Non Commercial": "No Comercial",
+  "Third Party": "Terceros",
+  "OEM": "OEM",
+};
+
 const translatedCountries: Record<string, string> = {
   Argentina: "Argentina",
   Australia: "Australia",
@@ -57,6 +74,19 @@ const translatedCountries: Record<string, string> = {
   Uruguay: "Uruguay",
   USA: "Estados Unidos",
 };
+
+export function convertLicenses(
+  licenses: any[],
+): any {
+  // @ts-ignore this.data is not defined
+  const lang = this.data?.lang as string;
+  return licenses.map(({ Tipo, Recuento }) => {
+    return {
+      Recuento,
+      Tipo: lang === "es" ? translatedLicenses[Tipo] ?? Tipo : Tipo,
+    };
+  }).sort((a, b) => b.Recuento - a.Recuento);
+}
 
 export function convertFoundries(
   content: FoundryCSV[],

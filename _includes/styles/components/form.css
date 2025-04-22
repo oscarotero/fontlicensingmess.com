@@ -26,6 +26,10 @@
       color: var(--color-background);
       background: var(--color-foreground);
     }
+    &:autofill {
+      color: var(--color-foreground);
+      background: var(--color-background);
+    }
   }
 }
 .form-footer {
