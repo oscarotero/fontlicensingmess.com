@@ -34,8 +34,7 @@
     margin: 0;
     grid-column: 2 / -1;
     display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
+    column-gap: 8px;
   }
 }
 .chart-dots {
@@ -147,7 +146,7 @@
 }
 .chart-pricing-details {
   font-size: var(--font-size-small);
-  line-height: 0;
+  line-height: 1;
 
   strong {
     font-size: var(--font-size-title);

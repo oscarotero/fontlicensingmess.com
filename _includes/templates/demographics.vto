@@ -12,21 +12,23 @@
 
       <dt>{{ country }}</dt>
       <dd>
-        {{ for item of foundries.sort((a, b) => a.women ? -1 : 1) }}
-        {{ if item.url }}
-        <a href="{{ item.url }}" target="_blank" class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
-          <span class="chart-dot-tooltip">
-          {{ item.name }}
+        <div class="chart-dots">
+          {{ for item of foundries.sort((a, b) => a.women ? -1 : 1) }}
+          {{ if item.url }}
+          <a href="{{ item.url }}" target="_blank" class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
+            <span class="chart-dot-tooltip">
+            {{ item.name }}
+            </span>
+          </a>
+          {{ else }}
+          <span class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
+            <span class="chart-dot-tooltip">
+            {{ item.name }}
+            </span>
           </span>
-        </a>
-        {{ else }}
-        <span class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
-          <span class="chart-dot-tooltip">
-          {{ item.name }}
-          </span>
-        </span>
-        {{ /if }}
-        {{ /for }}
+          {{ /if }}
+          {{ /for }}
+        </div>
       </dd>
       {{ /for }}
       <dt>

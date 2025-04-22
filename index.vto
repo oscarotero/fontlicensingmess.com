@@ -16,7 +16,7 @@ layout: layouts/base.vto
     <path d="M50 29V68"/>
     <path d="M69.2637 49.3862L50.0137 68.7006L30.7637 49.3862"/>
   </svg>
-  {{ for page of search.pages("id=introduction") }}
+  {{ for page of search.pages("id=introduction", "lang") }}
     <a href="{{ page.url }}">{{ page.language_name }}</a>
   {{ /for }}
 </nav>
