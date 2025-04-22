@@ -5,14 +5,17 @@ extra: licence
 order: 3h
 content:
   first: |
-    With independent, we mean that they offer their fonts on their own websites. Distribution platforms or websites are not considered in the research. The database includes foundries and designers of various sizes and from different locations, trying to cover as many countries as possible. Ideally, we include 5 examples per country, with a maximum limit of 10 in countries with a larger number of foundries and designers.
+    Esta licencia está pensada para usar las fuentes en múltiples formatos y sorportes. Es para empresas, marcas y organizaciones que quieren cubrir múltiples usos, desde documentos impresos a sitios web, aplicaciones móviles o publicidad. 
   more: |
-    The research is centered on the Latin Script, although some foundries and designers offer multiscript fonts. The sample consists of 154 entries from 44 different countries, and it is distributed as follows:
+    A diferencia de otras licencias, a menudo permite utilizar la fuente en la organización sin limitaciones en el número de usuarias o dispositivos. 
+
+    Mientras las licencias más comunes (Escritorio, Web, App, ePub) presentan precios comparables, las licencias menos comunes muestran diferencias notables. La licencia corporativa incluye los precios más altos en la muestra, ya que cubre un amplio abanico de usos. El coste medio por una fuente de texto en su rango más bajo ronda los 870€. Siendo la muestra muy pequeña en este caso (13), no se ha incluido a una de las fundiciones en la gráfica de precios ya que su precio (8.900€) se desvía demasiado del conjunto.
+
 
 chart:
-  title: Popular measuring units in corporate licences
+  title: Unidades de medida en licencias corporativas
   key: corporate
 
 pricing:
-  title: Pricing in corporate licences
+  title: Precios en licencias corporativas
   key: corporate-pricing
