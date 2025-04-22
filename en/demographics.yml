@@ -1,0 +1,20 @@
+title: Demographics
+id: demographics
+theme: light
+order: 2
+content:
+  first: |
+    The sample of this research is based on the following criteria: independence, clarity, representativeness, and accessibility of legal information. It includes 171 foundries and designers from 44 countries. All of them offer commercial font licences in English or Spanish. Free, open-source, and libre fonts are not included in the analysis.
+  more: |
+    Font retailers and distribution platforms have been excluded, putting the focus on the terms directly provided by the font creators. The data comes from publicly available information on foundry websites between July 2023 and April 2025.
+extra: demographics
+
+chart:
+  title: Number of foundries by country
+  legend:
+    women: Women in lead positions
+    men: No women in lead positions
+
+resources:
+  title: Related resources
+  links:

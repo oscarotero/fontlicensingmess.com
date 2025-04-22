@@ -1,0 +1,12 @@
+language_name: English
+
+i18n:
+  footer:
+    text: The Font Licensing Mess Team
+    cc_url: https://creativecommons.org/licenses/by/4.0/deed.en
+
+es:
+  i18n:
+    footer:
+      text: The Font Licensing Mess Team
+      cc_url: https://creativecommons.org/licenses/by/4.0/deed.en

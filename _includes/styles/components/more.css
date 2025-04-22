@@ -1,0 +1,13 @@
+.more {
+  stroke: var(--color-foreground);
+  stroke-width: 3px;
+
+  &:hover .more-circle {
+    stroke-dashoffset: 0;
+  }
+}
+.more-circle {
+  stroke-dasharray: calc(pi * 100px);
+  stroke-dashoffset: calc(pi * 100px);
+  transition: stroke-dashoffset var(--speed-medium);
+}

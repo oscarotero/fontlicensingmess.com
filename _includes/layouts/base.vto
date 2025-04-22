@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/assets/script.js"></script>
+</head>
+<body class="ly-page theme-{{ theme }}">
+  {{ content }}
+
+  <footer class="ly-page-footer">
+    <p>
+      <a href="{{ i18n.footer.cc_url }}">
+        <img width=18 height=18 src="{{ "creative-commons" |> icon("fontawesome", "brands") }}" alt="Creative commons" inline>
+        <img width=18 height=18 src="{{ "creative-commons-by" |> icon("fontawesome", "brands") }}" alt="Attribution" inline>
+      </a>
+      &nbsp;&nbsp;
+      {{ new Date().getFullYear() }}. {{ i18n.footer.text }}
+
+      {{ for alt of alternates.filter((page) => page.url !== url) }}
+      — <a rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url }}">{{ alt.language_name }}</a>
+      {{ /for }}
+      </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+.navigation {
+  display: flex;
+}
+
+.navigation-item {
+  position: fixed;
+  bottom: -10px;
+  pointer-events: none;
+
+  &.is-next {
+    right: -60px;
+  }
+  &.is-prev {
+    left: -60px;
+  }
+
+  @media (width < 600px) {
+    bottom: -40px;
+
+    &.is-next {
+      right: -90px;
+    }
+    &.is-prev {
+      left: -90px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: -3px;
+    width: 306px;
+    height: 306px;
+    transition: clip-path var(--speed-fast);
+    background-color: var(--color-foreground);
+    clip-path: circle(53px at 50% 50%);
+  }
+
+  &:has(a:hover)::after {
+    clip-path: circle(153px at 50% 50%);
+  }
+  &:has(a.is-transitioning)::after {
+    opacity: 0;
+  }
+  &:hover {
+    z-index: 2;
+  }
+
+  > a {
+    pointer-events: initial;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: var(--font-size-title);
+    letter-spacing: var(--tracking-title);
+    line-height: var(--line-height-short);
+    transition: clip-path var(--speed-fast);
+    outline: none;
+    clip-path: circle(50px at 50% 50%);
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 1;
+
+    > span {
+      display: block;
+      transform: translateX(100px);
+      transition: transform var(--speed-fast);
+    }
+
+    &.is-transitioning,
+    &:hover {
+      clip-path: circle(150px at 50% 50%);
+
+      &[rel="next"] > span {
+        transform: translateX(25px);
+      }
+      &[rel="prev"] > span {
+        transform: translateX(75px);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+layout: layouts/about-us.vto
+title: About us
+id: about-us
+theme: light
+order: 5
+content: |
+  Font Licensing Mess is an independent research project born to shed some light on one of the most complex and least understood aspects of the modern type industry: font licensing.
+people:
+  - img: /assets/img/equipo2.jpg
+    bio: |
+      María Ramos (Santa Comba, 1982) is an independent designer and researcher based in Santiago de Compostela. She holds a Master’s degree in Typeface Design from the University of Reading and is a co-founder of the Galician-Swedish type foundry [NM type](https://www.nmtype.com/). María has authored articles on design and typography for various media and has given numerous presentations at design schools and professional conferences. In 2021, she was a researcher in the [Study of the Design Economy in Galicia](https://estudodeseno.dag.gal/) and is currently involved in developing the [Galician Design Archive AR\DE](https://arde.gal/). Her interest in font licensing emerged while navigating the complexities of font distribution, both as a font developer and as a user for her graphic and editorial projects.
+
+  - img: /assets/img/equipo.jpg
+    bio: |
+      Ana Moliz (Barcelona, 1980) is a graphic designer and independent researcher based in Córdoba. Her areas of expertise include editorial design and typography. She earned a degree in History from the University of Granada and holds two master’s degrees from La Gauss: one in Graphic and Visual Design and another in Editorial Design and Digital Publications. Ana currently works as an art director at Buenaventura Studio and has been teaching Visual Design and Typography at [La Gauss](https://www.gaussmultimedia.com/) for over 10 years. She is also the co-founder of [Rayitas Azules](https://www.rayitasazules.com/), a digital publication focused on editorial design and typography. Additionally, she is a member of the organising team for the [Málaga Type](https://malagatype.com/) typographic festival, and she writes a weekly column about typography for the design magazine [Gràffica](https://graffica.info/). Her natural curiosity and passion for typography inspire her to engage actively in projects like this one, allowing her to broaden her knowledge and skills.
+
+  - img: /assets/img/equipo3.jpg
+    bio: |
+      Óscar Otero (Tordoia, 1979) is a web designer and developer based in Santiago de Compostela. Throughout his career, he has balanced his work as a designer in various agencies and startups with personal projects such as [letrag](http://letrag.com) (2004–2010), an online encyclopedia about typography, or [HA!](http://historia-arte.com) (2016–present), co-founded together with Miguel Calvo and focused on the history of art. He has also delivered talks on digital design and typography, providing training for both students and companies. From 2016 to 2018, he was president of the [Galician Association of Design](https://dag.gal/) and a member of the board of directors for 10 years. He is currently involved in the working group of the Galician Design Archive [AR\DE](https://arde.gal/). As a developer, he is highly active in the open-source community, creating projects like [lume](https://lume.land/), a framework for building websites that, “coincidentally,” was used to create this website.

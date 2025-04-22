@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid var(--color-background-dark); */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Octavia, system-ui, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: var(--font-size-small);
+  overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: none;
+  transition: text-underline-offset var(--speed-fast);
+
+  &:hover {
+    text-underline-offset: -0.25em;
+  }
+}
+
+::selection {
+  color: var(--color-foreground-dark);
+  background-color: var(--color-background-dark);
+}

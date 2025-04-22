@@ -1,0 +1,37 @@
+title: Licencias
+id: licences
+theme: dark
+order: 3
+content:
+  first: |
+    Hemos creado gráficas que muestran los tipos de licencia más habituales, las unidades de medida y los precios base por cada categoría, detectando patrones y diferencias entre estrategias comerciales. A continuación, presentamos una lista con el número de entradas analizadas en cada tipo de licencia.
+  more: |
+    Existen distintos modelos en el mercado; algunas fundiciones dividen sus licencias en infinidad de opciones, otras las simplifican permitiendo múltiples usos en sus licencias básicas. El uso en publicaciones electrónicas (ePub) y redes sociales, por ejemplo, se incluye a menudo en las licencias desktop.
+
+    Es reseñable que un 22% de las fundiciones en la muestra organiza sus licencias en paquetes que combinan varios usos. Sus datos han sido analizados en cada una de las categorías indicadas en su paquete. Las licencias menos comunes, como servidor, broadcasting o terceros, requieren generalmente un presupuesto a medida y no están disponibles en venta directa.
+extra: licences
+chart:
+  title: Número de fundiciones por licencia
+  data:
+    - name: Desktop
+      total: 50
+    - name: Web
+      total: 38
+    - name: App
+      total: 32
+    - name: ePub
+      total: 20
+    - name: Broadcasting
+      total: 14
+    - name: Server
+      total: 10
+    - name: Corporate
+      total: 8
+    - name: Logotype
+      total: 6
+    - name: Social Media
+      total: 3
+    - name: Advertising
+      total: 1
+    - name: Digital Ads
+      total: 1

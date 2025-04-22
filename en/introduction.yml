@@ -1,0 +1,21 @@
+title: Introduction
+id: introduction
+theme: dark
+extra: text
+order: 1
+content:
+  first: |
+    Over the past few decades, the digital type industry has experienced significant growth. However, the legal and commercial frameworks governing font use have not evolved with the same clarity. As a result, the system is often opaque and fragmented, making it difficult to understand, even for those working within the industry.
+  more: |
+    Font Licensing Mess stems from this general lack of understanding. We aim to provide an initial overview of the current state of commercial font licences, based on structured and comparative information.
+
+text: |
+  In the initial stage of the project—mainly focused on statistics—we are examining independent foundries and designers who sell their fonts through their websites, and primarily work with the Latin script. We have analysed how they present their licences, the conditions they offer, their pricing structures, and the metrics used to calculate the cost of a digital font.
+
+  Font Licensing Mess is a tool of live documentation, designed as an ecosystem of complementary content for sharing knowledge and fostering debate. All the materials have been compiled to offer valuable, accessible, and well-organised information. We combine quantitative analysis with a critical perspective. While our work is grounded in data, the ultimate goal is not just to present numbers but to facilitate their interpretation and encourage new questions.
+
+  The current content especially resonates with professionals in the font industry, including type designers, independent foundries, font retailers, design studios, software developers, and legal advisors. They will find relevant information for analysing, comparing, and learning about font licensing. The information is also valuable to identify trends and explore new models within the industry.
+
+  The initial analytic approach does not hinder our intention to provide educational content for academic contexts, connecting with disciplines aligned with typography, such as design, but also other fields, like cultural management, law, or computing. We offer valuable information for those who make strategic decisions in type foundries and those who are just beginning to navigate the field.
+
+  Beyond the empirical data, our goal is to stimulate the debate. Information can illuminate topics that often seem inaccessible, reveal contradictions within the system, and help us imagine new licencing formulas that better address the actual needs of typeface creators and users.

@@ -1,0 +1,5 @@
+layout: layouts/page.vto
+metas:
+  title: "=title"
+  description: Font Licensing Independent Research
+  icon: "/apple-touch-icon.png"

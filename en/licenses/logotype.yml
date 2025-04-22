@@ -1,0 +1,20 @@
+title: Logotype
+id: licences-logotype
+theme: light
+extra: licence
+order: 3i
+content:
+  first: |
+    This licence is tailored to permit the use of a digital font in a logotype or a trademark. Once created, the vector or bitmap image of the logo can be used in any media (websites, printed material, packaging, advertising, signage…).
+  more: |
+    This use is mostly included in desktop licences. The few foundries that offer a logotype licence (13) either measure the company’s size by the number of employees or ask for ‘use cases’ (number of logotypes), which can sometimes be segregated as logotype and trademark.
+
+    The price for a single text font ranges from the lowest 29€ to the highest above 400€.
+
+chart:
+  title: Popular measuring units in logotype licences
+  key: logotype
+
+pricing:
+  title: Pricing in logotype licences
+  key: logotype-pricing

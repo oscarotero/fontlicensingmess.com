@@ -1,0 +1,19 @@
+title: Contribute
+id: support
+theme: dark
+order: 6
+layout: layouts/support.vto
+content: |
+  If you believe our research and the content we provide are valuable, there are several ways to show your support. Please help us continue collecting and updating our databases by sending relevant information. You can also share this project and its resources with others. Additionally, if you want, you can make a small donation using the link to Open Collective below to help cover project expenses. Thank you for your support!
+
+links:
+  - icon: opencollective
+    text: Open Collective
+    url: https://opencollective.com/font-licensing-mess
+
+form:
+  intro: Contact us by filling out this form or emailing us at [hola@fontlicensingmess.com](mailto:hola@fontlicensingmess.com)
+  email: Your email
+  name: Your name
+  content: Tell us something!
+  submit: Send

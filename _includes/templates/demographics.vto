@@ -1,0 +1,37 @@
+
+<figure class="ly-page-resources ly-resources chart" id="more">
+  <figcaption class="ly-resources-header">
+    <h2>{{ chart.title }}</h2>
+
+    <p class="chart-legend"><span class="chart-dot is-fill"></span> {{ chart.legend.women }}</p>
+    <p class="chart-legend"><span class="chart-dot"></span> {{ chart.legend.men }}</p>
+  </figcaption>
+  <div class="ly-resources-chart">
+    <dl class="chart-rows is-condensed">
+      {{ for country, foundries of demographics |> demographics(lang) }}
+
+      <dt>{{ country }}</dt>
+      <dd>
+        <div class="chart-dots">
+          {{ for item of foundries.sort((a, b) => a.women ? -1 : 1) }}
+          {{ if item.url }}
+          <a href="{{ item.url }}" target="_blank" class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
+            <span class="chart-dot-tooltip">
+            {{ item.name }}
+            </span>
+          </a>
+          {{ else }}
+          <span class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
+            <span class="chart-dot-tooltip">
+            {{ item.name }}
+            </span>
+          </span>
+          {{ /if }}
+          {{ /for }}
+        </div>
+      </dd>
+      {{ /for }}
+      <dt>
+    </dl>
+  </div>
+</figure>

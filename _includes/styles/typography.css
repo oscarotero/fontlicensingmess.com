@@ -1,0 +1,17 @@
+.ty-text {
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-long);
+
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+.ty-header {
+  font-size: var(--font-size-display);
+  line-height: 1;
+  letter-spacing: var(--tracking-display);
+  margin: 0;
+}

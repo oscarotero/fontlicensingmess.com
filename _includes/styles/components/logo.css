@@ -1,0 +1,9 @@
+.logo {
+  display: block;
+  width: fit-content;
+
+  svg {
+    display: block;
+    fill: currentColor;
+  }
+}

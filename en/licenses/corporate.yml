@@ -1,0 +1,21 @@
+title: Corporate
+id: licences-corporate
+theme: light
+extra: licence
+order: 3h
+content:
+  first: |
+    This licence is intended to use the fonts across multiple formats and media. It is for companies, brands and organisations that want to cover a range of uses, from printed documents to websites, apps, or advertising.
+  more: |
+    Unlike other licenses, it usually allows unlimited devices and users within the organisation. Some set the price depending on the number of employees, and some don’t specify a limit in their purchase process, setting the restrictions in their EULAs.
+
+text: |
+  While the most common licenses (Desktop, Web, App, ePub) generally have comparable prices, less common licenses show significant differences. The corporate license presents the highest prices in the sample since it covers extensive font use. The average cost is 870€ for one text font in the lowest tier. The sample in this case is small (13), and one foundry was not included in the pricing graphic since the fee (8.900€) deviates too much from the others.
+
+chart:
+  title: Popular measuring units in corporate licences
+  key: corporate
+
+pricing:
+  title: Pricing in corporate licences
+  key: corporate-pricing
