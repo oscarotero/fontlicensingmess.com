@@ -1,26 +1,27 @@
-import Navigator from "./vendor/page-loader/navigator.js";
+import Navigator from "./vendor/page-loader.js";
 import MenuButton from "./menu-button.js";
 
 // Register the custom element
 customElements.define("menu-button", MenuButton);
 
-const nav = new Navigator(async (load, event) => {
-  const target = event.target.closest("a");
-  const circle = target.classList.contains("js-transition");
+const nav = new Navigator();
+
+nav.links(async ({ load, event, submitter }) => {
+  const circle = submitter.classList.contains("js-transition");
   let page;
 
   if (circle) {
-    target.classList.add("is-transitioning");
+    submitter.classList.add("is-transitioning");
     const svg = createSvg(event.clientX, event.clientY, "red");
     svg.classList.add("transition-circle");
 
     document.querySelectorAll(".navigation-item").forEach((item) => {
-      if (!item.contains(target)) {
+      if (!item.contains(submitter)) {
         item.style.opacity = 0;
       }
     });
 
-    if (target.classList.contains("theme-dark")) {
+    if (submitter.classList.contains("theme-dark")) {
       svg.classList.add("theme-dark");
     } else {
       svg.classList.add("theme-light");
@@ -55,9 +56,6 @@ const nav = new Navigator(async (load, event) => {
   await page.updateState(); //Update the page status (change url, title etc)
   await page.resetScroll(); //Reset the scroll position
 });
-
-//Init the navigation, capturing all clicks in links and form submits
-nav.init();
 
 function createSvg(x, y) {
   const width = innerWidth;
