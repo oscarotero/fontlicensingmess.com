@@ -1,10 +1,10 @@
 Measuring unit
 Use Case
 Use Case
-Number of Users
+Monthly Users
 Use Case
 Number of Employees
-Workstations
+Workstations, Annual Fee
 Workstations
 Number of Employees
 Number of Employees
@@ -32,12 +32,12 @@ Monthly Users, Number of Years
 Use Case
 Use Case
 Number of Employees
-Number of Users
+Monthly Users
 Use Case
 Use Case
 Use Case
 Number of Employees
-Use Case
+Use Case, Annual Fee
 Use Case
 Downloads
 Number of Employees
@@ -45,7 +45,7 @@ Downloads
 Number of Users
 Monthly Users
 Use Case
-Number of Users
+Monthly Users, Annual Fee
 Number of Employees
 Use Case
 Use Case
@@ -62,12 +62,12 @@ Downloads
 Use Case
 Use Case
 Use Case
-Use Case, Downloads 
+Downloads Use Case
 Number of Employees
-Monthly Users, Downloads 
+Downloads, Monthly Users
 Use Case
 Use Case
-Use Case, Number of Users 
+Monthly Users, Use Case
 Use Case
 Downloads
 Use Case
@@ -76,9 +76,9 @@ Number of Employees
 Use Case
 Downloads
 Use Case
+Monthly Users
 Number of Users
-Number of Users
-Number of Employees
+Number of Employees, Annual Fee
 Number of Employees
 Use Case
 Use Case
@@ -86,7 +86,7 @@ Downloads
 Use Case
 Use Case
 Use Case
-Number of Users
+Monthly Users
 Number of Years
 Number of Employees
 Number of Employees
@@ -105,16 +105,16 @@ Monthly Users
 Number of Years
 Use Case
 Monthly Users
-Number of Users
+Monthly Users, Annual Fee
 Use Case
-Use Case
+Annual Fee, Use Case
 Monthly Users
 Use Case
 Use Case
 Number of Employees
 Use Case
 Workstations
-Use Case, Downloads 
+Downloads, Use Case
 Use Case
 Use Case
 Use Case
@@ -129,11 +129,11 @@ Use Case
 Number of Employees
 Downloads
 Use Case
-Use Case
+Annual Fee, Use Case
 Use Case
 Use Case
 Monthly Users
-Use Case, Number of Years 
+Number of Years, Use Case
 Use Case
 Use Case
 Use Case
