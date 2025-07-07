@@ -5,7 +5,7 @@ extra: licence
 order: 3c
 content:
   first: |
-    Esta licencia permite utilizar una fuente digital en aplicaciones, garantizando que la tipografía pueda mostrar su contenido. En la mayoría de casos, es necesario leer el EULA para averiguar si la licencia cubre aplicaciones de escritorio o si se limita a dispositivos móviles. Las fuentes se incrustan en la app y se cargan el su interfaz.
+    Esta licencia permite utilizar una fuente digital en aplicaciones, garantizando que la tipografía pueda mostrar su contenido. En la mayoría de casos, es necesario leer el EULA para averiguar si la licencia cubre aplicaciones de escritorio o si se limita a dispositivos móviles. Las fuentes se incrustan en la app y se cargan en su interfaz.
   more: |
     La licencia para aplicaciones se ofrece a veces como App/ePub o App/Videojuego. Las fundiciones con una licencia específica para videojuegos usan métricas y precios similares a los de las licencias App, así que las hemos metido en el mismo bloque.
 
