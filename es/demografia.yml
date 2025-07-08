@@ -16,6 +16,13 @@ chart:
     women: Mujeres en puestos de liderazgo
     men: Sin mujeres en puestos de liderazgo
 
+language_chart:
+  title: Fundiciones según idioma
+  legend:
+    english: Con sede en países de habla inglesa
+    non_english: Con sede en otros países
+    multilingual: Info de licencias en varios idiomas
+
 resources:
   title: Related resources
   links:

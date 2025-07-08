@@ -15,6 +15,13 @@ chart:
     women: Women in lead positions
     men: No women in lead positions
 
+language_chart:
+  title: Foundries by language
+  legend:
+    english: Based on English-speaking countries
+    non_english: Based on other countries
+    multilingual: Multilingual licensing info available
+
 resources:
   title: Related resources
   links:
