@@ -205,3 +205,40 @@ function getMedian(values: number[]): number {
     ? values[mid]
     : (values[mid - 1] + values[mid]) / 2;
 }
+
+interface LanguageCSV {
+  Idiomas: string;
+  "English based": "No" | "Yes";
+}
+interface Language {
+  total: number;
+  englishBased: number;
+  nonEnglishBased: number;
+  multilingualLicenses: number;
+}
+
+export function convertLanguages(content: LanguageCSV[]): Language {
+  const language: Language = {
+    total: content.length,
+    englishBased: 0,
+    nonEnglishBased: 0,
+    multilingualLicenses: 0,
+  };
+
+  for (const lang of content) {
+    if (lang["English based"] === "Yes") {
+      language.englishBased++;
+    } else {
+      language.nonEnglishBased++;
+    }
+
+    const languages = new Set(lang.Idiomas.split(",").map((l) => l.trim()));
+    languages.delete("Inglés");
+
+    if (languages.size) {
+      language.multilingualLicenses++;
+    }
+  }
+
+  return language;
+}

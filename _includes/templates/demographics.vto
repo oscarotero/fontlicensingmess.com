@@ -1,5 +1,33 @@
-
 <figure class="ly-page-resources ly-resources chart" id="more">
+  <figcaption class="ly-resources-header">
+    <h2>{{ language_chart.title }}</h2>
+  </figcaption>
+  <div class="ly-resources-chart">
+    <dl class="chart-rows">
+      {{ set data = language |> languages }}
+      <dt>{{ language_chart.legend.english }}</dt>
+      <dd>
+        <div class="chart-row-bar bg-pattern-1" style="--value:{{ (data.englishBased / data.total) * 100 }}">
+          <span>{{ data.englishBased }}</span>
+        </div>
+      </dd>
+      <dt>{{ language_chart.legend.non_english }}</dt>
+      <dd>
+        <div class="chart-row-bar bg-pattern-2" style="--value:{{ (data.nonEnglishBased / data.total) * 100 }}">
+          <span>{{ data.nonEnglishBased }}</span>
+        </div>
+      </dd>
+      <dt>{{ language_chart.legend.multilingual }}</dt>
+      <dd>
+        <div class="chart-row-bar bg-pattern-3" style="--value:{{ (data.multilingualLicenses / data.total) * 100 }}">
+          <span>{{ data.multilingualLicenses }}</span>
+        </div>
+      </dd>
+    </dl>
+  </div>
+</figure>
+
+<figure class="ly-page-resources ly-resources chart">
   <figcaption class="ly-resources-header">
     <h2>{{ chart.title }}</h2>
 
