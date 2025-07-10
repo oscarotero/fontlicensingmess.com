@@ -1,26 +1,39 @@
 <figure class="ly-page-resources ly-resources chart" id="more">
   <figcaption class="ly-resources-header">
     <h2>{{ language_chart.title }}</h2>
+
+    <p class="chart-legend"><span class="chart-dot is-fill"></span> {{ language_chart.legend.english_only }}</p>
+    <p class="chart-legend"><span class="chart-dot"></span> {{ language_chart.legend.non_english_only }}</p>
   </figcaption>
   <div class="ly-resources-chart">
     <dl class="chart-rows">
-      {{ set data = language |> languages }}
-      <dt>{{ language_chart.legend.english }}</dt>
+      {{ set data = language |> languages |> sort((a, b) => b.englishOnly - a.englishOnly) }}
+      <dt>{{ language_chart.groups.english }}</dt>
       <dd>
-        <div class="chart-row-bar bg-pattern-1" style="--value:{{ (data.englishBased / data.total) * 100 }}">
-          <span>{{ data.englishBased }}</span>
+        <div class="chart-dots">
+          {{ for item of data }}
+          {{ if item.englishBased }}
+          <span class="chart-dot {{ item.englishOnly ? "is-fill" : "is-empty" }}" tabindex="-1">
+            <span class="chart-dot-tooltip">
+            {{ item.languages.join(", ") }}
+            </span>
+          </span>
+          {{ /if }}
+          {{ /for }}
         </div>
       </dd>
-      <dt>{{ language_chart.legend.non_english }}</dt>
+      <dt>{{ language_chart.groups.non_english }}</dt>
       <dd>
-        <div class="chart-row-bar bg-pattern-2" style="--value:{{ (data.nonEnglishBased / data.total) * 100 }}">
-          <span>{{ data.nonEnglishBased }}</span>
-        </div>
-      </dd>
-      <dt>{{ language_chart.legend.multilingual }}</dt>
-      <dd>
-        <div class="chart-row-bar bg-pattern-3" style="--value:{{ (data.multilingualLicenses / data.total) * 100 }}">
-          <span>{{ data.multilingualLicenses }}</span>
+        <div class="chart-dots">
+          {{ for item of data }}
+          {{ if !item.englishBased }}
+          <span class="chart-dot {{ item.englishOnly ? "is-fill" : "is-empty" }}" tabindex="-1">
+            <span class="chart-dot-tooltip">
+            {{ item.languages.join(", ") }}
+            </span>
+          </span>
+          {{ /if }}
+          {{ /for }}
         </div>
       </dd>
     </dl>

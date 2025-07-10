@@ -19,9 +19,11 @@ chart:
 language_chart:
   title: Fundiciones según idioma
   legend:
-    english: Con sede en países de habla inglesa
-    non_english: Con sede en otros países
-    multilingual: Info de licencias en varios idiomas
+    english_only: Licencias solo en inglés
+    non_english_only: Licencias en diferentes idiomas
+  groups:
+    english: Con sede en un país de habla inglesa
+    non_english: Con sede en otro país
 
 resources:
   title: Related resources

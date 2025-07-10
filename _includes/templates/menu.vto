@@ -8,27 +8,41 @@
       <button aria-expanded="false" type="button">Menu</button>
       <div class="menu-content">
         <button class="menu-close" type="button" aria-label="Close">
-          <img src="{{ "circle-xmark" |> icon("fontawesome") }}" inline>
+          <img src='{{ "circle-xmark" |> icon("fontawesome") }}' inline>
         </button>
         <ol>
-          {{ for item of nav.menu(lang === "en" ? "/" : "/es", `lang=${lang} menu!=false`, "order=asc suborder=asc").children }}
-          <li>
-            <a data-order="{{ item.data.order }}" {{ item.data.url === url ? 'aria-current="page"' : "" }} href="{{ item.data.url }}">
-              {{ item.data.title }}
-            </a>
+          {{
+            for item of nav.menu(lang === "en" ? "/" : "/es", `lang=${lang} menu!=false`, "order=asc suborder=asc").children
+          }}
+            <li>
+              <a
+                data-order="{{ item.data.order }}"
+                {{ item.data.url === url ? 'aria-current="page"' : "" }}
+                href="{{ item.data.url }}"
+              >
+                {{ item.data.title }}
+              </a>
 
-            {{ if item.children }}
-              <ol>
-                {{ for subitem of item.children }}
-                <li>
-                  <a data-order="{{ subitem.data.order }}" {{ subitem.data.url === url ? 'aria-current="page"' : "" }} href="{{ subitem.data.url }}">
-                    {{ subitem.data.title }}
-                  </a>
-                </li>
-                {{ /for }}
-              </ol>
-            {{ /if }}
-          </li>
+              {{ if item.children }}
+                <ol>
+                  {{ for subitem of item.children }}
+                    <li>
+                      <a
+                        data-order="{{ subitem.data.order }}"
+                        {{
+                          subitem.data.url === url
+                            ? 'aria-current="page"'
+                            : ""
+                        }}
+                        href="{{ subitem.data.url }}"
+                      >
+                        {{ subitem.data.title }}
+                      </a>
+                    </li>
+                  {{ /for }}
+                </ol>
+              {{ /if }}
+            </li>
           {{ /for }}
         </ol>
       </div>

@@ -29,7 +29,6 @@ site.use(multilanguage({
   languages: ["en", "es"],
 }));
 
-
 site.add("assets");
 site.add("style.css");
 site.filter("demographics", filters.convertFoundries);

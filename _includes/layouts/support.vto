@@ -9,18 +9,25 @@ layout: layouts/base.vto
   <div class="ly-page-content ty-text">
     {{ content |> md }}
     <ul class="links">
-    {{ for link of links }}
-      <li><a href="{{ link.url }}">
-        <img width=32 height=32 src="{{ link.icon |> icon("simpleicons") }}" inline>
-        {{ link.text }}
-      </a></li>
-    {{ /for }}
+      {{ for link of links }}
+        <li>
+          <a href="{{ link.url }}">
+            <img
+              width="32"
+              height="32"
+              src='{{ link.icon |> icon("simpleicons") }}'
+              inline
+            >
+            {{ link.text }}
+          </a>
+        </li>
+      {{ /for }}
     </ul>
   </div>
-  
+
   <form class="ly-page-content form" name="contact" method="POST" netlify>
     {{ form.intro |> md }}
-    
+
     <p class="form-field">
       <label for="field-name">{{ form.name }}</label>
       <input id="field-name" type="text" name="name">

@@ -18,9 +18,11 @@ chart:
 language_chart:
   title: Foundries by language
   legend:
+    english_only: Font license is only in English
+    non_english_only: Font license in different languages
+  groups:
     english: Based on English-speaking countries
     non_english: Based on other countries
-    multilingual: Multilingual licensing info available
 
 resources:
   title: Related resources

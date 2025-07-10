@@ -1,19 +1,39 @@
 <nav class="ly-page-nav navigation">
-  {{ set prev = nav.previousPage(url, `lang=${lang} order!=undefined menu!=false`, "order=asc suborder=asc") }}
+  {{
+    set prev = nav.previousPage(
+      url,
+      `lang=${lang} order!=undefined menu!=false`,
+      "order=asc suborder=asc",
+    )
+  }}
 
   {{ if prev }}
     <div class="navigation-item is-prev">
-      <a rel="prev" class="js-transition theme-{{ prev.theme}}" href="{{ prev.url }}">
+      <a
+        rel="prev"
+        class="js-transition theme-{{ prev.theme}}"
+        href="{{ prev.url }}"
+      >
         <span>{{ prev.order }}. {{ prev.title }}</span>
       </a>
     </div>
   {{ /if }}
 
-  {{ set next = nav.nextPage(url, `lang=${lang} order!=undefined menu!=false`, "order=asc suborder=asc") }}
+  {{
+    set next = nav.nextPage(
+      url,
+      `lang=${lang} order!=undefined menu!=false`,
+      "order=asc suborder=asc",
+    )
+  }}
 
   {{ if next }}
     <div class="navigation-item is-next">
-      <a rel="next" class="js-transition theme-{{ next.theme}}" href="{{ next.url }}">
+      <a
+        rel="next"
+        class="js-transition theme-{{ next.theme}}"
+        href="{{ next.url }}"
+      >
         <span>{{ next.order }}. {{ next.title }}</span>
       </a>
     </div>

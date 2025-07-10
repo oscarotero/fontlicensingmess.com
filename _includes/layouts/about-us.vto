@@ -9,17 +9,19 @@ layout: layouts/base.vto
   <div class="ly-page-content ty-text">{{ content |> md }}</div>
   <div class="ly-page-content people">
     {{ for person of people }}
-    <section class="person">
-      <img transform-images="webp 100@2" class="person-image" src="{{ person.img }}">
-      
-      <div class="person-bio">
-        {{ person.bio |> md }}
-      </div>
-    </section>
+      <section class="person">
+        <img
+          transform-images="webp 100@2"
+          class="person-image"
+          src="{{ person.img }}"
+        >
+
+        <div class="person-bio">
+          {{ person.bio |> md }}
+        </div>
+      </section>
     {{ /for }}
   </div>
-
-
 </main>
 
 {{ include "templates/navigation.vto" }}

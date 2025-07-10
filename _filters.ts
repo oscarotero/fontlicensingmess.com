@@ -211,34 +211,43 @@ interface LanguageCSV {
   "English based": "No" | "Yes";
 }
 interface Language {
-  total: number;
-  englishBased: number;
-  nonEnglishBased: number;
-  multilingualLicenses: number;
+  englishBased: boolean;
+  languages: string[];
+  englishOnly: boolean;
 }
 
-export function convertLanguages(content: LanguageCSV[]): Language {
-  const language: Language = {
-    total: content.length,
-    englishBased: 0,
-    nonEnglishBased: 0,
-    multilingualLicenses: 0,
-  };
+export function convertLanguages(content: LanguageCSV[]): Language[] {
+  const languages: Language[] = [];
 
-  for (const lang of content) {
-    if (lang["English based"] === "Yes") {
-      language.englishBased++;
-    } else {
-      language.nonEnglishBased++;
-    }
+  // @ts-ignore this.data is not defined
+  const lang = this.data?.lang as string;
 
-    const languages = new Set(lang.Idiomas.split(",").map((l) => l.trim()));
-    languages.delete("Inglés");
+  for (const item of content) {
+    const language: Language = {
+      englishBased: item["English based"] === "Yes",
+      languages: [],
+      englishOnly: false,
+    };
 
-    if (languages.size) {
-      language.multilingualLicenses++;
-    }
+    const langs = new Set(item.Idiomas.split(",").map((l) => l.trim()));
+    const index = lang === "en" ? 0 : 1;
+    language.languages = Array.from(langs).map((lang) =>
+      translatedLanguages[lang]?.[index] ?? lang
+    );
+    language.englishOnly = langs.size === 1 && langs.has("Inglés");
+    languages.push(language);
   }
 
-  return language;
+  return languages;
 }
+
+const translatedLanguages: Record<string, [string, string]> = {
+  "Inglés": ["English", "Inglés"],
+  "Russian": ["Russian", "Ruso"],
+  "Alemán": ["German", "Alemán"],
+  "Portugués": ["Portuguesse", "Portugués"],
+  "Francés": ["French", "Francés"],
+  "Japonés": ["Japanesse", "Japonés"],
+  "Árabe": ["Arabian", "Árabe"],
+  "Eslovaco": ["Slovak", "Eslovaco"],
+};

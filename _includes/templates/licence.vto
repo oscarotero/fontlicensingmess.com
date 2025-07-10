@@ -1,57 +1,62 @@
-{{ if text }}  
-<div class="ly-page-text text" id="more">
-  {{ text |> md }}
-</div>
-{{ /if }}
-
-{{ if chart }}  
-<figure class="ly-page-resources ly-resources chart" id="more">
-  <figcaption class="ly-resources-header">
-    <h2>{{ chart.title }}</h2>
-  </figcaption>
-  <div class="ly-resources-chart">
-    <dl class="chart-rows">
-      {{ for id, unit of it[chart.key] |> units }}
-      <dt>{{ unit.name }}</dt>
-      <dd>
-        <div class="chart-row-bar bg-pattern-{{ id }}" style="--value:{{ unit.value }}">
-          <span>{{ unit.value }}</span>
-        </div>
-      </dd>
-      {{ /for }}
-    </dl>
+{{ if text }}
+  <div class="ly-page-text text" id="more">
+    {{ text |> md }}
   </div>
-</figure>
 {{ /if }}
 
-{{ if pricing }}  
-<figure class="ly-page-resources ly-resources chart">
-  <figcaption class="ly-resources-header">
-    <h2>{{ pricing.title }}</h2>
-  </figcaption>
-  <div class="ly-resources-chart">
-    <div class="chart-pricing">
-      {{ for row of it[pricing.key] |> pricing }}
-      <div class="chart-pricing-dots {{ (row.min || row.max || row.median) ? 'has-label' : '' }}">
-        <div class="chart-pricing-dots-wrapper">
-          {{- for price of row.prices }}
-          <span class="chart-dot is-fill"></span>
-          {{ /for -}}
-        </div>
-      </div>
-      <div class="chart-pricing-details">
-        {{ if row.min }}
-          <strong>{{ row.min }}€</strong>
-        {{ /if }}
-        {{ if row.max }}
-          <strong>{{ row.max }}€</strong>
-        {{ /if }}
-        {{ if row.median }}
-          <strong>{{ row.median }}€</strong> (median)
-        {{ /if }}
-      </div>
-      {{ /for }}
+{{ if chart }}
+  <figure class="ly-page-resources ly-resources chart" id="more">
+    <figcaption class="ly-resources-header">
+      <h2>{{ chart.title }}</h2>
+    </figcaption>
+    <div class="ly-resources-chart">
+      <dl class="chart-rows">
+        {{ for id, unit of it[chart.key] |> units }}
+          <dt>{{ unit.name }}</dt>
+          <dd>
+            <div
+              class="chart-row-bar bg-pattern-{{ id }}"
+              style="--value: {{ unit.value }}"
+            >
+              <span>{{ unit.value }}</span>
+            </div>
+          </dd>
+        {{ /for }}
+      </dl>
     </div>
-  </div>
-</figure>
+  </figure>
+{{ /if }}
+
+{{ if pricing }}
+  <figure class="ly-page-resources ly-resources chart">
+    <figcaption class="ly-resources-header">
+      <h2>{{ pricing.title }}</h2>
+    </figcaption>
+    <div class="ly-resources-chart">
+      <div class="chart-pricing">
+        {{ for row of it[pricing.key] |> pricing }}
+          <div
+            class="chart-pricing-dots {{ (row.min || row.max || row.median) ? 'has-label' : '' }}"
+          >
+            <div class="chart-pricing-dots-wrapper">
+              {{- for price of row.prices }}
+                <span class="chart-dot is-fill"></span>
+              {{ /for -}}
+            </div>
+          </div>
+          <div class="chart-pricing-details">
+            {{ if row.min }}
+              <strong>{{ row.min }}€</strong>
+            {{ /if }}
+            {{ if row.max }}
+              <strong>{{ row.max }}€</strong>
+            {{ /if }}
+            {{ if row.median }}
+              <strong>{{ row.median }}€</strong> (median)
+            {{ /if }}
+          </div>
+        {{ /for }}
+      </div>
+    </div>
+  </figure>
 {{ /if }}
