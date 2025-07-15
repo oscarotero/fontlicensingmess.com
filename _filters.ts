@@ -251,3 +251,36 @@ const translatedLanguages: Record<string, [string, string]> = {
   "Árabe": ["Arabian", "Árabe"],
   "Eslovaco": ["Slovak", "Eslovaco"],
 };
+
+interface TiersCSV {
+  Limit: string;
+  Number: number;
+  Count: number;
+}
+
+interface Tier {
+  limit: string;
+  value?: number;
+  count: number;
+}
+
+export function convertTiers(content: TiersCSV[]): Tier[] {
+  const tiers: Tier[] = content.map((item) => ({
+    limit: item.Limit,
+    value: toNumber(item.Number),
+    count: toNumber(item.Count) ?? 0,
+  }));
+
+  return tiers;
+}
+
+function toNumber(value?: string | number): number | undefined {
+  if (typeof value === "number") {
+    return value;
+  }
+  if (typeof value === "string") {
+    const num = parseInt(value.replaceAll(".", ""), 10);
+    return isNaN(num) ? undefined : num;
+  }
+  return undefined;
+}

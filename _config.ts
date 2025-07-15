@@ -36,5 +36,6 @@ site.filter("units", filters.convertUnit);
 site.filter("pricing", filters.convertPricing);
 site.filter("licenses", filters.convertLicenses);
 site.filter("languages", filters.convertLanguages);
+site.filter("tiers", filters.convertTiers);
 
 export default site;

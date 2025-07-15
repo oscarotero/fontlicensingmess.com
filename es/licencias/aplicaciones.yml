@@ -20,6 +20,13 @@ chart:
   title: Unidades de medida en licencias de applicaciones
   key: app
 
+chart_tiers:
+  title: Límites de apps más populares
+  key: app-tiers
+  description: |
+    - Y axis: Los límites de aplicaciones más populares en las licencias.
+    - X row: Número de fundiciones que ofrecen este límite.
+
 pricing:
   title: Precios en licencias de applicaciones
   key: app-pricing

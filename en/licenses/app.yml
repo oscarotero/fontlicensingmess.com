@@ -20,6 +20,13 @@ chart:
   title: Popular measuring units in app licences
   key: app
 
+chart_tiers:
+  title: Most popular Number of apps tiers
+  key: app-tiers
+  description: |
+    - Y axis: The most popular tiers by number of apps allowed.
+    - X row: The number of foundries offering this tier.
+
 pricing:
   title: Pricing in app licences
   key: app-pricing

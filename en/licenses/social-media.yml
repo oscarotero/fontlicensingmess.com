@@ -18,6 +18,13 @@ chart:
   title: Popular measuring units in social media licences
   key: social-media
 
+chart_tiers:
+  title: Most popular number of followers tiers by foundry
+  description: |
+    - Y axis: The most popular tiers by number of followers.
+    - X row: The number of foundries offering this tier.
+  key: social-media-tiers
+
 pricing:
   title: Pricing in social media licences
   key: social-media-pricing

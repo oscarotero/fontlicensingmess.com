@@ -18,6 +18,13 @@ chart:
   title: Popular measuring units in web licences
   key: web
 
+chart_tiers:
+  title: Most popular Unique Web Visitors tiers
+  key: web-tiers
+  description: |
+    - Y axis: The most popular tiers by number of Unique Web Visitors (UWV).
+    - X row: The number of foundries offering this tier.
+
 pricing:
   title: Pricing in web licences
   key: web-pricing

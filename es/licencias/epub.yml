@@ -16,6 +16,13 @@ chart:
   title: Unidades de medida en licencias ePub
   key: ePub
 
+chart_tiers:
+  title: Most popular Number of use cases tiers
+  description: |
+    - Y axis: The most popular tiers by number of use cases allowed.
+    - X row: The number of foundries offering this tier.
+  key: epub-tiers
+
 pricing:
   title: Precios en licencias ePub
   key: ePub-pricing

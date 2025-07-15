@@ -1,0 +1,11 @@
+Limit,Number,Count,Unit of measure,Tags
+10.000 UWV,10.000,14,Unique Visitors/Month,Web
+50.000 UWV,50.000,22,Unique Visitors/Month,Web
+100.000 UWV,100.000,27,Unique Visitors/Month,Web
+250.000 UWV,250.000,12,Unique Visitors/Month,Web
+500.000 UWV,500.000,25,Unique Visitors/Month,Web
+1M UWV,1.000.000,28,Unique Visitors/Month,Web
+5M UWV,5.000.000,16,Unique Visitors/Month,Web
+10M UWV,10.000.000,13,Unique Visitors/Month,Web
+20M UWV,20.000.000,8,Unique Visitors/Month,Web
+50M UWV,50.000.000,8,Unique Visitors/Month,Web
