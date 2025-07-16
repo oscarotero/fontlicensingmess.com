@@ -17,11 +17,11 @@ chart:
   key: server
 
 chart_tiers:
-  title: Most popular number of servers tiers by foundry
-  description: |
-    - Y axis: The most popular tiers by number of servers allowed.
-    - X row: The number of foundries offering this tier.
-  key: server-tiers
+  - title: Most popular tiers for Number of servers
+    key: server-tiers
+    units: [server, servers]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
 
 pricing:
   title: Pricing in server licences

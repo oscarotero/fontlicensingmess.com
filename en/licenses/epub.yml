@@ -17,11 +17,11 @@ chart:
   key: ePub
 
 chart_tiers:
-  title: Most popular Number of use cases tiers
-  description: |
-    - Y axis: The most popular tiers by number of use cases allowed.
-    - X row: The number of foundries offering this tier.
-  key: epub-tiers
+  - title: Most popular tiers for Number of use cases
+    key: epub-tiers
+    units: [use case, use cases]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
 
 pricing:
   title: Pricing in ePub licences

@@ -254,33 +254,60 @@ const translatedLanguages: Record<string, [string, string]> = {
 
 interface TiersCSV {
   Limit: string;
-  Number: number;
   Count: number;
 }
 
 interface Tier {
-  limit: string;
-  value?: number;
+  value: number;
   count: number;
 }
 
 export function convertTiers(content: TiersCSV[]): Tier[] {
   const tiers: Tier[] = content.map((item) => ({
-    limit: item.Limit,
-    value: toNumber(item.Number),
+    value: toNumber(item.Limit),
     count: toNumber(item.Count) ?? 0,
   }));
 
   return tiers;
 }
 
-function toNumber(value?: string | number): number | undefined {
+function toNumber(value: string | number): number {
   if (typeof value === "number") {
     return value;
   }
-  if (typeof value === "string") {
-    const num = parseInt(value.replaceAll(".", ""), 10);
-    return isNaN(num) ? undefined : num;
+  if (value.toLowerCase() === "unlimited") {
+    return Infinity;
   }
-  return undefined;
+  return parseInt(value.replaceAll(".", ""), 10);
+}
+
+const enFormatNumber = new Intl.NumberFormat("en-US", {
+  style: "decimal",
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+  notation: "compact"
+});
+
+const esFormatNumber = new Intl.NumberFormat("es-ES", {
+  style: "decimal",
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+  notation: "compact"
+});
+
+export function formatNumber(number: number, unit: [string, string]): string {
+  // @ts-ignore this.data is not defined
+  const lang = this.data?.lang as string;
+
+  if (number === Infinity) {
+    return lang === "es" ? "Ilimitado" : "Unlimited";
+  }
+
+  const formattedNumber = lang === "es"
+    ? esFormatNumber.format(number)
+    : enFormatNumber.format(number);
+  
+  const suffix = number === 1 ? unit[0] : unit[1];
+
+  return `${formattedNumber} ${suffix ?? ""}`.trim();
 }

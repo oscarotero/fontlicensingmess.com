@@ -61,22 +61,22 @@
   </figure>
 {{ /if }}
 
-{{ if chart_tiers }}
+{{ for chart of chart_tiers }}
   <figure class="ly-page-resources ly-resources chart" id="more">
     <figcaption class="ly-resources-header">
-      <h2>{{ chart_tiers.title }}</h2>
-      {{ chart_tiers.description |> md }}
+      <h2>{{ chart.title }}</h2>
+      {{ chart.description |> md }}
     </figcaption>
     <div class="ly-resources-chart">
-      <dl class="chart-rows">
-        {{ set tiers = it[chart_tiers.key] |> tiers }}
+      <dl class="chart-rows is-condensed">
+        {{ set tiers = it[chart.key] |> tiers }}
         {{ set max = tiers.reduce((max, curr) => Math.max(max, curr.count), 0) }}
 
-        {{ for id, { limit, count, value } of tiers }}
-          <dt>{{ limit }}</dt>
+        {{ for { value, count } of tiers }}
+          <dt>{{ value |> format(chart.units) }}</dt>
           <dd>
             <div
-              class="chart-row-bar bg-pattern-{{ id }}"
+              class="chart-row-bar is-small bg-pattern-3"
               style="--value: {{ (count / max) * 90 }}"
             >
               <span>{{ count }}</span>
@@ -86,4 +86,4 @@
       </dl>
     </div>
   </figure>
-{{ /if }}
+{{ /for }}

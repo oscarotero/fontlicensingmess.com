@@ -19,11 +19,6 @@ chart:
   key: web
 
 chart_tiers:
-  title: Most popular number of followers tiers by foundry
-  description: |
-    - Y axis: The most popular tiers by number of followers.
-    - X row: The number of foundries offering this tier.
-  key: social-media-tiers
 
 pricing:
   title: Precios en licencias web

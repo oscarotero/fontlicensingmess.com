@@ -17,11 +17,21 @@ chart:
   key: desktop
 
 chart_tiers:
-  title: Most popular number of users tiers by foundry
-  description: |
-    - Y axis: The most popular tiers by number of users.
-    - X row: The number of foundries offering this tier.
-  key: desktop-tiers
+  - title: Most popular tiers for Number of Users
+    key: desktop-tiers-users
+    units: [user, users]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+  - title: Most popular tiers for Number of Workstations
+    key: desktop-tiers-workstations
+    units: [workstation, workstations]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+  - title: Most popular tiers for Number of Employees
+    key: desktop-tiers-employees
+    units: [employee, employees]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
 
 pricing:
   title: Pricing in desktop licences

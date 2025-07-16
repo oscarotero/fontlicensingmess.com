@@ -17,11 +17,6 @@ chart:
   key: desktop
 
 chart_tiers:
-  title: Most popular number of users tiers by foundry
-  description: |
-    - Y axis: The most popular tiers by number of users.
-    - X row: The number of foundries offering this tier.
-  key: desktop-tiers
 
 pricing:
   title: Precios en licencias de escritorio
