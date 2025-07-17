@@ -20,6 +20,23 @@ chart:
   title: Popular measuring units in app licences
   key: app
 
+chart_tiers:
+  - title: Most popular tiers for Number of Apps
+    key: app-tiers-usecase
+    units: [app, apps]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+  - title: Most popular tiers for Number of Monthly users
+    key: app-tiers-monthlyusers
+    units: [user, users]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+  - title: Most popular tiers for Number of Downloads
+    key: app-tiers-downloads
+    units: [download, downloads]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+
 pricing:
   title: Pricing in app licences
   key: app-pricing

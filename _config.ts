@@ -16,6 +16,8 @@ const site = lume();
 site.use(lightningcss());
 site.use(metas());
 site.use(icons());
+site.use(picture());
+site.use(transformImages());
 site.use(inline());
 site.use(nav());
 site.use(sheets());
@@ -27,14 +29,14 @@ site.use(multilanguage({
   languages: ["en", "es"],
 }));
 
-site.use(picture());
-site.use(transformImages());
-
 site.add("assets");
 site.add("style.css");
 site.filter("demographics", filters.convertFoundries);
 site.filter("units", filters.convertUnit);
 site.filter("pricing", filters.convertPricing);
 site.filter("licenses", filters.convertLicenses);
+site.filter("languages", filters.convertLanguages);
+site.filter("tiers", filters.convertTiers);
+site.filter("format", filters.formatNumber);
 
 export default site;

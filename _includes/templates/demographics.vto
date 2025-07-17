@@ -1,5 +1,46 @@
-
 <figure class="ly-page-resources ly-resources chart" id="more">
+  <figcaption class="ly-resources-header">
+    <h2>{{ language_chart.title }}</h2>
+
+    <p class="chart-legend"><span class="chart-dot is-fill"></span> {{ language_chart.legend.english_only }}</p>
+    <p class="chart-legend"><span class="chart-dot"></span> {{ language_chart.legend.non_english_only }}</p>
+  </figcaption>
+  <div class="ly-resources-chart">
+    <dl class="chart-rows">
+      {{ set data = language |> languages |> sort((a, b) => b.englishOnly - a.englishOnly) }}
+      <dt>{{ language_chart.groups.english }}</dt>
+      <dd>
+        <div class="chart-dots">
+          {{ for item of data }}
+          {{ if item.englishBased }}
+          <span class="chart-dot {{ item.englishOnly ? "is-fill" : "is-empty" }}" tabindex="-1">
+            <span class="chart-dot-tooltip">
+            {{ item.languages.join(", ") }}
+            </span>
+          </span>
+          {{ /if }}
+          {{ /for }}
+        </div>
+      </dd>
+      <dt>{{ language_chart.groups.non_english }}</dt>
+      <dd>
+        <div class="chart-dots">
+          {{ for item of data }}
+          {{ if !item.englishBased }}
+          <span class="chart-dot {{ item.englishOnly ? "is-fill" : "is-empty" }}" tabindex="-1">
+            <span class="chart-dot-tooltip">
+            {{ item.languages.join(", ") }}
+            </span>
+          </span>
+          {{ /if }}
+          {{ /for }}
+        </div>
+      </dd>
+    </dl>
+  </div>
+</figure>
+
+<figure class="ly-page-resources ly-resources chart">
   <figcaption class="ly-resources-header">
     <h2>{{ chart.title }}</h2>
 

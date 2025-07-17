@@ -16,6 +16,8 @@ chart:
   title: Unidades de medida en licencias de servidor
   key: server
 
+chart_tiers:
+
 pricing:
   title: Precios en licencias de servidor
   key: server-pricing

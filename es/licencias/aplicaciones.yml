@@ -20,6 +20,8 @@ chart:
   title: Unidades de medida en licencias de applicaciones
   key: app
 
+chart_tiers:
+
 pricing:
   title: Precios en licencias de applicaciones
   key: app-pricing

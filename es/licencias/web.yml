@@ -18,6 +18,8 @@ chart:
   title: Unidades de medida en licencias web
   key: web
 
+chart_tiers:
+
 pricing:
   title: Precios en licencias web
   key: web-pricing

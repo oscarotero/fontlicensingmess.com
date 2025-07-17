@@ -18,6 +18,13 @@ chart:
   title: Popular measuring units in social media licences
   key: social-media
 
+chart_tiers:
+  - title: Most popular tiers for Number of followers
+    key: social-media-tiers
+    units: [follower, followers]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+
 pricing:
   title: Pricing in social media licences
   key: social-media-pricing

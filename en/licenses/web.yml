@@ -18,6 +18,18 @@ chart:
   title: Popular measuring units in web licences
   key: web
 
+chart_tiers:
+  - title: Most popular tiers for Number of unique web visitors
+    key: web-tiers-visitors
+    units: [visitor, visitors]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+  - title: Most popular tiers for Number of pageviews
+    key: web-tiers-pageviews
+    units: [page view, page views]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+
 pricing:
   title: Pricing in web licences
   key: web-pricing

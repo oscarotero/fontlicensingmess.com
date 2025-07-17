@@ -161,6 +161,10 @@
   height: 63px;
   position: relative;
 
+  &.is-small {
+    height: 28px;
+  }
+
   > span {
     font-size: var(--font-size-title);
     color: var(--color-foreground);

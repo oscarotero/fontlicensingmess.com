@@ -205,3 +205,109 @@ function getMedian(values: number[]): number {
     ? values[mid]
     : (values[mid - 1] + values[mid]) / 2;
 }
+
+interface LanguageCSV {
+  Idiomas: string;
+  "English based": "No" | "Yes";
+}
+interface Language {
+  englishBased: boolean;
+  languages: string[];
+  englishOnly: boolean;
+}
+
+export function convertLanguages(content: LanguageCSV[]): Language[] {
+  const languages: Language[] = [];
+
+  // @ts-ignore this.data is not defined
+  const lang = this.data?.lang as string;
+
+  for (const item of content) {
+    const language: Language = {
+      englishBased: item["English based"] === "Yes",
+      languages: [],
+      englishOnly: false,
+    };
+
+    const langs = new Set(item.Idiomas.split(",").map((l) => l.trim()));
+    const index = lang === "en" ? 0 : 1;
+    language.languages = Array.from(langs).map((lang) =>
+      translatedLanguages[lang]?.[index] ?? lang
+    );
+    language.englishOnly = langs.size === 1 && langs.has("Inglés");
+    languages.push(language);
+  }
+
+  return languages;
+}
+
+const translatedLanguages: Record<string, [string, string]> = {
+  "Inglés": ["English", "Inglés"],
+  "Russian": ["Russian", "Ruso"],
+  "Alemán": ["German", "Alemán"],
+  "Portugués": ["Portuguesse", "Portugués"],
+  "Francés": ["French", "Francés"],
+  "Japonés": ["Japanesse", "Japonés"],
+  "Árabe": ["Arabian", "Árabe"],
+  "Eslovaco": ["Slovak", "Eslovaco"],
+};
+
+interface TiersCSV {
+  Limit: string;
+  Count: number;
+}
+
+interface Tier {
+  value: number;
+  count: number;
+}
+
+export function convertTiers(content: TiersCSV[]): Tier[] {
+  const tiers: Tier[] = content.map((item) => ({
+    value: toNumber(item.Limit),
+    count: toNumber(item.Count) ?? 0,
+  }));
+
+  return tiers;
+}
+
+function toNumber(value: string | number): number {
+  if (typeof value === "number") {
+    return value;
+  }
+  if (value.toLowerCase() === "unlimited") {
+    return Infinity;
+  }
+  return parseInt(value.replaceAll(".", ""), 10);
+}
+
+const enFormatNumber = new Intl.NumberFormat("en-US", {
+  style: "decimal",
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+  notation: "compact"
+});
+
+const esFormatNumber = new Intl.NumberFormat("es-ES", {
+  style: "decimal",
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+  notation: "compact"
+});
+
+export function formatNumber(number: number, unit: [string, string]): string {
+  // @ts-ignore this.data is not defined
+  const lang = this.data?.lang as string;
+
+  if (number === Infinity) {
+    return lang === "es" ? "Ilimitado" : "Unlimited";
+  }
+
+  const formattedNumber = lang === "es"
+    ? esFormatNumber.format(number)
+    : enFormatNumber.format(number);
+  
+  const suffix = number === 1 ? unit[0] : unit[1];
+
+  return `${formattedNumber} ${suffix ?? ""}`.trim();
+}

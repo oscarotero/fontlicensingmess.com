@@ -16,6 +16,8 @@ chart:
   title: Unidades de medida en licencias ePub
   key: ePub
 
+chart_tiers:
+
 pricing:
   title: Precios en licencias ePub
   key: ePub-pricing

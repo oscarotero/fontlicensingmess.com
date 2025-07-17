@@ -16,6 +16,23 @@ chart:
   title: Popular measuring units in desktop licences
   key: desktop
 
+chart_tiers:
+  - title: Most popular tiers for Number of Users
+    key: desktop-tiers-users
+    units: [user, users]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+  - title: Most popular tiers for Number of Workstations
+    key: desktop-tiers-workstations
+    units: [workstation, workstations]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+  - title: Most popular tiers for Number of Employees
+    key: desktop-tiers-employees
+    units: [employee, employees]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+
 pricing:
   title: Pricing in desktop licences
   key: desktop-pricing

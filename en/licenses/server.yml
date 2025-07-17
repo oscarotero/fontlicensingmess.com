@@ -16,6 +16,13 @@ chart:
   title: Popular measuring units in server licences
   key: server
 
+chart_tiers:
+  - title: Most popular tiers for Number of servers
+    key: server-tiers
+    units: [server, servers]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+
 pricing:
   title: Pricing in server licences
   key: server-pricing

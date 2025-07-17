@@ -16,6 +16,8 @@ chart:
   title: Unidades de medida en licencias de escritorio
   key: desktop
 
+chart_tiers:
+
 pricing:
   title: Precios en licencias de escritorio
   key: desktop-pricing
