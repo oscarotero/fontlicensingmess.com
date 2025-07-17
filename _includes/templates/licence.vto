@@ -61,7 +61,7 @@
   </figure>
 {{ /if }}
 
-{{ for chart of chart_tiers }}
+{{ for id, chart of chart_tiers }}
   <figure class="ly-page-resources ly-resources chart" id="more">
     <figcaption class="ly-resources-header">
       <h2>{{ chart.title }}</h2>
@@ -76,7 +76,7 @@
           <dt>{{ value |> format(chart.units) }}</dt>
           <dd>
             <div
-              class="chart-row-bar is-small bg-pattern-3"
+              class="chart-row-bar is-small bg-pattern-{{ id }}"
               style="--value: {{ (count / max) * 90 }}"
             >
               <span>{{ count }}</span>
