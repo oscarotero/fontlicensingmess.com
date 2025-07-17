@@ -245,11 +245,12 @@ const translatedLanguages: Record<string, [string, string]> = {
   "Inglés": ["English", "Inglés"],
   "Russian": ["Russian", "Ruso"],
   "Alemán": ["German", "Alemán"],
-  "Portugués": ["Portuguesse", "Portugués"],
+  "Portugués": ["Portuguese", "Portugués"],
   "Francés": ["French", "Francés"],
-  "Japonés": ["Japanesse", "Japonés"],
+  "Japonés": ["Japanese", "Japonés"],
   "Árabe": ["Arabian", "Árabe"],
   "Eslovaco": ["Slovak", "Eslovaco"],
+  "Español": ["Spanish", "Español"],
 };
 
 interface TiersCSV {
