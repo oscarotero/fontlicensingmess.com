@@ -243,7 +243,7 @@ export function convertLanguages(content: LanguageCSV[]): Language[] {
 
 const translatedLanguages: Record<string, [string, string]> = {
   "Inglés": ["English", "Inglés"],
-  "Russian": ["Russian", "Ruso"],
+  "Ruso": ["Russian", "Ruso"],
   "Alemán": ["German", "Alemán"],
   "Portugués": ["Portuguese", "Portugués"],
   "Francés": ["French", "Francés"],
