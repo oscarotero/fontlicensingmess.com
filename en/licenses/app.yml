@@ -21,22 +21,21 @@ chart:
   key: app
 
 chart_tiers:
-  - title: Most popular tiers for Number of Apps
+  - title: Popular tiers for Number of Apps
     key: app-tiers-usecase
     units: [app, apps]
     description: |
-      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
-  - title: Most popular tiers for Number of Monthly users
+      The number on the right indicates the amount of foundries that offer that particular tier. We show the 10 most popular tiers in the sample.
+  - title: Most popular tiers for Number of Monthly Users
     key: app-tiers-monthlyusers
     units: [user, users]
     description: |
-      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+      Three type foundries include an option for an unlimited number of monthly users. Counting all the different metrics for app use, a total of 27 offer an unlimited option. 
   - title: Most popular tiers for Number of Downloads
     key: app-tiers-downloads
     units: [download, downloads]
     description: |
-      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
-
+      The lowest limit we have found is 50 app downloads; the highest value peaks at 1,000 million downloads.
 pricing:
   title: Pricing in app licences
   key: app-pricing
