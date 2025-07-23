@@ -2,23 +2,38 @@
   <figcaption class="ly-resources-header">
     <h2>{{ language_chart.title }}</h2>
 
-    <p class="chart-legend"><span class="chart-dot is-fill"></span> {{ language_chart.legend.english_only }}</p>
-    <p class="chart-legend"><span class="chart-dot"></span> {{ language_chart.legend.non_english_only }}</p>
+    <p class="chart-legend">
+      <span class="chart-dot is-fill"></span> {{
+        language_chart.legend.english_only
+      }}
+    </p>
+    <p class="chart-legend">
+      <span class="chart-dot"></span> {{
+        language_chart.legend.non_english_only
+      }}
+    </p>
   </figcaption>
   <div class="ly-resources-chart">
     <dl class="chart-rows">
-      {{ set data = language |> languages |> sort((a, b) => b.englishOnly - a.englishOnly) }}
+      {{
+        set data = language
+        |> languages
+        |> sort((a, b) => b.englishOnly - a.englishOnly)
+      }}
       <dt>{{ language_chart.groups.english }}</dt>
       <dd>
         <div class="chart-dots">
           {{ for item of data }}
-          {{ if item.englishBased }}
-          <span class="chart-dot {{ item.englishOnly ? "is-fill" : "is-empty" }}" tabindex="-1">
-            <span class="chart-dot-tooltip">
-            {{ item.languages.join(", ") }}
-            </span>
-          </span>
-          {{ /if }}
+            {{ if item.englishBased }}
+              <span
+                class='chart-dot {{ item.englishOnly ? "is-fill" : "is-empty" }}'
+                tabindex="-1"
+              >
+                <span class="chart-dot-tooltip">
+                  {{ item.languages.join(", ") }}
+                </span>
+              </span>
+            {{ /if }}
           {{ /for }}
         </div>
       </dd>
@@ -26,13 +41,16 @@
       <dd>
         <div class="chart-dots">
           {{ for item of data }}
-          {{ if !item.englishBased }}
-          <span class="chart-dot {{ item.englishOnly ? "is-fill" : "is-empty" }}" tabindex="-1">
-            <span class="chart-dot-tooltip">
-            {{ item.languages.join(", ") }}
-            </span>
-          </span>
-          {{ /if }}
+            {{ if !item.englishBased }}
+              <span
+                class='chart-dot {{ item.englishOnly ? "is-fill" : "is-empty" }}'
+                tabindex="-1"
+              >
+                <span class="chart-dot-tooltip">
+                  {{ item.languages.join(", ") }}
+                </span>
+              </span>
+            {{ /if }}
           {{ /for }}
         </div>
       </dd>
@@ -44,35 +62,45 @@
   <figcaption class="ly-resources-header">
     <h2>{{ chart.title }}</h2>
 
-    <p class="chart-legend"><span class="chart-dot is-fill"></span> {{ chart.legend.women }}</p>
-    <p class="chart-legend"><span class="chart-dot"></span> {{ chart.legend.men }}</p>
+    <p class="chart-legend">
+      <span class="chart-dot is-fill"></span> {{ chart.legend.women }}
+    </p>
+    <p class="chart-legend">
+      <span class="chart-dot"></span> {{ chart.legend.men }}
+    </p>
   </figcaption>
   <div class="ly-resources-chart">
     <dl class="chart-rows is-condensed">
       {{ for country, foundries of demographics |> demographics(lang) }}
-
-      <dt>{{ country }}</dt>
-      <dd>
-        <div class="chart-dots">
-          {{ for item of foundries.sort((a, b) => a.women ? -1 : 1) }}
-          {{ if item.url }}
-          <a href="{{ item.url }}" target="_blank" class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
-            <span class="chart-dot-tooltip">
-            {{ item.name }}
-            </span>
-          </a>
-          {{ else }}
-          <span class="chart-dot {{ item.women ? "is-fill" : "is-empty" }}" tabindex="-1">
-            <span class="chart-dot-tooltip">
-            {{ item.name }}
-            </span>
-          </span>
-          {{ /if }}
-          {{ /for }}
-        </div>
-      </dd>
+        <dt>{{ country }}</dt>
+        <dd>
+          <div class="chart-dots">
+            {{ for item of foundries.sort((a, b) => a.women ? -1 : 1) }}
+              {{ if item.url }}
+                <a
+                  href="{{ item.url }}"
+                  target="_blank"
+                  class='chart-dot {{ item.women ? "is-fill" : "is-empty" }}'
+                  tabindex="-1"
+                >
+                  <span class="chart-dot-tooltip">
+                    {{ item.name }}
+                  </span>
+                </a>
+              {{ else }}
+                <span
+                  class='chart-dot {{ item.women ? "is-fill" : "is-empty" }}'
+                  tabindex="-1"
+                >
+                  <span class="chart-dot-tooltip">
+                    {{ item.name }}
+                  </span>
+                </span>
+              {{ /if }}
+            {{ /for }}
+          </div>
+        </dd>
       {{ /for }}
-      <dt>
     </dl>
   </div>
 </figure>

@@ -1,0 +1,19 @@
+layout: layouts/about-us.vto
+title: Sobre nós
+id: about-us
+theme: light
+order: 5
+content: |
+  Font Licensing Mess é un proxecto de investigación independente co obxectivo de esclarecer un dos aspectos máis complexos e menos comprendidos da industria tipográfica actual: as licenzas tipográficas.
+people:
+  - img: /assets/img/equipo2.jpg
+    bio: |
+      María Ramos (Santa Comba, 1982) é deseñadora e investigadora independente afincada en Santiago de Compostela. Está graduada no Máster en Deseño de Tipografías pola Universidade de Reading e é socia cofundadora da fundición tipográfica galego-sueca [NM type](https://www.nmtype.com/). María publicou artigos sobre deseño e tipografía en diversos medios e impartiu numerosas conferencias en escolas de deseño e congresos profesionais. En 2021 participou como investigadora no [Estudo da Economía do Deseño en Galicia](https://estudodeseno.dag.gal/) e actualmente está involucrada no desenvolvemento do [Arquivo do Deseño Galego AR\DE](https://arde.gal/). O seu interese polas licenzas tipográficas xurdiu pola necesidade de entender as complexidades na distribución tipográfica, como creadora de tipografías e como usuaria en proxectos de deseño gráficos e editoriais.
+
+  - img: /assets/img/equipo.jpg
+    bio: |
+      Ana Moliz (Barcelona, 1980) é deseñadora gráfica e investigadora independente afincada en Córdoba. As súas áreas de especialización inclúen o deseño editorial e a tipografía. Licenciouse en Historia pola Universidade de Granada para posteriormente especializarse en deseño. Cursou dous másteres en La Gauss: un en Deseño Gráfico e Visual e outro en Deseño Editorial e Publicacións Dixitais. Actualmente, Ana traballa como directora de arte en Buenaventura Studio e leva máis de 10 anos impartindo clases de Deseño Visual e Tipografía en [La Gauss](https://www.gaussmultimedia.com/). Tamén é cofundadora de [Rayitas Azules](https://www.rayitasazules.com/), unha publicación dixital centrada no deseño editorial e a tipografía. Ademais, forma parte do equipo organizador do festival tipográfico [Málaga Type](https://malagatype.com/) e escribe unha columna semanal sobre tipografía para a revista de deseño [Gràffica](https://graffica.info/). A súa curiosidade natural e paixón pola tipografía levouna a participar activamente en proxectos como este, que lle permiten ampliar os seus coñecementos e habilidades.
+
+  - img: /assets/img/equipo3.jpg
+    bio: |
+      Óscar Otero (Tordoia, 1979) é un deseñador e desenvolvedor web afincado en Santiago de Compostela. Ao longo da súa carreira, combinou o traballo como deseñador en diversas axencias e startups con proxectos persoais como [letrag](http://letrag.com) (2004–2010), unha enciclopedia online sobre tipografía, ou [HA!](http://historia-arte.com) (2016–presente), proxecto cofundado xunto con Miguel Calvo e centrado na historia da arte. Tamén impartiu charlas sobre deseño dixital e tipografía, formando tanto a estudantes como a empresas. De 2016 a 2018 foi presidente da [Asociación Galega de Deseño](https://dag.gal/) e membro da xunta directiva durante 10 anos. Actualmente participa no grupo de traballo do Arquivo do Deseño Galego [AR\DE](https://arde.gal/). Como desenvolvedor, é moi activo na comunidade de software libre, creando proxectos como [lume](https://lume.land/), un framework para crear sitios web que, “casualmente”, foi utilizado para crear este sitio web.

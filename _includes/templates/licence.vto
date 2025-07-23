@@ -70,7 +70,9 @@
     <div class="ly-resources-chart">
       <dl class="chart-rows is-condensed">
         {{ set tiers = it[chart.key] |> tiers }}
-        {{ set max = tiers.reduce((max, curr) => Math.max(max, curr.count), 0) }}
+        {{
+          set max = tiers.reduce((max, curr) => Math.max(max, curr.count), 0)
+        }}
 
         {{ for { value, count } of tiers }}
           <dt>{{ value |> format(chart.units) }}</dt>

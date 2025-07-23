@@ -12,7 +12,7 @@
         </button>
         <ol>
           {{
-            for item of nav.menu(lang === "en" ? "/" : "/es", `lang=${lang} menu!=false`, "order=asc suborder=asc").children
+            for item of nav.menu(lang === "en" ? "/" : `/${lang}`, `lang=${lang} menu!=false`, "order=asc suborder=asc").children
           }}
             <li>
               <a

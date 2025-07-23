@@ -1,0 +1,22 @@
+title: Recursos
+id: resources
+theme: dark
+order: 4
+layout: layouts/resources.vto
+
+resources:
+  - title: Mulleres que lideran fundicións
+    description: Directorio de fundicións lideradas por mulleres, creado para mellorar a súa presenza e visibilidade na esfera pública.
+    type: url
+    url: "https://www.notion.so/1d69824c60a180c1b4dbd7e63685f971?v=1d69824c60a18196a279000c0e64b95f&pvs=4"
+  - title: Mapa de fundicións independentes
+    description: Un mapamundi onde podermos localizar fundicións tipográficas independentes, definir patróns por rexións e identificar as zonas con menor visibilidade.
+    type: fontlicensingmess
+    url: "https://www.google.com/maps/d/edit?hl=es&mid=1br9CtuDyDHGh7I0HIjcrVp6nmp3jgAo&ll=3.4954369849734235%2C0&z=2"
+  - title: Outras fontes e publicacións
+    description: Colección de recursos externos, incluíndo ligazóns a artigos, enquisas, consellos legais e outros contidos relacionados con este tema.
+    type: url
+    url: "https://www.notion.so/1d69824c60a180e2b07be5cd9bf16de0?v=1d69824c60a18116bdfa000c9277c64b&pvs=4"
+
+content: |
+  Durante o proceso de investigación, desenvolvemos este material addicional que compartimos. Pensamos que pode ser de interese para a nosa audiencia e un recurso útil para outras iniciativas.

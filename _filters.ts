@@ -11,68 +11,72 @@ interface Foundry {
   women: boolean;
 }
 
-const translatedLicenses: Record<string, string> = {
-  Desktop: "Escritorio",
-  Web: "Web",
-  App: "Aplicaciones",
-  ePub: "ePub",
-  Server: "Servidor",
-  Broadcasting: "Retransmisión",
-  "Social Media": "Redes Sociales",
-  Corporate: "Corporativa",
-  Logotype: "Logotipo",
-  Video: "Vídeo",
-  "Digital Ads": "Publicidad Digital",
-  "Non Commercial": "No Comercial",
-  "Third Party": "Terceros",
-  "OEM": "OEM",
+const translatedLicenses: Record<string, [string, string, string]> = {
+  Desktop: ["Desktop", "Escritorio", "Escritorio"],
+  Web: ["Web", "Web", "Web"],
+  App: ["App", "Aplicaciones", "Aplicacións"],
+  ePub: ["ePub", "ePub", "ePub"],
+  Server: ["Server", "Servidor", "Servidor"],
+  Broadcasting: ["Broadcasting", "Retransmisión", "Retransmisión"],
+  "Social Media": ["Social Media", "Redes Sociales", "Redes Sociais"],
+  Corporate: ["Corporate", "Corporativa", "Corporativa"],
+  Logotype: ["Logotype", "Logotipo", "Logotipo"],
+  Video: ["Video", "Vídeo", "Vídeo"],
+  "Digital Ads": ["Digital Ads", "Publicidad Digital", "Publicidade Dixital"],
+  "Non Commercial": ["Non Commercial", "No Comercial", "Non Comercial"],
+  "Third Party": ["Third Party", "Terceros", "Terceiros"],
+  "OEM": ["OEM", "OEM", "OEM"],
 };
 
-const translatedCountries: Record<string, string> = {
-  Argentina: "Argentina",
-  Australia: "Australia",
-  Austria: "Austria",
-  Belgium: "Bélgica",
-  Brazil: "Brasil",
-  Bulgaria: "Bulgaria",
-  Canada: "Canadá",
-  Chile: "Chile",
-  Colombia: "Colombia",
-  "Costa Rica": "Costa Rica",
-  Croatia: "Croacia",
-  Czechia: "Chequia",
-  Denmark: "Dinamarca",
-  Estonia: "Estonia",
-  Finland: "Finlandia",
-  France: "Francia",
-  Germany: "Alemania",
-  Greece: "Grecia",
-  Iceland: "Islandia",
-  India: "India",
-  Indonesia: "Indonesia",
-  Ireland: "Irlanda",
-  Italy: "Italia",
-  Japan: "Japón",
-  Kazakhstan: "Kazajstán",
-  Mexico: "México",
-  "New Zealand": "Nueva Zelanda",
-  Norway: "Noruega",
-  Poland: "Polonia",
-  Portugal: "Portugal",
-  Romania: "Rumanía",
-  Serbia: "Serbia",
-  Slovakia: "Eslovaquia",
-  Slovenia: "Eslovenia",
-  Spain: "España",
-  Sweden: "Suecia",
-  Switzerland: "Suíza",
-  "The Netherlands": "Países Bajos",
-  Turkey: "Turquía",
-  Ukraine: "Ucrania",
-  "United Arab Emirates": "Emiratos Árabes Unidos",
-  "United Kingdom": "Reino Unido",
-  Uruguay: "Uruguay",
-  USA: "Estados Unidos",
+const translatedCountries: Record<string, [string, string, string]> = {
+  Argentina: ["Argentina", "Argentina", "Arxentina"],
+  Australia: ["Australia", "Australia", "Australia"],
+  Austria: ["Austria", "Austria", "Austria"],
+  Belgium: ["Belgium", "Bélgica", "Bélxica"],
+  Brazil: ["Brazil", "Brasil", "Brasil"],
+  Bulgaria: ["Bulgaria", "Bulgaria", "Bulgaria"],
+  Canada: ["Canada", "Canadá", "Canadá"],
+  Chile: ["Chile", "Chile", "Chile"],
+  Colombia: ["Colombia", "Colombia", "Colombia"],
+  "Costa Rica": ["Costa Rica", "Costa Rica", "Costa Rica"],
+  Croatia: ["Croatia", "Croacia", "Croacia"],
+  Czechia: ["Czechia", "Chequia", "Chequia"],
+  Denmark: ["Denmark", "Dinamarca", "Dinamarca"],
+  Estonia: ["Estonia", "Estonia", "Estonia"],
+  Finland: ["Finland", "Finlandia", "Finlandia"],
+  France: ["France", "Francia", "Francia"],
+  Germany: ["Germany", "Alemania", "Alemaña"],
+  Greece: ["Greece", "Grecia", "Grecia"],
+  Iceland: ["Iceland", "Islandia", "Islandia"],
+  India: ["India", "India", "India"],
+  Indonesia: ["Indonesia", "Indonesia", "Indonesia"],
+  Ireland: ["Ireland", "Irlanda", "Irlanda"],
+  Italy: ["Italy", "Italia", "Italia"],
+  Japan: ["Japan", "Japón", "Xapón"],
+  Kazakhstan: ["Kazakhstan", "Kazajstán", "Cazaquistán"],
+  Mexico: ["Mexico", "México", "México"],
+  "New Zealand": ["Nueva Zelanda", "Nueva Zelanda", "Nova Zelanda"],
+  Norway: ["Norway", "Noruega", "Noruega"],
+  Poland: ["Poland", "Polonia", "Polonia"],
+  Portugal: ["Portugal", "Portugal", "Portugal"],
+  Romania: ["Romania", "Rumanía", "Romanía"],
+  Serbia: ["Serbia", "Serbia", "Serbia"],
+  Slovakia: ["Slovakia", "Eslovaquia", "Eslovaquia"],
+  Slovenia: ["Slovenia", "Eslovenia", "Eslovenia"],
+  Spain: ["Spain", "España", "España"],
+  Sweden: ["Sweden", "Suecia", "Suecia"],
+  Switzerland: ["Switzerland", "Suíza", "Suíza"],
+  "The Netherlands": ["The Netherlands", "Países Bajos", "Países Baixos"],
+  Turkey: ["Turkey", "Turquía", "Turquía"],
+  Ukraine: ["Ukraine", "Ucrania", "Ucraína"],
+  "United Arab Emirates": [
+    "United Arab Emirates",
+    "Emiratos Árabes Unidos",
+    "Emiratos Árabes Unidos",
+  ],
+  "United Kingdom": ["United Kingdom", "Reino Unido", "Reino Unido"],
+  Uruguay: ["Uruguay", "Uruguay", "Uruguai"],
+  USA: ["USA", "Estados Unidos", "Estados Unidos"],
 };
 
 export function convertLicenses(
@@ -80,10 +84,11 @@ export function convertLicenses(
 ): any {
   // @ts-ignore this.data is not defined
   const lang = this.data?.lang as string;
+  const key = langKey(lang);
   return licenses.map(({ Tipo, Recuento }) => {
     return {
       Recuento,
-      Tipo: lang === "es" ? translatedLicenses[Tipo] ?? Tipo : Tipo,
+      Tipo: translatedLicenses[Tipo][key],
     };
   }).sort((a, b) => b.Recuento - a.Recuento);
 }
@@ -94,6 +99,7 @@ export function convertFoundries(
   const foundries: Foundry[] = [];
   // @ts-ignore this.data is not defined
   const lang = this.data?.lang as string;
+  const key = langKey(lang);
 
   for (const foundry of content) {
     const countries = foundry["Base Country"].split(",").map((c) => c.trim());
@@ -101,9 +107,7 @@ export function convertFoundries(
       foundries.push({
         name: foundry.Nombre,
         url: foundry["URL Licensing"] || undefined,
-        country: lang === "es"
-          ? translatedCountries[country] ?? country
-          : country,
+        country: translatedCountries[country][key],
         women: foundry["Run by women"] === "Yes",
       });
     }
@@ -221,6 +225,7 @@ export function convertLanguages(content: LanguageCSV[]): Language[] {
 
   // @ts-ignore this.data is not defined
   const lang = this.data?.lang as string;
+  const key = langKey(lang);
 
   for (const item of content) {
     const language: Language = {
@@ -230,9 +235,8 @@ export function convertLanguages(content: LanguageCSV[]): Language[] {
     };
 
     const langs = new Set(item.Idiomas.split(",").map((l) => l.trim()));
-    const index = lang === "en" ? 0 : 1;
     language.languages = Array.from(langs).map((lang) =>
-      translatedLanguages[lang]?.[index] ?? lang
+      translatedLanguages[lang]?.[key] ?? lang
     );
     language.englishOnly = langs.size === 1 && langs.has("Inglés");
     languages.push(language);
@@ -241,16 +245,16 @@ export function convertLanguages(content: LanguageCSV[]): Language[] {
   return languages;
 }
 
-const translatedLanguages: Record<string, [string, string]> = {
-  "Inglés": ["English", "Inglés"],
-  "Ruso": ["Russian", "Ruso"],
-  "Alemán": ["German", "Alemán"],
-  "Portugués": ["Portuguese", "Portugués"],
-  "Francés": ["French", "Francés"],
-  "Japonés": ["Japanese", "Japonés"],
-  "Árabe": ["Arabian", "Árabe"],
-  "Eslovaco": ["Slovak", "Eslovaco"],
-  "Español": ["Spanish", "Español"],
+const translatedLanguages: Record<string, [string, string, string]> = {
+  "Inglés": ["English", "Inglés", "Inglés"],
+  "Ruso": ["Russian", "Ruso", "Ruso"],
+  "Alemán": ["German", "Alemán", "Alemán"],
+  "Portugués": ["Portuguese", "Portugués", "Portugués"],
+  "Francés": ["French", "Francés", "Francés"],
+  "Japonés": ["Japanese", "Japonés", "Xaponés"],
+  "Árabe": ["Arabian", "Árabe", "Árabe"],
+  "Eslovaco": ["Slovak", "Eslovaco", "Eslovaco"],
+  "Español": ["Spanish", "Español", "Español"],
 };
 
 interface TiersCSV {
@@ -286,14 +290,14 @@ const enFormatNumber = new Intl.NumberFormat("en-US", {
   style: "decimal",
   minimumFractionDigits: 0,
   maximumFractionDigits: 0,
-  notation: "compact"
+  notation: "compact",
 });
 
 const esFormatNumber = new Intl.NumberFormat("es-ES", {
   style: "decimal",
   minimumFractionDigits: 0,
   maximumFractionDigits: 0,
-  notation: "compact"
+  notation: "compact",
 });
 
 export function formatNumber(number: number, unit: [string, string]): string {
@@ -301,14 +305,26 @@ export function formatNumber(number: number, unit: [string, string]): string {
   const lang = this.data?.lang as string;
 
   if (number === Infinity) {
-    return lang === "es" ? "Ilimitado" : "Unlimited";
+    return lang === "en" ? "Unlimited" : "Ilimitado";
   }
 
-  const formattedNumber = lang === "es"
-    ? esFormatNumber.format(number)
-    : enFormatNumber.format(number);
-  
+  const formattedNumber = lang === "en"
+    ? enFormatNumber.format(number)
+    : esFormatNumber.format(number);
+
   const suffix = number === 1 ? unit[0] : unit[1];
 
   return `${formattedNumber} ${suffix ?? ""}`.trim();
+}
+
+function langKey(lang: string): number {
+  switch (lang) {
+    case "en":
+      return 0;
+    case "es":
+      return 1;
+    case "gl":
+      return 2;
+  }
+  throw new Error(`Unknown language: ${lang}`);
 }

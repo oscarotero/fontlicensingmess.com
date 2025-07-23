@@ -5,21 +5,26 @@ layout: layouts/base.vto
 {{ include "templates/menu.vto" }}
 
 <main class="ly-page-hero transition-content">
-  <h1 style="view-transition-name: t-{{ id }}" class="ly-page-header ty-header">{{ order }}. {{ title }}</h1>
+  <h1 class="ly-page-header ty-header">{{ order }}. {{ title }}</h1>
   <div class="ly-page-content ty-text">{{ content.first |> md }}</div>
   <div class="ly-page-content ty-text">{{ content.more |> md }}</div>
 </main>
 
 {{ if extra }}
-<a href="#more" class="ly-page-more more">
-  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle class="more-circle" cx="50" cy="50" r="48.5"/>
-    <path d="M50 29V68"/>
-    <path d="M69.2637 49.3862L50.0137 68.7006L30.7637 49.3862"/>
-  </svg>
-</a>
-{{ include `templates/${extra}.vto` }}
-
+  <a href="#more" class="ly-page-more more">
+    <svg
+      width="100"
+      height="100"
+      viewBox="0 0 100 100"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle class="more-circle" cx="50" cy="50" r="48.5" />
+      <path d="M50 29V68" />
+      <path d="M69.2637 49.3862L50.0137 68.7006L30.7637 49.3862" />
+    </svg>
+  </a>
+  {{ include `templates/${extra}.vto` }}
 {{ /if }}
 
 {{ include "templates/navigation.vto" }}

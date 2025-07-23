@@ -5,17 +5,16 @@
   <div class="ly-resources-chart">
     <dl class="chart-rows">
       {{ for row of licences |> licenses }}
-      <dt>{{ row.Tipo }}</dt>
-      <dd>
-        <div class="chart-dots">
-        {{ for item of row.Recuento }}
-          <span class="chart-dot is-fill"></span>
-        {{ /for }}
-        </div>
-        <span class="chart-value">{{ row.Recuento }}</span>
-      </dd>
+        <dt>{{ row.Tipo }}</dt>
+        <dd>
+          <div class="chart-dots">
+            {{ for item of row.Recuento }}
+              <span class="chart-dot is-fill"></span>
+            {{ /for }}
+          </div>
+          <span class="chart-value">{{ row.Recuento }}</span>
+        </dd>
       {{ /for }}
-      <dt>
     </dl>
   </div>
 </figure>

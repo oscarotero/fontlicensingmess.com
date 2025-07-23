@@ -1,0 +1,7 @@
+layout: layouts/page.vto
+lang: gl
+language_name: Galego
+metas:
+  title: "=title"
+  description: Investigación independente sobre licencias tipográficas
+  icon: "/apple-touch-icon.png"

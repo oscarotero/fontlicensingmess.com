@@ -26,7 +26,7 @@ site.use(favicon({
 }));
 site.use(multilanguage({
   defaultLanguage: "en",
-  languages: ["en", "es"],
+  languages: ["en", "es", "gl"],
 }));
 
 site.add("assets");

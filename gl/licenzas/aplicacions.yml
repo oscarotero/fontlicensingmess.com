@@ -1,0 +1,27 @@
+title: Aplicacións
+id: licences-app
+theme: light
+extra: licence
+order: 3c
+content:
+  first: |
+    Esta licenza permite o uso de fontes dixitais en aplicacións para mostrar o contido de maneira efectiva. Na maioría dos casos, é necesario revisar a EULA para determinar se a licenza inclúe tamén as aplicacións de escritorio ou está restrinxida ao dispositivos móbiles. As fontes están incrustadas na aplicación e son cargadas na interface.
+  more: |
+    A licenza de aplicacións ás veces ofrécese como App/ePub ou App/Videoxogo. As fundicións que teñen unha licenza separada para videoxogos, observamos que as métricas e prezos coinciden coa de aplicacións, polo que as engadimos no mesmo bloque.
+
+text: |
+  Hai unha unidade de medida predominante: o número de aplicacións que incluirán a fonte. Usamos o termo xeral «caso de uso», xa que tamén é apropiado para outras licenzas. Existen outras métricas relacionadas con quen ve/lee/interactúa coa aplicación (descargas e usuarios mensuais), pero neste caso a porcentaxe na mostra é menor (19%) que nas licenzas web.
+
+  Tamén identificamos cinco fundicións que empregan o número de anos como única métrica. A mostra inclúe máis licenzas non perpetuas para aplicacións que para outros usos, con sete que cobran unha subscrición anual e oito que impoñen límites baseados no número de anos.
+
+  O custo da licenza de fontes para aplicacións adoita ser superior ao das licenzas web e de escritorio, ás veces duplicando ou mesmo multiplicando por dez. Porén, algunhas fundicións manteñen a mesma tarifa básica. O resultado é unha ampla variedade, aínda que a maioría das fundicións manteñen os prezos por debaixo de 250€ para unha fonte de texto.
+
+chart:
+  title: Unidades de medida en licenzas de aplicacións
+  key: app
+
+chart_tiers:
+
+pricing:
+  title: Prezos en licenzas de aplicacións
+  key: app-pricing

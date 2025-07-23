@@ -1,0 +1,28 @@
+title: ePub
+id: licences-epub
+theme: light
+extra: licence
+order: 3d
+content:
+  first: |
+    This is the licence for using fonts in electronic books (eBooks), typically distributed as ePub, .mobi, and similar formats. The font is embedded in digital publications and displayed on devices such as e-readers, tablets, and reading apps for smartphones and computers.
+  more: |
+    Almost a third of the sampled licences for ePub are based on the number of ‘use cases’ (titles). Only three licences define their tiers by number of years. Other general metrics (users, workstations, employees) relate to font packages that combine various uses. We’ve also found three foundries that charge an annual fee for use in electronic publications.
+
+text: |
+  Many include font usage in electronic books in their desktop licence, as it is considered similar to font embedding in PDF documents. The price range for ePub licences is still wide, and although the sample size is smaller than that of apps, the trend suggests a lower cost.
+
+chart:
+  title: Popular measuring units in ePub licences
+  key: ePub
+
+chart_tiers:
+  - title: Most popular tiers for Number of use cases
+    key: epub-tiers
+    units: [use case, use cases]
+    description: |
+      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+
+pricing:
+  title: Pricing in ePub licences
+  key: ePub-pricing

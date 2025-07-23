@@ -1,0 +1,25 @@
+title: Redes sociais
+id: licences-social-media
+theme: light
+extra: licence
+order: 3g
+content:
+  first: |
+    Unha licenza de redes sociais permite usar a fonte dixital en contidos creados e publicados en plataformas de redes sociais, como Instagram, Facebook, TikTok e máis.
+  more: |
+    A fonte pode empregarse en formatos como imaxes estáticas ou vídeos, aínda que algunhas fundicións usan unha licenza separada para contido en vídeo. Para publicidade ou contido de pago, algunhas fundicións ofrecen outra licenza medida polo número de impresións.
+
+text: |
+  Como noutros casos, este uso específico adoita estar incluído nas licenzas básicas ou integrado nun paquete de licenzas. Aínda así, algunhas fundicións seguen unha estratexia diferente, dividiendo a licenza en usos máis específicos como redes sociais, logotipos ou publicidade dixital.
+
+  Os tramos de prezos calcúlanse principalmente polo número de seguidores ou subscritores en todas as canles de redes sociais, comezando en 10.000. O prezo mediano para unha fonte de texto —nunha mostra de 18 fundicións— é de 66€; un pouco máis alto pero non moi afastado do prezo medio das licenzas de escritorio e web.
+
+chart:
+  title: Unidade de medida en licenzas de redes sociais
+  key: social-media
+
+chart_tiers:
+
+pricing:
+  title: Prezos en licenzas de redes sociais
+  key: social-media-pricing

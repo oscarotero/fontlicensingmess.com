@@ -59,7 +59,7 @@
   }
   svg {
     grid-column: 1;
-    grid-row: span 2;
+    grid-row: span 3;
     rotate: -90deg;
   }
 

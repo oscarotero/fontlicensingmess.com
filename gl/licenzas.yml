@@ -1,0 +1,38 @@
+title: Licenzas
+id: licences
+theme: dark
+order: 3
+content:
+  first: |
+    A gráficas que fixemos ilustran os tipos de licenzas máis comúns, as unidades de medida do uso das fontes e os prezos base de cada categoría, destacando patróns e diferenzas entre diferentes estratexias comerciais. A continuación, presentamos unha lista co número de entradas analizadas por cada tipo de licenza.
+  more: |
+    Existen diferentes modelos no mercado; algunhas fundicións dividen as súas licenzas nunha ampla gama de opcións, mentres que outras simplifican o proceso permitindo múltiples usos nas súas licenzas básicas. As publicacións electrónicas (ePub) e as redes sociais, por exemplo, adoitan estar incluídas nas licenzas desktop.
+
+    É destacable que o 22% das fundicións da mostra ofrecen paquetes de licenzas que combinan varios usos. Os seus datos foron incluídos en todas as categorías especificadas no seu paquete. As licenzas menos comúns, como servidor, broadcasting ou terceiros, adoitan ter un orzamento a medida, e non están dispoñibles para venda directa.
+
+extra: licences
+chart:
+  title: Número de fundicións por licenza
+  data:
+    - name: Desktop
+      total: 50
+    - name: Web
+      total: 38
+    - name: App
+      total: 32
+    - name: ePub
+      total: 20
+    - name: Broadcasting
+      total: 14
+    - name: Server
+      total: 10
+    - name: Corporate
+      total: 8
+    - name: Logotype
+      total: 6
+    - name: Social Media
+      total: 3
+    - name: Advertising
+      total: 1
+    - name: Digital Ads
+      total: 1

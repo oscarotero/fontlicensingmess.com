@@ -1,0 +1,21 @@
+title: Corporativa
+id: licences-corporate
+theme: light
+extra: licence
+order: 3h
+content:
+  first: |
+    Esta licenza está pensada para usar as fontes en múltiples formatos e medios. É para empresas, marcas e organizacións que queren cubrir unha variedade de usos, dende documentos impresos ata sitios web, aplicacións ou publicidade.
+  more: |
+    A diferenza doutras licenzas, normalmente permite dispositivos e usuarios ilimitados dentro da organización. Algunhas establecen o prezo segundo o número de empregados, e outras non especifican ningún límite no proceso de compra, establecendo as restricións nas súas EULAs.
+
+text: |
+  Mentres que as licenzas máis comúns (Desktop, Web, App, ePub) teñen prezos similares, as licenzas menos habituais amosan diferenzas significativas. A licenza corporativa presenta os prezos máis altos da mostra, xa que cobre un uso amplo das fontes. O custo medio é de 870€ para unha fonte de texto no rango máis baixo. A mostra neste caso é pequena (13), e unha das fundicións non foi incluída no gráfico de prezos porque a tarifa (8.900€) desvíase demasiado das demais.
+
+chart:
+  title: Unidades de medida en licenzas corporativas
+  key: corporate
+
+pricing:
+  title: Prezos en licenzas corporativas
+  key: corporate-pricing

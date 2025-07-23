@@ -30,7 +30,7 @@ chart_tiers:
     key: app-tiers-monthlyusers
     units: [user, users]
     description: |
-      Three type foundries include an option for an unlimited number of monthly users. Counting all the different metrics for app use, a total of 27 offer an unlimited option. 
+      Three type foundries include an option for an unlimited number of monthly users. Counting all the different metrics for app use, a total of 27 offer an unlimited option.
   - title: Most popular tiers for Number of Downloads
     key: app-tiers-downloads
     units: [download, downloads]
