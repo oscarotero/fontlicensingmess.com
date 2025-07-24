@@ -17,7 +17,7 @@ chart:
   key: server
 
 chart_tiers:
-  - title: Límites comunes en Número de servidores
+  - title: Límites habituales en Número de servidores
     key: server-tiers
     units: [servidor, servidores]
     description: |
