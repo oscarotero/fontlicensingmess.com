@@ -17,6 +17,11 @@ chart:
   key: server
 
 chart_tiers:
+  - title: Límites más comunes en Número de servidores
+    key: server-tiers
+    units: [servidor, servidores]
+    description: |
+      El número a la derecha indica cuantas fundiciones ofrecen ese límite de uso en particular. Estos son los 10 límites más comunes en nuestra muestra.
 
 pricing:
   title: Precios en licencias de servidor
