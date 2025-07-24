@@ -17,7 +17,9 @@ chart:
   key: ePub
 
 chart_tiers:
-
-pricing:
-  title: Precios en licencias ePub
+  - title: Límites habituales para ePubs
+    key: epub-tiers
+    units: [ePub, ePubs]
+    description: |
+      El número a la derecha indica cuantas fundiciones ofrecen ese límite en particular. Mostramos los 10 límites más comunes en la muestra. 
   key: ePub-pricing
