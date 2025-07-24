@@ -17,9 +17,9 @@ chart:
   key: ePub
 
 chart_tiers:
-  - title: Popular tiers for Number of Use Cases
+  - title: Popular tiers for Number of ePubs
     key: epub-tiers
-    units: [use case, use cases]
+    units: [ePub, ePubs]
     description: |
       The number on the right indicates the amount of foundries that offer that particular tier. We show the 10 most popular tiers in the sample.
 
