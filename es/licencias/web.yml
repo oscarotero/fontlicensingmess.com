@@ -19,6 +19,16 @@ chart:
   key: web
 
 chart_tiers:
+  - title: Límites habituales en Número de visitantes web
+    key: web-tiers-visitors
+    units: [visitante, visitantes]
+    description: |
+      El número a la derecha indica cuantas fundiciones ofrecen ese límite en particular. Mostramos los 10 límites más frecuentes en la muestra.
+  - title: Límites habituales en Número de páginas vistas
+    key: web-tiers-pageviews
+    units: [página vista, páginas vistas]
+    description: |
+      39 fundiciones tipográficas, contabilizando las diferentes unidades de medida de uso web, type foundries, ofrecen un opción de uso ilimitado para web.
 
 pricing:
   title: Precios en licencias web
