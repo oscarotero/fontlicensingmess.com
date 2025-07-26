@@ -22,4 +22,7 @@ chart_tiers:
     units: [ePub, ePubs]
     description: |
       El número a la derecha indica cuantas fundiciones ofrecen ese límite en particular. Mostramos los 10 límites más comunes en la muestra. 
+
+pricing:
+  title: Precios en licencias ePub
   key: ePub-pricing
