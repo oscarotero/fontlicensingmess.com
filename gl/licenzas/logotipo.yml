@@ -9,12 +9,12 @@ content:
   more: |
     Este uso adoita estar incluído nas licenzas de escritorio. As poucas fundicións que ofrecen unha licenza de logotipo (13) miden o tamaño da compañía polo número de empregados ou solicitan «casos de uso» (número de logotipos), diferenciando ás veces entre logotipo e marcas rexistradas.
 
-    O prezo para unha soa fonte de texto vai dende os 29€ máis baixos ata máis de 400€.
+    O prezo para unha soa fonte de texto vai desde os 29 €, o máis baixo, ata máis de 400 €.
 
 chart:
-  title: Unidades de medida en licenzas de logotipo
+  title: Unidades de medida das licenzas de logotipo
   key: logotype
 
 pricing:
-  title: Prezos en licenzas de logotipo
+  title: Prezos das licenzas de logotipo
   key: logotype-pricing

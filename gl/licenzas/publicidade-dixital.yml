@@ -1,0 +1,24 @@
+title: Digital ads
+id: licences-digital-ads
+theme: light
+extra: licence
+order: 3j
+content:
+  first: |
+    Esta licenza permite o uso das fontes dixitais en anuncios publicados en sitios web, aplicacións, ou calquera outra plataforma conectada á Internet. Inclúe báners, anuncios en vídeo e outros formatos publicitarios.
+
+  more: | 
+    A maioría das métricas de licenzas para uso online (web, publicidade dixital, redes sociais) miden a audiencia, usando termos diferentes en cada caso. A unidade de medida predominante nos anuncios dixitais é o número de impresións, que poden contabilizarse por mes ou coa suma total sen prazo temporal.
+  
+
+text: |
+  Esta é a mostra máis pequena da nosa base de datos (11). Excluíndo as dúas fundicións que cobran unha tarifa anual, o custo medio para unha tipografía de texto é 65 €, semellante ao custo en redes sociais. Hai un caso excepcional que cobra máis de 2.000 € por publicidade dixital e redes sociais, aínda que neste caso o uso é ilimitado para cada marca. 
+
+
+chart:
+  title: Unidades de medida para licenzas de publicidade dixital
+  key: digital-ads
+
+pricing:
+  title: Prezos de licenzas de publicidade dixital
+  key: digital-ads-pricing

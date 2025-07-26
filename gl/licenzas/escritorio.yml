@@ -5,19 +5,19 @@ extra: licence
 order: 3a
 content:
   first: |
-    Esta licenza concede o dereito a usar a fonte dixital en aplicacións de escritorio, como programas de deseño gráfico ou procesadores de texto. A fonte pode instalarse localmente nun ordenador ou noutro dispositivo electrónico, estando dispoñible para calquera software que soporte o formato da fonte. Escritorio (Desktop) é o termo máis utilizado para este tipo de licenza, pero tamén se pode atopar baixo outros títulos como Impresión, Básica, Offline ou Traballo creativo.
+    Esta licenza concede o dereito a usar a fonte dixital en aplicacións de escritorio, como programas de deseño gráfico ou procesadores de texto. A fonte pode instalarse localmente nun computador ou noutro dispositivo electrónico, e está dispoñible para calquera software que soporte o formato da fonte. Escritorio (Desktop) é o termo máis utilizado para este tipo de licenza, aínda que tamén se pode encontrar so outros títulos como Impresión, Básica, Offline ou Traballo Creativo.
   more: |
     Un dos factores que fan este tema especialmente complexo é a variedade de criterios para definir o uso das fontes. As licenzas ofrécense a diferentes prezos segundo unidades de medida específicas. Os seus valores marcan o alcance e custo da licenza, delimitando restricións de uso e definindo escalas de prezos. A licenza de Escritorio é a que ten maior consenso respecto á medición do uso das fontes. Só atopamos 3 métricas diferentes, todas relacionadas co número de posibles usuarios da fonte.
 
 text: |
-  O rango de prezos para unha fonte de texto única en licenzas de escritorio varía entre 8€ e 200€, cun valor medio arredor dos 50€. Todos os prezos da mostra están expresados en euros, e cando foi necesario facer a conversión da moeda, utilizouse o sitio web [Xe](https://www.xe.com/).
+  O rango de prezos para unha fonte de texto única nas licenzas de escritorio varía entre 8 € e 200 €, cun valor medio arredor dos 50 €. Todos os prezos da mostra están expresados en euros, e cando foi necesario facer a conversión da moeda, utilizouse o sitio web [Xe](https://www.xe.com/).
 
 chart:
-  title: Unidades de medida en licenzas de escritorio
+  title: Unidades de medida das licenzas de escritorio
   key: desktop
 
 chart_tiers:
 
 pricing:
-  title: Prezos en licenzas de escritorio
+  title: Prezos das licenzas de escritorio
   key: desktop-pricing

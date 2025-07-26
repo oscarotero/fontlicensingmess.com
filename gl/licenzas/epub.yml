@@ -5,23 +5,25 @@ extra: licence
 order: 3d
 content:
   first: |
-    This is the licence for using fonts in electronic books (eBooks), typically distributed as ePub, .mobi, and similar formats. The font is embedded in digital publications and displayed on devices such as e-readers, tablets, and reading apps for smartphones and computers.
+    Esta licenza permite o uso de fontes dixitais en libros electrónicos (eBooks), xeralmente distribuídos en formato ePub, .mobi e formatos similares. A fonte incrústase en publicacións dixitais que serán lidas en dispositivos como lectores electrónicos, tabletas e aplicacións de lectura para teléfonos móbiles e computadores. 
+   
   more: |
-    Almost a third of the sampled licences for ePub are based on the number of ‘use cases’ (titles). Only three licences define their tiers by number of years. Other general metrics (users, workstations, employees) relate to font packages that combine various uses. We’ve also found three foundries that charge an annual fee for use in electronic publications.
+    Case unha terceira parte das licenzas analizadas para ePub miden o número de «casos de uso» (títulos). Só tres determinan o uso por número de anos. Outras métricas xerais (usuarias, postos de traballo, persoas empregadas) fan parte de paquetes de licenzas combinadas. Encontramos tamén tres exemplos de fundicións que cobran unha subscrición polo uso en publicacións electrónicas.
 
 text: |
-  Many include font usage in electronic books in their desktop licence, as it is considered similar to font embedding in PDF documents. The price range for ePub licences is still wide, and although the sample size is smaller than that of apps, the trend suggests a lower cost.
+  En moitos casos, o uso dunha fonte en libros electrónicos está incluído nas licenzas de escritorio, posto que se considera similar á incrustación en documentos PDF. O rango de prezos para ePub continúa sendo amplo e, aínda que a mostra é máis pequena que a de aplicacións, a tendencia é que o custo sexa menor. 
+
 
 chart:
-  title: Popular measuring units in ePub licences
+  title: Unidades de medida das licencias ePub
   key: ePub
 
 chart_tiers:
-  - title: Most popular tiers for Number of use cases
+  - title: Límites habituais para ePubs
     key: epub-tiers
-    units: [use case, use cases]
+    units: [ePub, ePubs]
     description: |
-      The number on the right indicates the amount of foundries that offer that particular tier. We only show the 10 most popular tiers in the sample.
+     O número á dereita indica cantas fundicións ofrecen ese límite en particular. Mostramos os 10 límites máis comúns na mostra.
 
 pricing:
   title: Pricing in ePub licences

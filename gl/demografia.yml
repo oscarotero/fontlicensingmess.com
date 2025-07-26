@@ -4,16 +4,16 @@ theme: light
 order: 2
 content:
   first: |
-    A mostra desta investigación está baseada nos seguintes criterios: independencia, claridade, representatividade e accesibilidade da información legal. Inclúe 171 fundicións e profesionais de 44 países. Todas as webs consultadas ofrecen licenzas comerciais en inglés ou español. As fontes gratuitas ou de código aberto non están incluídas na análise.
+    A mostra desta investigación está baseada nos seguintes criterios: independencia, claridade, representatividade e accesibilidade da información legal. Inclúe 171 fundicións e profesionais de 44 países. Todas as webs consultadas ofrecen licenzas comerciais en inglés ou español. As fontes gratuítas ou de código aberto non están incluídas na análise.
   more: |
-    Na mostra exclúense tamén as plataformas de distribución, poñendo o foco na análise dos termos proporcionados directamente polos creadores das fontes. Os datos proceden da información dispoñible publicamente nas webs das fundicións entre xullo de 2023 e abril de 2025.
+    Na mostra exclúense tamén as plataformas de distribución, e ponse o foco na análise dos termos proporcionados directamente polos creadores das fontes. Os datos proceden da información dispoñible publicamente nas webs das fundicións entre xullo de 2023 e abril de 2025.
 extra: demographics
 
 chart:
   title: Número de fundicións por país
   legend:
-    women: Mulleres en postos de liderazgo
-    men: Sen mulleres en postos de liderazgo
+    women: Mulleres en postos de liderado
+    men: Sen mulleres en postos de liderado
 
 language_chart:
   title: Fundicións por idioma
