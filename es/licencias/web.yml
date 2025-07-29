@@ -28,7 +28,7 @@ chart_tiers:
     key: web-tiers-pageviews
     units: [página vista, páginas vistas]
     description: |
-      39 fundiciones tipográficas, contabilizando las diferentes unidades de medida de uso web, type foundries, ofrecen un opción de uso ilimitado para web.
+      39 fundiciones tipográficas, contabilizando las diferentes unidades de medida, ofrecen una opción de uso ilimitado para web.
 
 pricing:
   title: Precios en licencias web
