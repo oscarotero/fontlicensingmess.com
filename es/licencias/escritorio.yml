@@ -26,7 +26,7 @@ chart_tiers:
     key: desktop-tiers-workstations
     units: [dispositivo, dispositivos]
     description: |
-      En nuestra muestra, 7 fundiciones tipográficas que ofrecen la opción de adquirir una licencia para un número ilimitado de dispositivos. Si contamos todas las unidades de medida para uso de escritorio, son 31 la fundiciones que incluyen esta opción.
+      En nuestra muestra, 7 fundiciones tipográficas ofrecen la opción de adquirir una licencia para un número ilimitado de dispositivos. Si contamos todas las unidades de medida para uso de escritorio, 31 fundiciones incluyen esta opción.
   - title: Límites habituales en Número de personas empleadas
     key: desktop-tiers-employees
     units: [empleada, empleadas]
