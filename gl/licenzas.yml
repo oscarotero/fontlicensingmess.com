@@ -4,11 +4,11 @@ theme: dark
 order: 3
 content:
   first: |
-    As gráficas que fixemos ilustran os tipos de licenzas máis comúns, as unidades de medida do uso das fontes e os prezos base de cada categoría, e destacan patróns e diferenzas entre distintas estratexias comerciais. A continuación, presentamos unha lista co número de entradas analizadas por cada tipo de licenza.
+    As gráficas que fixemos ilustran os tipos de licenzas máis comúns, as unidades de medida de uso das fontes e os prezos base de cada categoría, e destacan patróns e diferenzas entre distintas estratexias comerciais. A continuación, presentamos unha lista co número de entradas analizadas por cada tipo de licenza.
   more: |
     Existen diferentes modelos no mercado; algunhas fundicións dividen as súas licenzas nunha ampla gama de opcións, en canto que outras simplifican o proceso permitindo múltiples usos nas súas licenzas básicas. As publicacións electrónicas (ePub) e as redes sociais, por exemplo, adoitan estar incluídas nas licenzas desktop.
 
-    É destacable que 22 % das fundicións da mostra ofrecen paquetes de licenzas que combinan varios usos. Os seus datos foron incluídos en todas as categorías especificadas no seu paquete. As licenzas menos comúns, como servidor, broadcasting ou terceiros, adoitan ter un orzamento á medida, e non están dispoñibles para a venda directa.
+    É destacable que 22 % das fundicións da mostra ofrecen paquetes de licenzas que combinan varios usos. Os seus datos foron incluídos en todas as categorías especificadas no seu paquete. As licenzas menos comúns, como servidor, retransmisión ou terceiros, non sempre están dispoñibles para a venda directa e precisan un orzamento á medida.
 
 extra: licences
 chart:
