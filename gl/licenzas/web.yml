@@ -5,14 +5,14 @@ extra: licence
 order: 3b
 content:
   first: |
-    Esta licenza permite o uso de fontes dixitais en sitios web, e, por tanto, seren mostradas en calquera navegador. As fontes cárganse dinamicamente a través da Internet e poden estar aloxadas polo propio usuario ou seren fornecidas polo servidor da fundición. Esta segunda opción xera unha relación de dependencia coa fundición.
+    Esta licenza permite o uso de fontes dixitais en sitios web, para seren mostradas en calquera navegador. As fontes cárganse dinamicamente a través da Internet e poden estar aloxadas nun servidor propio ou no da fundición. Esta segunda opción xera unha relación de dependencia coa fundición.
   more: |
     O uso web cuantifícase principalmente polo tráfico do sitio (visualizacións de páxina ou visitantes),  76 % da mostra. Mentres que as licenzas de escritorio céntranse nos individuos que van usar a fonte, as licenzas web concéntranse en quen verá, lerá ou interactuará coa fonte nos sitios web.
 
 text: |
-  Máis de metade da mostra (54 %) utiliza o número de páxinas vistas mensualmente como unidade de medida para as licenzas web. Aínda que é habitual atopar o número de dominios combinado co tráfico, hai algúns casos (4) en que esta é a única métrica empregada. Moitas fundicións que rastrexan empregados, usuarios ou estacións de traballo venden licenzas web como parte dun paquete que inclúe varios usos, e proporcionan esta métrica como referencia universal.
+  Máis de metade da mostra (54 %) utiliza o número de páxinas vistas mensualmente como unidade de medida para as licenzas web. Aínda que o número de dominios aparece habitualmente combinado coa medición do tráfico, hai algúns casos (4) en que os dominios son a única métrica empregada. Moitas fundicións que usan unidades de medida máis universais —número de persoas empregadas, usuarias ou dispositivos— venden as licenzas web dentro dun paquete con varios usos.
 
-  O prezo medio dunha fonte de texto para a web é similar ao dunha de escritorio, cun rango máis amplo que chega ata os 233 €. Atopamos algunhas licenzas temporais para uso web, mais continúan sendo casos excepcionais na mostra. Cinco fundicións cobran unha tarifa anual, e dúas ofrecen varios períodos de tempo.
+  O prezo medio dunha fonte de texto para a web é similar ao dunha de escritorio, cun rango algo máis amplo, que chega ata os 233 €. Atopamos algunhas licenzas temporais para uso web, mais continúan sendo casos excepcionais na mostra. Cinco fundicións cobran unha tarifa anual, e dúas ofrecen opcións para varios períodos de tempo.
 
 chart:
   title: Unidades de medida das licenzas web
