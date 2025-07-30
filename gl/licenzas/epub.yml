@@ -5,7 +5,7 @@ extra: licence
 order: 3d
 content:
   first: |
-    Esta licenza permite o uso de fontes dixitais en libros electrónicos (eBooks), xeralmente distribuídos en formato ePub, .mobi e formatos similares. A fonte incrústase en publicacións dixitais que serán lidas en dispositivos como lectores electrónicos, tabletas e aplicacións de lectura para teléfonos móbiles e computadores. 
+    Esta licenza permite o uso de fontes dixitais en libros electrónicos (eBooks), xeralmente distribuídos en formato ePub, .mobi e outros similares. A fonte incrústase en publicacións dixitais que serán lidas en dispositivos como lectores electrónicos, tabletas e aplicacións de lectura para teléfonos móbiles e computadores. 
    
   more: |
     Case unha terceira parte das licenzas analizadas para ePub miden o número de «casos de uso» (títulos). Só tres determinan o uso por número de anos. Outras métricas xerais (usuarias, postos de traballo, persoas empregadas) fan parte de paquetes de licenzas combinadas. Encontramos tamén tres exemplos de fundicións que cobran unha subscrición polo uso en publicacións electrónicas.
@@ -15,7 +15,7 @@ text: |
 
 
 chart:
-  title: Unidades de medida das licencias ePub
+  title: Unidades de medida das licenzas ePub
   key: ePub
 
 chart_tiers:
@@ -26,5 +26,5 @@ chart_tiers:
      O número á dereita indica cantas fundicións ofrecen ese límite en particular. Mostramos os 10 límites máis comúns na mostra.
 
 pricing:
-  title: Pricing in ePub licences
+  title: Prezos das licenzas ePub
   key: ePub-pricing
