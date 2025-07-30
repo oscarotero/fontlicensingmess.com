@@ -14,18 +14,18 @@ interface Foundry {
 const translatedUnits: Record<string, [string, string, string]> = {
   "Number of Users": [
     "Number of Users",
-    "Número de Usuarios",
-    "Número de Usuarios",
+    "Número de Usuarias",
+    "Número de Usuarias",
   ],
   "Workstations": [
     "Workstations",
-    "Estaciones de Trabajo",
-    "Estacións de Traballo",
+    "Dispositivos",
+    "Dispositivos",
   ],
   "Number of Employees": [
     "Number of Employees",
-    "Número de Empleados",
-    "Número de Empregados",
+    "Número de Empleadas",
+    "Número de Empregadas",
   ],
   "Pageviews/Month": [
     "Pageviews/Month",
@@ -34,8 +34,8 @@ const translatedUnits: Record<string, [string, string, string]> = {
   ],
   "Unique Visitors/Month": [
     "Unique Visitors/Month",
-    "Visitantes únicos/mes",
-    "Visitantes únicos/mes",
+    "Visitantes únicas/mes",
+    "Visitantes únicas/mes",
   ],
   "Number of Domains": [
     "Number of Domains",
@@ -45,8 +45,8 @@ const translatedUnits: Record<string, [string, string, string]> = {
   "Use Case": ["Use Case", "Caso de Uso", "Caso de Uso"],
   "Monthly Users": [
     "Monthly Users",
-    "Usuarios Mensuales",
-    "Usuarios Mensuais",
+    "Usuarias Mensuales",
+    "Usuarias Mensuais",
   ],
   "Downloads": ["Downloads", "Descargas", "Descargas"],
   "Number of Years": [
@@ -78,8 +78,8 @@ const translatedUnits: Record<string, [string, string, string]> = {
   ],
   "Number of Followers": [
     "Number of Followers",
-    "Número de Seguidores",
-    "Número de Seguidores",
+    "Número de Seguidoras",
+    "Número de Seguidoras",
   ],
   "Brands": ["Brands", "Marcas", "Marcas"],
   "Unlimited": ["Unlimited", "Ilimitado", "Ilimitado"],
