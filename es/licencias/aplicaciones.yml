@@ -31,7 +31,7 @@ chart_tiers:
     units: [usuaria, usuarias]
     description: |
       Tres fundiciones tipográficas incluyen una opción para un número ilimitado de usuarias al mes. Si contabilizamos todas las unidades de medida para uso en aplicaciones, encontramos un total de 27 fundiciones con la opción de uso ilimitado.
-  - title: Popular tiers for Number of Downloads
+  - title: Límites habituais en Número de descargas
     key: app-tiers-downloads
     units: [descarga, descargas]
     description: |
