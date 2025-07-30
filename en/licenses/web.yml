@@ -26,7 +26,7 @@ chart_tiers:
       The number on the right indicates the amount of foundries that offer that particular tier. We show the 10 most popular tiers in the sample.
   - title: Popular tiers for Number of Pageviews
     key: web-tiers-pageviews
-    units: [page view, page views]
+    units: [pageview, pageviews]
     description: |
       39 type foundries, considering all the different measuring units in our sample, provide an unlimited option among their tiers.
 
