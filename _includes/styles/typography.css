@@ -8,6 +8,15 @@
   > :last-child {
     margin-bottom: 0;
   }
+  svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor
+  }
+  a:has(svg) {
+    display: inline-block;
+  }
 }
 .ty-header {
   font-size: var(--font-size-display);

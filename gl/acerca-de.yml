@@ -5,6 +5,8 @@ theme: light
 order: 5
 content: |
   Font Licensing Mess é un proxecto de investigación independente que ten como obxectivo esclarecer un dos aspectos máis complexos e menos comprendidos da industria tipográfica actual: as licenzas tipográficas.
+
+  Ademais desta web, podes seguirnos en [![instagram](/assets/instagram.svg){inline} @fontlicensing](https://www.instagram.com/fontlicensing/).
 people:
   - img: /assets/img/equipo2.jpg
     bio: |
