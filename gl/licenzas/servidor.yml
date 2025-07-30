@@ -5,12 +5,12 @@ extra: licence
 order: 3e
 content:
   first: |
-    Os dereitos de uso nesta licenza varían segundo a fundición. Xeralmente refírense ao uso en aplicacións dixitais que operan desde un servidor, como plataformas que usan fontes para xerar texto ou gráficos en tempo real. Porén, tamén atopamos casos nos que os dereitos se refiren ao servidor local dunha empresa, o que permite o uso interno por parte dos seus empregados.
+    Os dereitos de uso nesta licenza varían segundo a fundición. Xeralmente refírense ao uso en aplicacións dixitais que operan desde un servidor, como plataformas que usan fontes para xerar texto ou gráficos en tempo real. Porén, tamén atopamos casos nos que os dereitos se refiren ao servidor local dunha empresa, o que permite o uso interno por parte das persoas empregadas.
   more: |
-    Esta mestura confusa de referencias e tipos de servidor resulta nunha licenza especialmente complicada tanto para as fundicións como para os usuarios. De feito, cando recompilabamos os datos, observamos que sete fundicións das analizadas retiraron esta licenza da mostra.
+    Esta mestura de referencias e tipos de servidor resulta nunha licenza especialmente complicada tanto para as fundicións como para quen adquire unha fonte. De feito, cando recompilabamos os datos, observamos que sete fundicións das analizadas retiraron esta licenza da mostra.
 
 text: |
-  O prezo baséase principalmente no número de servidores. O único caso onde se mide o número de usuarios ofrece a licenza para servidores locais. Os prezos oscilan entre 92 € e 1.440 € por unha tipografía de texto no nivel máis baixo da licenza. Aínda así, en moitos casos non é fácil ter claro a que tipo de servidor se refiren, polo que é difícil identificar unha tendencia.
+  O prezo baséase principalmente no número de servidores. O único caso onde se mide o número de persoas usuarias ofrece a licenza para servidores locais. Os prezos oscilan entre 92 € e 1.440 € por unha tipografía de texto na licenza máis restrinxida. Aínda así, en moitos casos non é fácil ter claro a que tipo de servidor se refiren, polo que é difícil identificar unha tendencia.
 
 chart:
   title: Unidades de medida das licenzas de servidor
