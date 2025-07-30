@@ -17,7 +17,22 @@ chart:
   key: desktop
 
 chart_tiers:
-
+  - title: Límites habituais en Número de personas usuarias
+    key: desktop-tiers-users
+    units: [usuaria, usuarias]
+    description: |
+      Á dereita, o número de fundicións que ofrecen ese límite en particular. Estes son os 10 límites que máis se repiten na nosa mostra.
+  - title: Límites habituais en Número de dispositivos
+    key: desktop-tiers-workstations
+    units: [dispositivo, dispositivos]
+    description: |
+      Na nosa mostra, 7 fundicións tipográficas ofrecen a opción de adquirir unha licenza para un número ilimitado de dispositivos. Se contabilizamos todas as unidades de medida para uso de escritorio, 31 fundicións inclúen esta opción.
+  - title: Límites habituales en Número de personas empleadas
+    key: desktop-tiers-employees
+    units: [empregada, empregadas]
+    description: |
+      O límite máis alto que atopamos, en venta directa, para uso de escritorio é 400.000 personas empregadas.
+      
 pricing:
   title: Prezos das licenzas de escritorio
   key: desktop-pricing
