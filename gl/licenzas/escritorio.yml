@@ -27,7 +27,7 @@ chart_tiers:
     units: [dispositivo, dispositivos]
     description: |
       Na nosa mostra, 7 fundicións tipográficas ofrecen a opción de adquirir unha licenza para un número ilimitado de dispositivos. Se contabilizamos todas as unidades de medida para uso de escritorio, 31 fundicións inclúen esta opción.
-  - title: Límites habituales en Número de personas empleadas
+  - title: Límites habituais en Número de personas empregadas
     key: desktop-tiers-employees
     units: [empregada, empregadas]
     description: |
