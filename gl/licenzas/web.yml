@@ -23,7 +23,7 @@ chart_tiers:
     key: web-tiers-visitors
     units: [visitante, visitantes]
     description: |
-      O número á derecha indica cantas fundicións ofrecen ese límite en particular. Mostramos os 10 límites más frecuentes na mostra.
+      O número á dereita indica cantas fundicións ofrecen ese límite en particular. Mostramos os 10 límites más frecuentes na mostra.
   - title: Límites habituais en Número de páxinas vistas
     key: web-tiers-pageviews
     units: [páxina vista, páxinas vistas]
