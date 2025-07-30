@@ -11,6 +11,90 @@ interface Foundry {
   women: boolean;
 }
 
+const translatedUnits: Record<string, [string, string, string]> = {
+  "Number of Users": [
+    "Number of Users",
+    "Número de Usuarios",
+    "Número de Usuarios",
+  ],
+  "Workstations": [
+    "Workstations",
+    "Estaciones de Trabajo",
+    "Estacións de Traballo",
+  ],
+  "Number of Employees": [
+    "Number of Employees",
+    "Número de Empleados",
+    "Número de Empregados",
+  ],
+  "Pageviews/Month": [
+    "Pageviews/Month",
+    "Páginas vistas/mes",
+    "Páxinas vistas/mes",
+  ],
+  "Unique Visitors/Month": [
+    "Unique Visitors/Month",
+    "Visitantes únicos/mes",
+    "Visitantes únicos/mes",
+  ],
+  "Number of Domains": [
+    "Number of Domains",
+    "Número de Dominios",
+    "Número de Dominios",
+  ],
+  "Use Case": ["Use Case", "Caso de Uso", "Caso de Uso"],
+  "Monthly Users": [
+    "Monthly Users",
+    "Usuarios Mensuales",
+    "Usuarios Mensuais",
+  ],
+  "Downloads": ["Downloads", "Descargas", "Descargas"],
+  "Number of Years": [
+    "Number of Years",
+    "Número de Años",
+    "Número de Anos",
+  ],
+  "Operating Systems": [
+    "Operating Systems",
+    "Sistemas Operativos",
+    "Sistemas Operativos",
+  ],
+  "PDFs/month": [
+    "PDFs/month",
+    "PDFs/mes",
+    "PDFs/mes",
+  ],
+  "Countries": ["Countries", "Países", "Países"],
+  "Budget": ["Budget", "Presupuesto", "Orzamento"],
+  "Audience Size": [
+    "Audience Size",
+    "Tamaño de la Audiencia",
+    "Tamaño da Audiencia",
+  ],
+  "Platform": [
+    "Platform",
+    "Plataforma",
+    "Plataforma",
+  ],
+  "Number of Followers": [
+    "Number of Followers",
+    "Número de Seguidores",
+    "Número de Seguidores",
+  ],
+  "Brands": ["Brands", "Marcas", "Marcas"],
+  "Unlimited": ["Unlimited", "Ilimitado", "Ilimitado"],
+  "Annual Fee": [
+    "Annual Fee",
+    "Cuota Anual",
+    "Cota Anual",
+  ],
+  "Impressions": [
+    "Impressions",
+    "Impresiones",
+    "Impresións",
+  ],
+};
+
 const translatedLicenses: Record<string, [string, string, string]> = {
   Desktop: ["Desktop", "Escritorio", "Escritorio"],
   Web: ["Web", "Web", "Web"],
@@ -128,6 +212,10 @@ interface Unit {
 }
 
 export function convertUnit(content: UnitCSV[]): Unit[] {
+  // @ts-ignore this.data is not defined
+  const lang = this.data?.lang as string;
+  const key = langKey(lang);
+
   const count: Record<string, number> = {};
 
   for (const unit of content) {
@@ -143,7 +231,7 @@ export function convertUnit(content: UnitCSV[]): Unit[] {
   }
 
   return Object.entries(count).map(([name, value]) => ({
-    name,
+    name: translatedUnits[name]?.[key] ?? name,
     value,
   })).sort((a, b) => b.value - a.value);
 }
