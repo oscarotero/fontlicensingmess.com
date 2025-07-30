@@ -21,6 +21,21 @@ chart:
   key: app
 
 chart_tiers:
+  - title: Límites habituais en Número de aplicacións
+    key: app-tiers-usecase
+    units: [app, apps]
+    description: |
+      O número á dereita indica cantas fundicións ofrecen ese límite en particular. Mostramos os 10 límites que máis se repiten.
+  - title: Límites habituais en Número de persoas usuarias ao mes
+    key: app-tiers-monthlyusers
+    units: [usuaria, usuarias]
+    description: |
+      Tres fundicións tipográficas inclúen unha opción para un número ilimitado de usuarias ao mes. Se contabilizamos todas as unidades de medida para uso en aplicacións, atopamos un total de 27 fundicións coa opción de uso ilimitado.
+  - title: Límites habituais en Número de descargas
+    key: app-tiers-downloads
+    units: [descarga, descargas]
+    description: |
+      O límite máis baixo que atopamos é 50 descargas; o valor máis alto chega aos 1.000 millóns de descargas.
 
 pricing:
   title: Prezos das licenzas de aplicacións
