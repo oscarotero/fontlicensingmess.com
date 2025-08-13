@@ -144,7 +144,7 @@ const translatedCountries: Record<string, [string, string, string]> = {
   Japan: ["Japan", "Japón", "Xapón"],
   Kazakhstan: ["Kazakhstan", "Kazajstán", "Cazaquistán"],
   Mexico: ["Mexico", "México", "México"],
-  "New Zealand": ["Nueva Zelanda", "Nueva Zelanda", "Nova Zelanda"],
+  "New Zealand": ["New Zeland", "Nueva Zelanda", "Nova Zelandia"],
   Norway: ["Norway", "Noruega", "Noruega"],
   Poland: ["Poland", "Polonia", "Polonia"],
   Portugal: ["Portugal", "Portugal", "Portugal"],
